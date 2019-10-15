@@ -26,7 +26,7 @@ module alu(a, b, cin, card, f, cout, zero);
     assign f_t[159:128] = a&b;
     assign f_t[127:96] = ~(a^b);
     assign f_t[95:64] = a^b;
-    assign f_t[63:32] = ~(a|b);
+    assign f_t[63:32] = ~(a&b);
     assign f_t[31:0] = {32{1'b0}};
 
     multiplex32_16 m32(f_t, f, card);
