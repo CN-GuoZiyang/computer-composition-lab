@@ -1,7 +1,26 @@
+`timescale 1ns / 1ps
+
 `include "add.v"
 `include "multiplex.v"
-`include "test.v"
-
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    22:16:57 10/15/2019 
+// Design Name: 
+// Module Name:    alu 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module alu(a, b, cin, card, f, cout, zero);
     input [31:0] a, b;
     input [4:0] card;

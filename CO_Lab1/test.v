@@ -4,10 +4,10 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   23:56:06 10/11/2019
+// Create Date:   22:23:50 10/15/2019
 // Design Name:   alu
-// Module Name:   C:/Users/zinker/Downloads/ISEProjects/ALU/alu_test.v
-// Project Name:  ALU
+// Module Name:   C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/test.v
+// Project Name:  CO_Lab1
 // Target Device:  
 // Tool versions:  
 // Description: 
@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module alu_test;
+module test;
 
 	// Inputs
 	reg [31:0] a;
@@ -47,8 +47,6 @@ module alu_test;
 	);
 
 	initial begin
-		$dumpfile("test.vcd");
-      	$dumpvars(0, uut);
 		a = 32'hFFFFFF;
 		b = 32'heeeeee;
 		cin = 0;
@@ -65,3 +63,4 @@ module alu_test;
 	always #(DELAY << 5) cin = ~cin;
       
 endmodule
+
