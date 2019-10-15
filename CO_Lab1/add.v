@@ -68,13 +68,13 @@ module sub32(a, b, cin, sum, cout);
     output [31:0] sum;
     output cout;
 
-    wire [31:0] b_n, sum_t;
-    wire cin_n, cout1, cout2;
+    wire [31:0] b_n, sum_t, cin_n;
+    wire cout1, cout2;
     assign b_n = b ^ {32{1'b1}};
-    assign cin_n = cin ^ 1'b1;
+    assign cin_n = {{31{1'b0}}, cin} ^ {32{1'b1}};
 
-    add32 a1(a, b, 1'b1, sum_t, cout1);
-    add32 a2(sum_t, {{31{1'b0}}, cin_n}, 1'b1, sum, cout2);
+    add32 a1(a, b_n, 1'b1, sum_t, cout1);
+    add32 a2(sum_t, cin_n, 1'b1, sum, cout2);
     assign cout = cout1 | cout2;
 
 endmodule

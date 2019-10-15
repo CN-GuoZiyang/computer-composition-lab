@@ -1,5 +1,6 @@
 `include "add.v"
 `include "multiplex.v"
+`include "test.v"
 
 module alu(a, b, cin, card, f, cout, zero);
     input [31:0] a, b;
