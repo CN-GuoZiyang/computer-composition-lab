@@ -9,264 +9,275 @@ z2
 cModel Technology
 Z0 dC:/Users/guo/Desktop/computer-composition-lab/CO_Lab1
 T_opt
-!s110 1571156153
-VkFBzc>[gWTff>V<EY@E9f1
-04 4 4 work test fast 0
-04 4 4 work glbl fast 0
-=1-3c52822f1c32-5da5f0b8-202-1a60
-o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
-Z1 tCvgOpt 0
+!s110 1571312870
+VmK9:gL?U?1lAH^bLW2PbQ0
+Z1 04 4 4 work test fast 0
+Z2 04 4 4 work glbl fast 0
+=1-3c52822f1c32-5da854e6-e8-2bac
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+Z4 tCvgOpt 0
 n@_opt
-OL;O;10.6d;65
+Z5 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1571313039
+VGCEDT<0g5Agd[BgNl28[f0
+R1
+R2
+=1-3c52822f1c32-5da8558f-e3-33e8
+R3
+R4
+n@_opt1
+R5
 vadd1
-Z2 !s110 1571156151
+Z6 !s110 1571313038
 !i10b 1
 !s100 i74hO[7KAi43NOBL__OHZ1
 IMdde3E1?o5^jJ6PIUL;fC0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z7 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1571149136
-Z5 8add.v
-Z6 Fadd.v
-Z7 L0 21
-Z8 OL;L;10.6d;65
+Z8 w1571149136
+Z9 8add.v
+Z10 Fadd.v
+Z11 L0 21
+Z12 OL;L;10.6d;65
 r1
 !s85 0
 31
-Z9 !s108 1571156151.000000
-Z10 !s107 multiplex.v|add.v|alu.v|
-Z11 !s90 -reportprogress|300|alu.v|
+Z13 !s108 1571313038.000000
+Z14 !s107 multiplex.v|add.v|alu.v|
+Z15 !s90 -reportprogress|300|alu.v|
 !i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+Z16 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
 vadd16
-R2
+R6
 !i10b 1
 !s100 GElD>CIck;?@MM2jVAfbd3
 I=CzOa2<oizlcEG]@j^[YG3
-R3
+R7
 R0
-R4
-R5
-R6
-L0 63
 R8
+R9
+R10
+L0 63
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vadd2
-R2
+R6
 !i10b 1
 !s100 jWE5CA0:O^FOYLBVfIS5h3
 IE_NK2KV:CShcBfFYKi8932
-R3
+R7
 R0
-R4
-R5
-R6
-L0 30
 R8
+R9
+R10
+L0 30
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vadd32
-R2
+R6
 !i10b 1
 !s100 6egIZboQaBZ99ejAZBMbS2
 I7DD7;fJ8J;JJPGLW[ljC51
-R3
+R7
 R0
-R4
-R5
-R6
-L0 74
 R8
+R9
+R10
+L0 74
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vadd4
-R2
+R6
 !i10b 1
 !s100 BXoK7UZ2H>]PHcH=]]98U1
 ISb4g3g8j1TX;:?5UdiRj21
-R3
+R7
 R0
-R4
-R5
-R6
-L0 41
 R8
+R9
+R10
+L0 41
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vadd8
-R2
+R6
 !i10b 1
 !s100 kXz04i>A:JBlS1F:5YWf=3
 I:ImS8ON9b31jHVcj4h[n<0
-R3
+R7
 R0
-R4
-R5
-R6
-L0 52
 R8
+R9
+R10
+L0 52
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 valu
-R2
+R6
 !i10b 1
 !s100 3_g9D:GUjlK8On8An9U:k0
 IhKM966<7i6i=<c]f>Mnhh1
-R3
+R7
 R0
 w1571149166
 8alu.v
 Falu.v
 L0 24
-R8
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vglbl
-R2
+R6
 !i10b 1
 !s100 UlJ]9LUWO:ZWoRO62F9fW3
 Ik8Q3>OZNK[D?JRF9ZzF?D1
-R3
+R7
 R0
 w1381681120
 8D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
 FD:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
 L0 5
-R8
+R12
 r1
 !s85 0
 31
-R9
+R13
 !s107 D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
 !s90 -reportprogress|300|D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
 !i113 0
-R12
-R1
+R16
+R4
 vmultiplex1_16
-R2
+R6
 !i10b 1
-!s100 CGYIk@K`GcD9MnabcEbfL3
-I]FX6C@IeGoAGmKX8XN0L=2
-R3
+!s100 U[4c6OGjX6ZBj`YH7bmAJ3
+IdQN<Y?H=;[CBdNfYaFboZ3
+R7
 R0
-Z13 w1571149111
-Z14 8multiplex.v
-Z15 Fmultiplex.v
+Z17 w1571313016
+Z18 8multiplex.v
+Z19 Fmultiplex.v
 L0 49
-R8
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
-!i113 0
-R12
-R1
-vmultiplex32_16
-R2
-!i10b 1
-!s100 n01^aRiY`N?l`4EX3z=S42
-I2b8bM<[eV5B`j`ULOHgdN3
-R3
-R0
 R13
 R14
 R15
+!i113 0
+R16
+R4
+vmultiplex32_16
+R6
+!i10b 1
+!s100 n01^aRiY`N?l`4EX3z=S42
+I2b8bM<[eV5B`j`ULOHgdN3
 R7
-R8
+R0
+R17
+R18
+R19
+R11
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vsub32
-R2
+R6
 !i10b 1
 !s100 z65Oe1RY9PDR;bkXJk<>b3
 IbYB]_C[_N`@AWbz71H69[2
-R3
+R7
 R0
-R4
-R5
-R6
-L0 85
 R8
+R9
+R10
+L0 85
+R12
 r1
 !s85 0
 31
-R9
-R10
-R11
+R13
+R14
+R15
 !i113 0
-R12
-R1
+R16
+R4
 vtest
-R2
+R6
 !i10b 1
 !s100 >]c;:?:bnHSf7_1?G`B>_2
 Ic8L:Iod3U95n6TT``n@8Z3
-R3
+R7
 R0
 w1571149461
 8test.v
 Ftest.v
 L0 25
-R8
+R12
 r1
 !s85 0
 31
-R9
+R13
 !s107 test.v|
 !s90 -reportprogress|300|test.v|
 !i113 0
-R12
-R1
+R16
+R4

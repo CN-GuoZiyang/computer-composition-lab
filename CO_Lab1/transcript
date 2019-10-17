@@ -13,8 +13,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do {test.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 00:15:51 on Oct 16,2019
+# Start time: 19:50:38 on Oct 17,2019
 # vlog -reportprogress 300 alu.v 
 # -- Compiling module add1
 # -- Compiling module add2
@@ -29,29 +30,29 @@
 # 
 # Top level modules:
 # 	alu
-# End time: 00:15:51 on Oct 16,2019, Elapsed time: 0:00:00
+# End time: 19:50:38 on Oct 17,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 00:15:51 on Oct 16,2019
+# Start time: 19:50:38 on Oct 17,2019
 # vlog -reportprogress 300 test.v 
 # -- Compiling module test
 # 
 # Top level modules:
 # 	test
-# End time: 00:15:51 on Oct 16,2019, Elapsed time: 0:00:00
+# End time: 19:50:38 on Oct 17,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 00:15:51 on Oct 16,2019
+# Start time: 19:50:38 on Oct 17,2019
 # vlog -reportprogress 300 D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 00:15:51 on Oct 16,2019, Elapsed time: 0:00:00
+# End time: 19:50:38 on Oct 17,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.test glbl 
-# Start time: 00:15:51 on Oct 16,2019
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 19:50:38 on Oct 17,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.test(fast)
 # Loading work.alu(fast)
 # Loading work.add32(fast)
@@ -64,8 +65,13 @@
 # Loading work.multiplex32_16(fast)
 # Loading work.multiplex1_16(fast)
 # Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: guo  Hostname: DESKTOP-UDT728H  ProcessID: 11180
+#           Attempting to use alternate WLF file "./wlft59z7d2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft59z7d2
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 00:18:07 on Oct 16,2019, Elapsed time: 0:02:16
-# Errors: 0, Warnings: 0
+# End time: 19:52:21 on Oct 17,2019, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 2
