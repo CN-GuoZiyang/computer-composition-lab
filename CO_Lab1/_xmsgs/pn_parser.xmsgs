@@ -8,5 +8,16 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/alu.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/alu.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/add.v&apos; in file &quot;C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/alu.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/alu.v</arg>&quot; Line <arg fmt="%d" index="2">4</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/multiplex.v&apos; in file &quot;C:/Users/guo/Desktop/computer-composition-lab/CO_Lab1/alu.v&quot; line 4
+</arg>
+</msg>
+
 </messages>
 
