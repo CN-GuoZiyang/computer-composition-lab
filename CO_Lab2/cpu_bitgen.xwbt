@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.ncd
+OUTFILE=C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2
+LICENSE=WebPack
+USER_INFO=__0_0_0

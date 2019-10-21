@@ -18,10 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module expander(in, out);
-	input [15:0] in;
+module expander(in16, in26, select, out);
+	input [15:0] in16;
+	input [25:0] in26;
+	input select;
 	output reg [31:0] out;
 	
-	assign out = {{16{in[15]}}, in};
+	always @(*) begin
+		if(select == 0) out = {{16{in16[15]}}, in16};
+		else out = {{6{in26[25]}}, in26};
+	end
 
 endmodule

@@ -26,11 +26,10 @@ module instruction_memory(flag, address, instruction);
 	reg [8:0] data [1023:0];
 	
 	initial begin
-		$readmemb("C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instructions.txt", data, 0);
-		instruction = 32'bz;
+		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt", data, 0);
 	end
 	
-	always @(flag) begin
+	always @(*) begin
 		if(flag == 1) begin
 			instruction[31:24] <= data[address];
 			instruction[23:16] <= data[address + 1];

@@ -27,8 +27,7 @@ module data_memory(clk, address, read, write, write_data, out);
 	reg [7:0] data [1023:0];
 		
 	initial begin
-		$readmemb("C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\data.txt", data, 0);
-		out = 32'bz;
+		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data, 0);
 	end
 	
 	always @(*) begin
