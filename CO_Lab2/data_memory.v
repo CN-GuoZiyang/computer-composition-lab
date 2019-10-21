@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module data_memory(clk, address, read, write, write_data, data, out);
+module data_memory(clk, address, read, write, write_data, out);
 	
 	input clk, read, write;
 	input [31:0] address, write_data;
