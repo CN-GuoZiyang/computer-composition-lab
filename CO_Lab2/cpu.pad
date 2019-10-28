@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Oct 21 23:26:00 2019
+Mon Oct 28 21:22:43 2019
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -41,17 +41,17 @@ B1|||VCCAUX||||||||2.5||||
 B2||IOBM|IO_L2P_0|UNUSED||0|||||||||
 B3||IOBM|IO_L4P_0|UNUSED||0|||||||||
 B4||IOBM|IO_L5P_0|UNUSED||0|||||||||
-B5|||VCCO_0|||0|||||any******||||
-B6||IOBM|IO_L8P_0|UNUSED||0|||||||||
+B5|||VCCO_0|||0|||||2.50||||
+B6|res_zero|IOB|IO_L8P_0|OUTPUT|LVCMOS25*|0|12|SLOW||||UNLOCATED|NO|NONE|
 B7|||GND||||||||||||
 B8||IOBM|IO_L33P_0|UNUSED||0|||||||||
 B9||IOBM|IO_L35P_GCLK17_0|UNUSED||0|||||||||
-B10|||VCCO_0|||0|||||any******||||
+B10|||VCCO_0|||0|||||2.50||||
 B11||IOBM|IO_L39P_0|UNUSED||0|||||||||
 B12||IOBM|IO_L41P_0|UNUSED||0|||||||||
 B13|||GND||||||||||||
 B14||IOBM|IO_L62P_0|UNUSED||0|||||||||
-B15|||VCCO_0|||0|||||any******||||
+B15|||VCCO_0|||0|||||2.50||||
 B16||IOBM|IO_L66P_SCP1_0|UNUSED||0|||||||||
 B17|||VCCAUX||||||||2.5||||
 B18|||TMS||||||||||||
@@ -79,13 +79,13 @@ D3||IOBS|IO_L54N_M3A11_3|UNUSED||3|||||||||
 D4||IOBM|IO_L1P_HSWAPEN_0|UNUSED||0|||||||||
 D5|||GND||||||||||||
 D6||IOBM|IO_L3P_0|UNUSED||0|||||||||
-D7|||VCCO_0|||0|||||any******||||
+D7|||VCCO_0|||0|||||2.50||||
 D8||IOBM|IO_L11P_0|UNUSED||0|||||||||
 D9||IOBM|IO_L34P_GCLK19_0|UNUSED||0|||||||||
 D10|||GND||||||||||||
 D11||IOBM|IO_L36P_GCLK15_0|UNUSED||0|||||||||
 D12||IOBM|IO_L47P_0|UNUSED||0|||||||||
-D13|||VCCO_0|||0|||||any******||||
+D13|||VCCO_0|||0|||||2.50||||
 D14||IOBM|IO_L65P_SCP3_0|UNUSED||0|||||||||
 D15|||TDI||||||||||||
 D16|||TDO||||||||||||
@@ -100,7 +100,7 @@ E6||IOBS|IO_L7N_0|UNUSED||0|||||||||
 E7||IOBM|IO_L9P_0|UNUSED||0|||||||||
 E8||IOBS|IO_L9N_0|UNUSED||0|||||||||
 E9|||VCCAUX||||||||2.5||||
-E10|||VCCO_0|||0|||||any******||||
+E10|||VCCO_0|||0|||||2.50||||
 E11||IOBS|IO_L42N_0|UNUSED||0|||||||||
 E12||IOBS|IO_L51N_0|UNUSED||0|||||||||
 E13||IOBS|IO_L63N_SCP6_0|UNUSED||0|||||||||
@@ -224,7 +224,7 @@ M4|||VCCO_3|||3|||||any******||||
 M5||IOBS|IO_L31N_VREF_3|UNUSED||3|||||||||
 M6|||GND||||||||||||
 M7|||VCCINT||||||||1.2||||
-M8|op_code_out<4>|IOB|IO_L40P_2|OUTPUT|LVCMOS25*|2|12|SLOW||||UNLOCATED|NO|NONE|
+M8||IOBM|IO_L40P_2|UNUSED||2|||||||||
 M9|||VCCAUX||||||||2.5||||
 M10||IOBM|IO_L22P_2|UNUSED||2|||||||||
 M11||IOBM|IO_L15P_2|UNUSED||2|||||||||
@@ -242,7 +242,7 @@ N4||IOBM|IO_L1P_3|UNUSED||3|||||||||
 N5||IOBM|IO_L64P_D8_2|UNUSED||2|||||||||
 N6||IOBM|IO_L47P_2|UNUSED||2|||||||||
 N7||IOBM|IO_L44P_2|UNUSED||2|||||||||
-N8|op_code_out<5>|IOB|IO_L40N_2|OUTPUT|LVCMOS25*|2|12|SLOW||||UNLOCATED|NO|NONE|
+N8||IOBS|IO_L40N_2|UNUSED||2|||||||||
 N9||IOBS|IO_L22N_2|UNUSED||2|||||||||
 N10||IOBM|IO_L20P_2|UNUSED||2|||||||||
 N11||IOBS|IO_L15N_2|UNUSED||2|||||||||
@@ -261,7 +261,7 @@ P5|||VCCAUX||||||||2.5||||
 P6||IOBS|IO_L64N_D9_2|UNUSED||2|||||||||
 P7||IOBS|IO_L47N_2|UNUSED||2|||||||||
 P8||IOBS|IO_L44N_2|UNUSED||2|||||||||
-P9|||VCCO_2|||2|||||2.50||||
+P9|||VCCO_2|||2|||||any******||||
 P10|||VCCAUX||||||||2.5||||
 P11||IOBS|IO_L20N_2|UNUSED||2|||||||||
 P12||IOBS|IO_L13N_D10_2|UNUSED||2|||||||||
@@ -276,13 +276,13 @@ R2|||VCCO_3|||3|||||any******||||
 R3||IOBM|IO_L62P_D5_2|UNUSED||2|||||||||
 R4|||GND||||||||||||
 R5||IOBM|IO_L48P_D7_2|UNUSED||2|||||||||
-R6|||VCCO_2|||2|||||2.50||||
+R6|||VCCO_2|||2|||||any******||||
 R7||IOBM|IO_L46P_2|UNUSED||2|||||||||
-R8|op_code_out<0>|IOB|IO_L31P_GCLK31_D14_2|OUTPUT|LVCMOS25*|2|12|SLOW||||UNLOCATED|NO|NONE|
+R8||IOBM|IO_L31P_GCLK31_D14_2|UNUSED||2|||||||||
 R9|||GND||||||||||||
 R10||IOBM|IO_L29P_GCLK3_2|UNUSED||2|||||||||
 R11||IOBM|IO_L16P_2|UNUSED||2|||||||||
-R12|||VCCO_2|||2|||||2.50||||
+R12|||VCCO_2|||2|||||any******||||
 R13||IOBM|IO_L3P_D0_DIN_MISO_MISO1_2|UNUSED||2|||||||||
 R14|||GND||||||||||||
 R15||IOBM|IO_L1P_CCLK_2|UNUSED||2|||||||||
@@ -296,8 +296,8 @@ T4||IOBM|IO_L63P_2|UNUSED||2|||||||||
 T5||IOBS|IO_L48N_RDWR_B_VREF_2|UNUSED||2|||||||||
 T6||IOBM|IO_L45P_2|UNUSED||2|||||||||
 T7||IOBS|IO_L46N_2|UNUSED||2|||||||||
-T8|op_code_out<1>|IOB|IO_L31N_GCLK30_D15_2|OUTPUT|LVCMOS25*|2|12|SLOW||||UNLOCATED|NO|NONE|
-T9|op_code_out<2>|IOB|IO_L32P_GCLK29_2|OUTPUT|LVCMOS25*|2|12|SLOW||||UNLOCATED|NO|NONE|
+T8||IOBS|IO_L31N_GCLK30_D15_2|UNUSED||2|||||||||
+T9||IOBM|IO_L32P_GCLK29_2|UNUSED||2|||||||||
 T10||IOBS|IO_L29N_GCLK2_2|UNUSED||2|||||||||
 T11||IOBS|IO_L16N_VREF_2|UNUSED||2|||||||||
 T12||IOBM|IO_L19P_2|UNUSED||2|||||||||
@@ -310,17 +310,17 @@ T18||IOBS|IO_L51N_M1DQ13_1|UNUSED||1|||||||||
 U1||IOBS|IO_L32N_M3DQ15_3|UNUSED||3|||||||||
 U2||IOBM|IO_L32P_M3DQ14_3|UNUSED||3|||||||||
 U3||IOBM|IO_L65P_INIT_B_2|UNUSED||2|||||||||
-U4|||VCCO_2|||2|||||2.50||||
+U4|||VCCO_2|||2|||||any******||||
 U5||IOBM|IO_L49P_D3_2|UNUSED||2|||||||||
 U6|||GND||||||||||||
 U7||IOBM|IO_L43P_2|UNUSED||2|||||||||
 U8||IOBM|IO_L41P_2|UNUSED||2|||||||||
-U9|||VCCO_2|||2|||||2.50||||
+U9|||VCCO_2|||2|||||any******||||
 U10||IOBM|IO_L30P_GCLK1_D13_2|UNUSED||2|||||||||
 U11||IOBM|IO_L23P_2|UNUSED||2|||||||||
 U12|||GND||||||||||||
 U13||IOBM|IO_L14P_D11_2|UNUSED||2|||||||||
-U14|||VCCO_2|||2|||||2.50||||
+U14|||VCCO_2|||2|||||any******||||
 U15||IOBM|IO_L5P_2|UNUSED||2|||||||||
 U16||IOBM|IO_L2P_CMPCLK_2|UNUSED||2|||||||||
 U17||IOBM|IO_L52P_M1DQ14_1|UNUSED||1|||||||||
@@ -333,7 +333,7 @@ V5||IOBS|IO_L49N_D4_2|UNUSED||2|||||||||
 V6||IOBS|IO_L45N_2|UNUSED||2|||||||||
 V7||IOBS|IO_L43N_2|UNUSED||2|||||||||
 V8||IOBS|IO_L41N_VREF_2|UNUSED||2|||||||||
-V9|op_code_out<3>|IOB|IO_L32N_GCLK28_2|OUTPUT|LVCMOS25*|2|12|SLOW||||UNLOCATED|NO|NONE|
+V9||IOBS|IO_L32N_GCLK28_2|UNUSED||2|||||||||
 V10||IOBS|IO_L30N_GCLK0_USERCCLK_2|UNUSED||2|||||||||
 V11||IOBS|IO_L23N_2|UNUSED||2|||||||||
 V12||IOBS|IO_L19N_2|UNUSED||2|||||||||

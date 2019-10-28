@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:33:49 10/19/2019 
+// Create Date:    13:26:21 10/27/2019 
 // Design Name: 
 // Module Name:    instruction_memory 
 // Project Name: 
@@ -18,24 +18,25 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module instruction_memory(flag, address, instruction);
-	input flag;
+module instruction_memory(read, address, out);
+	input read;
 	input [31:0] address;
-	output reg [31:0] instruction;
+	output reg [31:0] out;
 	
-	reg [8:0] data [1023:0];
+	reg [7:0] data [127:0];
 	
 	initial begin
-		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt", data, 0);
+		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt", data);
+		out = 32'd0;
 	end
 	
-	always @(*) begin
-		if(flag == 1) begin
-			instruction[31:24] <= data[address];
-			instruction[23:16] <= data[address + 1];
-			instruction[15:8] <= data[address + 2];
-			instruction[7:0] <= data[address + 3];
+	always @(read or address) begin
+		if(read == 1'b1) begin
+			out[31:24] = data[address];
+         out[23:16] = data[address+1];
+         out[15:8] = data[address+2];
+         out[7:0] = data[address+3];
 		end
 	end
-
+	
 endmodule

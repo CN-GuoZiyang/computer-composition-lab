@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    20:01:31 10/21/2019 
+// Create Date:    13:18:17 10/27/2019 
 // Design Name: 
-// Module Name:    mux_32bit_2 
+// Module Name:    extender 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,17 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mux_32bit_2(in0, in1, select, out);
-
-	input [31:0] in0, in1;
+module extender(immediate16, immediate26, select, out);
+	input [15:0] immediate16;
+	input [25:0] immediate26;
 	input select;
 	output reg [31:0] out;
 	
-	always @(*) begin
+	always @(immediate16 or immediate26 or select) begin
 		case(select)
-			1'b0: out = in0;
-			1'b1: out = in1;
+			1'b0: begin
+				out[15:0] = immediate16;
+				out[31:16] = 16'd0;
+			end
+			1'b1: begin
+				out[25:0] = immediate26;
+				out[31:26] = 6'd0;
+			end
 		endcase
 	end
-	
+
 endmodule

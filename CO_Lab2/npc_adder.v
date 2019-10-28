@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:14:07 10/28/2019 
+// Create Date:    19:21:23 10/28/2019 
 // Design Name: 
-// Module Name:    zero_judge 
+// Module Name:    npc_adder 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,15 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module zero_judge(in, out);
-	input [31:0] in;
-	output reg out;
+module npc_adder(address, npc);
+	input [31:0] address;
+	output reg [31:0] npc;
 	
-	always @(in) begin
-		if(in == 32'd0) begin
-			out = 1'b1;
-		end
-		else out = 1'b0;
+	always @(address) begin
+		npc = address + 4;
 	end
 
 endmodule

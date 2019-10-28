@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    23:48:59 10/19/2019 
+// Create Date:    14:13:57 10/27/2019 
 // Design Name: 
-// Module Name:    expander 
+// Module Name:    pc_select 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,15 +18,16 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module expander(in16, in26, select, out);
-	input [15:0] in16;
-	input [25:0] in26;
+module pc_select(select, npc, reg_address, new_address);
 	input select;
-	output reg [31:0] out;
+	input [31:0] npc, reg_address;
+	output reg [31:0] new_address;
 	
-	always @(*) begin
-		if(select == 0) out = {{16{in16[15]}}, in16};
-		else out = {{6{in26[25]}}, in26};
+	always @(select, npc, reg_address, new_address) begin
+		case(select)
+			1'b0: new_address = npc;
+			1'b1: new_address = reg_address;
+		endcase
 	end
 
 endmodule

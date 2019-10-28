@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:36:44 10/19/2019 
+// Create Date:    13:32:28 10/27/2019 
 // Design Name: 
 // Module Name:    reg_file 
 // Project Name: 
@@ -18,35 +18,24 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module reg_file(clk, read_a, read_b, address_a, address_b, write, write_address, write_data, out_a, out_b);
-
-	input clk, read_a, read_b, write;
-	input [4:0] address_a, address_b, write_address;
+module reg_file(clk, write, read_address_a, read_address_b, write_address, write_data, read_out_a, read_out_b);
+	input clk, write;
+	input [4:0] read_address_a, read_address_b, write_address;
 	input [31:0] write_data;
-	output reg [31:0] out_a, out_b;
-	reg [31:0] register [0:31];
+	output [31:0] read_out_a, read_out_b;
+	
+	reg [31:0] data [1:31];	// ²»°üº¬#0¼Ä´æÆ÷
 	
 	initial begin
-		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/register.txt", register, 0);
-		out_a = 32'bz;
-		out_b = 32'bz;
+		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/register.txt", data);
 	end
 	
-	always @(*) begin
-		if(read_a == 1) begin
-			out_a = register[address_a];
-		end
-	end
+	assign read_out_a = (read_address_a == 5'd0) ? 32'd0 : data[read_address_a];
+	assign read_out_b = (read_address_b == 5'd0) ? 32'd0 : data[read_address_b];
 	
-	always @(*) begin
-		if(read_b == 1) begin
-			out_b = register[address_b];
-		end
-	end
-	
-	always @(posedge clk) begin
-		if(write == 1) begin
-			register[write_address] <= write_data;
+	always @(negedge clk) begin
+		if(write == 1'b1 && write_address != 5'd0) begin
+			data[write_address] <= write_data;
 		end
 	end
 

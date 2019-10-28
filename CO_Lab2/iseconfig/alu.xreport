@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-10-19T22:12:56</DateModified>
+  <DateModified>2019-10-27T13:09:39</DateModified>
   <ModuleName>cpu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/iseconfig/alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2\</ImplementationReportsDirectory>
-  <DateInitialized>2019-10-19T22:12:56</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2</ImplementationReportsDirectory>
+  <DateInitialized>2019-10-27T13:09:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

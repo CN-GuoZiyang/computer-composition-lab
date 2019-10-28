@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:34:02 10/19/2019 
+// Create Date:    13:41:33 10/27/2019 
 // Design Name: 
 // Module Name:    data_memory 
 // Project Name: 
@@ -18,28 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module data_memory(clk, address, read, write, write_data, out);
-	
+module data_memory(clk, address, write_data, read, write, out);
 	input clk, read, write;
 	input [31:0] address, write_data;
-	output reg [31:0] out;
+	output [31:0] out;
 	
-	reg [7:0] data [1023:0];
-		
+	reg [7:0] data [0:127];
+	
 	initial begin
-		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data, 0);
+		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data);
 	end
 	
-	always @(*) begin
-		if(read == 1) begin
-			out[31:24] = data[address];
-			out[23:16] = data[address + 1];
-			out[15:8] = data[address + 2];
-			out[7:0] = data[address + 3];
-		end
-	end
+	assign out[7:0] = (read == 1)?data[address + 3]: 8'bz;
+	assign out[15:8] = (read == 1)?data[address + 2]: 8'bz;
+	assign out[23:16] = (read == 1)?data[address + 1]: 8'bz;
+	assign out[31:24] = (read == 1)?data[address]: 8'bz;
 	
-	always @(posedge clk) begin
+	always @(negedge clk) begin
 		if(write == 1) begin
 			data[address] <= write_data[31:24];
 			data[address + 1] <= write_data[23:16];
@@ -49,3 +44,4 @@ module data_memory(clk, address, read, write, write_data, out);
 	end
 
 endmodule
+ 

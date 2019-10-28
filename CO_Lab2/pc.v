@@ -3,14 +3,14 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:22:52 10/19/2019 
+// Create Date:    13:10:09 10/27/2019 
 // Design Name: 
 // Module Name:    pc 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
 // Description: 
-//		store and output the current address
+//
 // Dependencies: 
 //
 // Revision: 
@@ -24,11 +24,11 @@ module pc(clk, new_address, current_address);
 	output reg [31:0] current_address;
 	
 	initial begin
-		current_address = 32'd0;
+		current_address <= 32'd0;
 	end
 	
 	always @(posedge clk) begin
-		current_address = new_address;
+		current_address <= new_address;
 	end
-	
+
 endmodule

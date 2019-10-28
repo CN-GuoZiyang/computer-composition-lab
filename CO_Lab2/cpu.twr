@@ -32,35 +32,31 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Clock clk to Pad
---------------+-----------------+------------+-----------------+------------+------------------+--------+
-              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
-Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
---------------+-----------------+------------+-----------------+------------+------------------+--------+
-op_code_out<0>|         9.692(R)|      SLOW  |         4.492(R)|      FAST  |clk_BUFGP         |   0.000|
-op_code_out<1>|         9.449(R)|      SLOW  |         4.325(R)|      FAST  |clk_BUFGP         |   0.000|
-op_code_out<2>|         9.727(R)|      SLOW  |         4.548(R)|      FAST  |clk_BUFGP         |   0.000|
-op_code_out<3>|         9.286(R)|      SLOW  |         4.259(R)|      FAST  |clk_BUFGP         |   0.000|
-op_code_out<4>|         9.470(R)|      SLOW  |         4.367(R)|      FAST  |clk_BUFGP         |   0.000|
-op_code_out<5>|         9.218(R)|      SLOW  |         4.191(R)|      FAST  |clk_BUFGP         |   0.000|
---------------+-----------------+------------+-----------------+------------+------------------+--------+
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+res_zero    |        18.686(R)|      SLOW  |         6.971(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        18.001(F)|      SLOW  |         6.744(F)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.797|         |         |         |
+clk            |    7.534|    6.552|    6.637|   13.048|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Oct 21 23:26:06 2019 
+Analysis completed Mon Oct 28 21:22:51 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4587 MB
+Peak Memory Usage: 4646 MB
 
 
 

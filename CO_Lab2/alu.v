@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:48:44 10/19/2019 
+// Create Date:    12:40:48 10/27/2019 
 // Design Name: 
 // Module Name:    alu 
 // Project Name: 
@@ -18,19 +18,37 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module alu(a, b, card, out);
-    input [31:0] a, b;
-    input [10:0] card;
-    output reg [31:0] out;
+module alu(func, srca, srcb, result, zero);
+	input [2:0] func;
+	input [31:0] srca, srcb;
+	output reg [31:0] result;
+	output zero;
+	
+	initial begin
+		result = 31'd0;
+	end
+	
+	assign zero = (result == 31'd0) ? 1 : 0;
+	
+	always @(func or srca or srcb) begin
+		case(func)
+			3'b000: result = srca + srcb;
+			3'b001: result = srca - srcb;
+			3'b010: result = srca << srcb;
+			3'b011: result = srca | srcb;
+			3'b100: result = srca & srcb;
+			3'b101: result = (srca < srcb) ? 1 : 0;
+			3'b110: begin
+				if(srca < srcb && (srca[31] == srcb[31]))result = 1;
+            else if (srca[31] == 1 && srcb[31] == 0) result = 1;
+            else result = 0;
+			end
+			3'b111: result = srca ^ srcb;
+			default: begin
+				result = 32'd0;
+			end
+		endcase
+	end
 
-    always @(*) begin
-        case(card)
-        11'b00000000001: out = a & b;
-        11'b00000000010: out = a | b;
-        11'b00000000100: out = a + b;
-        11'b00000001000: out = a + (~b) + 32'd1;
-        default: out = 32'd0;
-		  endcase
-    end
 
 endmodule

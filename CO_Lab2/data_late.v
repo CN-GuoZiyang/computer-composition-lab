@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:14:07 10/28/2019 
+// Create Date:    14:30:28 10/27/2019 
 // Design Name: 
-// Module Name:    zero_judge 
+// Module Name:    data_late 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,15 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module zero_judge(in, out);
+module data_late(clk, in, out);
+	input clk;
 	input [31:0] in;
-	output reg out;
+	output reg [31:0] out;
 	
-	always @(in) begin
-		if(in == 32'd0) begin
-			out = 1'b1;
-		end
-		else out = 1'b0;
+	always @(negedge clk) begin
+		out = in;
 	end
 
 endmodule

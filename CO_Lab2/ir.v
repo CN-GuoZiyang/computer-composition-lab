@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:00:36 10/19/2019 
+// Create Date:    14:27:39 10/27/2019 
 // Design Name: 
-// Module Name:    add_32 
+// Module Name:    ir 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,10 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module add_32(a, b, out);
-	input [31:0] a, b;
-	output [31:0] out;
+module ir(clk, write, in, out);
+	input clk, write;
+	input [31:0] in;
+	output reg [31:0] out;
 	
-	assign out = a + b;
+	always @(negedge clk) begin
+		if(write) begin
+			out = in;
+		end
+	end
 
 endmodule
