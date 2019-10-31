@@ -21,7 +21,7 @@
 module control_unit(
 	input clk,	//时钟
 	input [5:0] op_code,	//指令操作码
-	input zero,	//BEQZ零判断
+	input equal,	//BEQ相等判断
 	output reg alu_select_a,	//alu输入选择
 	output reg alu_select_b,	//alu输入选择
 	output reg reg_write_select,	//reg写回数据选择
@@ -107,7 +107,7 @@ module control_unit(
 		else alu_op = 3'b000;
 		
 		if(current_state == sID && op_code == J) next_address_select = 1;
-		else if(current_state == sEX && op_code == BEQZ && zero == 1) next_address_select = 1;
+		else if(current_state == sEX && op_code == BEQZ && equal == 1) next_address_select = 1;
 		else next_address_select = 0;
 		
 		data_memory_read = (current_state == sMEM && op_code == LW) ? 1 : 0;

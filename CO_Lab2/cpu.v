@@ -36,7 +36,7 @@ module cpu(
 	wire [2:0] alu_op;	//alu操作码
 	wire ir_write;	//ir读信号
 	
-	wire zero;
+	wire equal;
 	
 	wire [31:0] pc_addr, next_pc, npc, op_ir_in, current_op, extender_out;
 	
@@ -79,7 +79,7 @@ module cpu(
 	
 	data_late dl2(clk, read_data_b, read_datab);
 	
-	zero_judge zero_judge(read_data_a, zero);
+	equal_judge equal_judge(read_data_a, read_data_b, equal);
 	
 	select_32bit mux2(alu_select_a, read_dataa, npc, alu_in_a);
 	
@@ -100,7 +100,7 @@ module cpu(
 	control_unit control_unit(
 		clk,	//时钟
 		op_code,	//指令操作码
-		zero,	//BEQZ零判断
+		equal,	//BEQ相等判断
 		alu_select_a,	//alu输入选择
 		alu_select_b,	//alu输入选择
 		reg_write_select,	//reg写回数据选择

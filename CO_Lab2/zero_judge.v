@@ -18,12 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module zero_judge(in, out);
-	input [31:0] in;
+module equal_judge(in1, in2, out);
+	input [31:0] in1, in2;
 	output reg out;
 	
-	always @(in) begin
-		if(in == 32'd0) begin
+	always @(in1 or in2) begin
+		if(in1 == in2) begin
 			out = 1'b1;
 		end
 		else out = 1'b0;

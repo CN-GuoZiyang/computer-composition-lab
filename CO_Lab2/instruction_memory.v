@@ -23,7 +23,7 @@ module instruction_memory(read, address, out);
 	input [31:0] address;
 	output reg [31:0] out;
 	
-	reg [7:0] data [127:0];
+	reg [31:0] data [255:0];
 	
 	initial begin
 		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt", data);
@@ -32,10 +32,7 @@ module instruction_memory(read, address, out);
 	
 	always @(read or address) begin
 		if(read == 1'b1) begin
-			out[31:24] = data[address];
-         out[23:16] = data[address+1];
-         out[15:8] = data[address+2];
-         out[7:0] = data[address+3];
+			out = data[address];
 		end
 	end
 	
