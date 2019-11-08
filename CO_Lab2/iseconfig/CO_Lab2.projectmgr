@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>data_memory - data_memory (C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data_memory.v)</SelectedItem>
+         <SelectedItem>mux1 - select_32bit (C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/select_32bit.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cf0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>data_memory - data_memory (C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data_memory.v)</CurrentItem>
+      <CurrentItem>mux1 - select_32bit (C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/select_32bit.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -102,6 +102,6 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000015d0000011901000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001ef0000008701000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
 </Project>
