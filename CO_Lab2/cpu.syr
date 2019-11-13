@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: cpu.prj
 
@@ -143,13 +143,11 @@ Parsing module <cpu>.
 Elaborating module <cpu>.
 
 Elaborating module <pc>.
-WARNING:HDLCompiler:1499 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\pc.v" Line 21: Empty module <pc> remains a black box.
 
 Elaborating module <npc_adder>.
 
 Elaborating module <instruction_memory>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt\".
-WARNING:HDLCompiler:1670 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 29: Signal <data> in initial block is partially initialized.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 35: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <ir>.
@@ -160,7 +158,6 @@ Elaborating module <extender>.
 
 Elaborating module <reg_file>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/register.txt\".
-WARNING:HDLCompiler:1670 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\reg_file.v" Line 30: Signal <data> in initial block is partially initialized.
 
 Elaborating module <data_late>.
 
@@ -174,33 +171,32 @@ WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2
 
 Elaborating module <data_memory>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt\".
-WARNING:HDLCompiler:1670 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\data_memory.v" Line 29: Signal <data> in initial block is partially initialized.
 
 Elaborating module <pc_select>.
 
 Elaborating module <control_unit>.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 91: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 91: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 93: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 93: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 95: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 95: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 97: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 97: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 99: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 99: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 101: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 101: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 103: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 103: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 105: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 105: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 107: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 104: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 104: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 106: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 106: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 108: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 111: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 113: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 108: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 110: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 110: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 112: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 112: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 114: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 115: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 114: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 116: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 116: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 118: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 118: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 120: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 122: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 123: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 124: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -214,11 +210,9 @@ Unit <cpu> synthesized.
 
 Synthesizing Unit <pc>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\pc.v".
-WARNING:Xst:647 - Input <new_address> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2935 - Signal 'current_address', unconnected in block 'pc', is tied to its initial value (00000000000000000000000000000000).
+    Found 32-bit register for signal <current_address>.
     Summary:
-	no macro.
+	inferred  32 D-type flip-flop(s).
 Unit <pc> synthesized.
 
 Synthesizing Unit <npc_adder>.
@@ -391,6 +385,7 @@ Synthesizing Unit <control_unit>.
         LW = 6'b001110
 WARNING:Xst:647 - Input <alu_func<10:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2935 - Signal 'instruction_read', unconnected in block 'control_unit', is tied to its initial value (1).
+    Found 1-bit register for signal <renew_pc>.
     Found 5-bit register for signal <current_state>.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -398,9 +393,9 @@ WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be g
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   5 D-type flip-flop(s).
+	inferred   6 D-type flip-flop(s).
 	inferred   5 Latch(s).
-	inferred   6 Multiplexer(s).
+	inferred   5 Multiplexer(s).
 Unit <control_unit> synthesized.
 
 =========================================================================
@@ -414,16 +409,17 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 6
- 32-bit register                                       : 5
+# Registers                                            : 8
+ 1-bit register                                        : 1
+ 32-bit register                                       : 6
  5-bit register                                        : 1
 # Latches                                              : 37
  1-bit latch                                           : 37
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 25
- 1-bit 2-to-1 multiplexer                              : 3
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
  32-bit 2-to-1 multiplexer                             : 16
  5-bit 2-to-1 multiplexer                              : 1
@@ -439,10 +435,6 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <equal_judge> is unconnected in block <cpu>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <pc_select> is unconnected in block <cpu>.
-   It will be removed from the design.
 WARNING:Xst:2677 - Node <out_8> of sequential type is unconnected in block <dl3>.
 WARNING:Xst:2677 - Node <out_9> of sequential type is unconnected in block <dl3>.
 WARNING:Xst:2677 - Node <out_10> of sequential type is unconnected in block <dl3>.
@@ -501,6 +493,22 @@ WARNING:Xst:1294 - Latch <out_0> is equivalent to a wire in block <instruction_m
 WARNING:Xst:1294 - Latch <out_31> is equivalent to a wire in block <instruction_memory>.
 
 Synthesizing (advanced) Unit <cpu>.
+INFO:Xst:3226 - The RAM <instruction_memory/Mram_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <pc/current_address>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <renew_pc>      | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <next_pc<7:0>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <reg_file/Mram_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <ir/out>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
@@ -571,20 +579,6 @@ INFO:Xst:3226 - The RAM <reg_file/Mram_data1> will be implemented as a BLOCK RAM
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 Unit <cpu> synthesized (advanced).
-
-Synthesizing (advanced) Unit <instruction_memory>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 256-word x 32-bit                   |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <address>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <instruction_memory> synthesized (advanced).
 WARNING:Xst:2677 - Node <dl3/out_8> of sequential type is unconnected in block <cpu>.
 WARNING:Xst:2677 - Node <dl3/out_9> of sequential type is unconnected in block <cpu>.
 WARNING:Xst:2677 - Node <dl3/out_10> of sequential type is unconnected in block <cpu>.
@@ -616,13 +610,13 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 4
  256x32-bit dual-port block RAM                        : 1
- 256x32-bit single-port distributed Read Only RAM      : 1
+ 256x32-bit single-port block Read Only RAM            : 1
  32x32-bit dual-port block RAM                         : 2
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 141
- Flip-Flops                                            : 141
+# Registers                                            : 174
+ Flip-Flops                                            : 174
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
@@ -639,71 +633,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch out_29 hinder the constant cleaning in the block instruction_memory.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch out_28 hinder the constant cleaning in the block instruction_memory.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch out_27 hinder the constant cleaning in the block instruction_memory.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch out_21 hinder the constant cleaning in the block instruction_memory.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch out_16 hinder the constant cleaning in the block instruction_memory.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch out_0 hinder the constant cleaning in the block instruction_memory.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <out_31> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_1> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_2> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_3> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_4> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_5> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_6> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_7> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_8> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_9> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_10> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_11> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_12> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_13> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_14> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_15> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_17> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_18> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_19> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_20> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_22> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_23> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_24> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_25> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_26> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_30> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ir/out_31> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_30> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_26> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_25> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_24> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_23> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_22> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_20> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_19> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_18> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_17> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_15> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_14> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_13> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_12> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_11> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_10> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_9> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_8> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_7> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_6> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_5> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_4> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_3> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_2> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_1> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2042 - Unit cpu: 32 internal tristates are replaced by logic (pull-up yes): N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, N20, N21, N22, N23, N24, N25, N26, N27, N28, N29, N3, N30, N31, N32, N33, N34, N4, N5, N6, N7, N8, N9.
+WARNING:Xst:2042 - Unit cpu: 32 internal tristates are replaced by logic (pull-up yes): data_memory_out<0>, data_memory_out<10>, data_memory_out<11>, data_memory_out<12>, data_memory_out<13>, data_memory_out<14>, data_memory_out<15>, data_memory_out<16>, data_memory_out<17>, data_memory_out<18>, data_memory_out<19>, data_memory_out<1>, data_memory_out<20>, data_memory_out<21>, data_memory_out<22>, data_memory_out<23>, data_memory_out<24>, data_memory_out<25>, data_memory_out<26>, data_memory_out<27>, data_memory_out<28>, data_memory_out<29>, data_memory_out<2>, data_memory_out<30>, data_memory_out<31>, data_memory_out<3>, data_memory_out<4>, data_memory_out<5>, data_memory_out<6>, data_memory_out<7>, data_memory_out<8>, data_memory_out<9>.
 
 Optimizing unit <cpu> ...
 
@@ -711,59 +641,44 @@ Optimizing unit <control_unit> ...
 
 Optimizing unit <alu> ...
 WARNING:Xst:1294 - Latch <instruction_memory/out_0> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_31> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_1> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_2> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_5> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_3> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_4> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_8> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_6> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_7> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_11> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_9> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_10> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_12> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_13> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_16> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_14> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_15> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_19> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_17> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_18> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_22> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_20> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_21> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_23> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_24> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_27> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_29> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_25> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_26> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_28> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1710 - FF/Latch <ir/out_0> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_16> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_21> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_27> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_28> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_29> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_9> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_8> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_7> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_6> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_5> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_4> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_3> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_31> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_30> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_2> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_29> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_28> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_27> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_26> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_25> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_24> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_23> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_22> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_21> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_20> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_1> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_19> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_18> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_17> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_16> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_15> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_14> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_13> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_12> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_11> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_10> is unconnected in block <cpu>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_0> is unconnected in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_29> is equivalent to a wire in block <cpu>.
+WARNING:Xst:1294 - Latch <instruction_memory/out_30> is equivalent to a wire in block <cpu>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2399 - RAMs <reg_file/Mram_data>, <reg_file/Mram_data1> are equivalent, second RAM is removed
-Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 1.
-FlipFlop control_unit/current_state_0 has been replicated 1 time(s)
-FlipFlop control_unit/current_state_1 has been replicated 1 time(s)
-FlipFlop control_unit/current_state_2 has been replicated 2 time(s)
-FlipFlop control_unit/current_state_3 has been replicated 1 time(s)
-FlipFlop control_unit/current_state_4 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 5.
+FlipFlop ir/out_27 has been replicated 1 time(s)
+FlipFlop ir/out_28 has been replicated 2 time(s)
+FlipFlop ir/out_29 has been replicated 2 time(s)
 FlipFlop control_unit/current_state_4 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop control_unit/current_state_3 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop control_unit/current_state_2 has been replicated 1 time(s) to handle iob=true attribute.
@@ -776,8 +691,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 88
- Flip-Flops                                            : 88
+# Registers                                            : 184
+ Flip-Flops                                            : 184
 
 =========================================================================
 
@@ -800,27 +715,31 @@ Top Level Output File Name         : cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 144
+# BELS                             : 544
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 31
-#      LUT3                        : 1
-#      LUT5                        : 8
-#      LUT6                        : 37
-#      MUXCY                       : 31
+#      LUT2                        : 1
+#      LUT3                        : 49
+#      LUT4                        : 66
+#      LUT5                        : 120
+#      LUT6                        : 120
+#      MUXCY                       : 89
 #      VCC                         : 1
-#      XORCY                       : 32
-# FlipFlops/Latches                : 93
-#      FD                          : 16
-#      FD_1                        : 72
+#      XORCY                       : 64
+# FlipFlops/Latches                : 189
+#      FD                          : 10
+#      FD_1                        : 105
+#      FDE                         : 32
+#      FDE_1                       : 37
 #      LD                          : 5
-# RAMS                             : 2
-#      RAMB8BWER                   : 2
+# RAMS                             : 4
+#      RAMB16BWER                  : 1
+#      RAMB8BWER                   : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 200
-#      OBUF                        : 168
-#      OBUFT                       : 32
+# IO Buffers                       : 231
+#      OBUF                        : 231
 
 Device utilization summary:
 ---------------------------
@@ -829,25 +748,25 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              88  out of  18224     0%  
- Number of Slice LUTs:                   79  out of   9112     0%  
-    Number used as Logic:                79  out of   9112     0%  
+ Number of Slice Registers:             184  out of  18224     1%  
+ Number of Slice LUTs:                  389  out of   9112     4%  
+    Number used as Logic:               389  out of   9112     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    117
-   Number with an unused Flip Flop:      29  out of    117    24%  
-   Number with an unused LUT:            38  out of    117    32%  
-   Number of fully used LUT-FF pairs:    50  out of    117    42%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:    433
+   Number with an unused Flip Flop:     249  out of    433    57%  
+   Number with an unused LUT:            44  out of    433    10%  
+   Number of fully used LUT-FF pairs:   140  out of    433    32%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                         201
- Number of bonded IOBs:                 201  out of    232    86%  
+ Number of IOs:                         232
+ Number of bonded IOBs:                 232  out of    232   100%  
     IOB Flip Flops/Latches:               5
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                1  out of     32     3%  
-    Number using Block RAM only:          1
+ Number of Block RAM/FIFO:                3  out of     32     9%  
+    Number using Block RAM only:          3
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
@@ -871,8 +790,8 @@ Clock Information:
 ----------------------------------------+-----------------------------------+-------+
 Clock Signal                            | Clock buffer(FF name)             | Load  |
 ----------------------------------------+-----------------------------------+-------+
-clk                                     | BUFGP                             | 90    |
-control_unit/_n0071(control_unit/out1:O)| NONE(*)(control_unit/next_state_1)| 5     |
+clk                                     | BUFGP                             | 188   |
+control_unit/_n0072(control_unit/out1:O)| NONE(*)(control_unit/next_state_2)| 5     |
 ----------------------------------------+-----------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -887,9 +806,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.135ns (Maximum Frequency: 194.734MHz)
+   Minimum period: 16.368ns (Maximum Frequency: 61.096MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 8.315ns
+   Maximum output required time after clock: 12.738ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -898,50 +817,97 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.135ns (frequency: 194.734MHz)
-  Total number of paths / destination ports: 444 / 156
+  Clock period: 16.368ns (frequency: 61.096MHz)
+  Total number of paths / destination ports: 508211 / 396
 -------------------------------------------------------------------------
-Delay:               2.568ns (Levels of Logic = 1)
-  Source:            control_unit/current_state_4_1 (FF)
-  Destination:       reg_file/Mram_data (RAM)
-  Source Clock:      clk rising
-  Destination Clock: clk falling
+Delay:               8.184ns (Levels of Logic = 29)
+  Source:            ir/out_26 (FF)
+  Destination:       instruction_memory/Mram_data (RAM)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
 
-  Data Path: control_unit/current_state_4_1 to reg_file/Mram_data
+  Data Path: ir/out_26 to instruction_memory/Mram_data
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.924  control_unit/current_state_4_1 (control_unit/current_state_4_1)
-     LUT5:I0->O            6   0.203   0.744  control_unit/current_state[4]_GND_79_o_Select_17_o<4>1 (control_unit/current_state[4]_GND_79_o_Select_17_o)
-     RAMB8BWER:WEAWEL0         0.250          reg_file/Mram_data
+     FDE_1:C->Q           15   0.447   1.210  ir/out_26 (ir/out_26)
+     LUT5:I2->O           18   0.205   1.050  control_unit/op_code[5]_op_code[5]_OR_93_o21_2 (control_unit/op_code[5]_op_code[5]_OR_93_o21_1)
+     LUT3:I2->O            6   0.205   0.973  mux2/Mmux_out11 (alu_in_a_0_OBUF)
+     LUT4:I1->O            1   0.205   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_lut<0> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<0> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<1> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<2> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<3> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<4> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<5> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<6> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<7> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<8> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<9> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<10> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<11> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<12> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<13> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<14> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<14>)
+     MUXCY:CI->O           2   0.213   0.617  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<15> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<15>)
+     LUT5:I4->O            1   0.205   0.000  alu/Mmux_result7_rs_lut<0> (alu/Mmux_result7_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu/Mmux_result7_rs_cy<0> (alu/Mmux_result7_rs_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result7_rs_cy<1> (alu/Mmux_result7_rs_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result7_rs_cy<2> (alu/Mmux_result7_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result7_rs_cy<3> (alu/Mmux_result7_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result7_rs_cy<4> (alu/Mmux_result7_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result7_rs_cy<5> (alu/Mmux_result7_rs_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result7_rs_cy<6> (alu/Mmux_result7_rs_cy<6>)
+     XORCY:CI->O           6   0.180   0.745  alu/Mmux_result7_rs_xor<7> (alu_res_7_OBUF)
+     LUT5:I4->O            3   0.205   0.650  pc_select/Mmux_new_address301 (next_pc_7_OBUF)
+     RAMB16BWER:ADDRA12        0.350          instruction_memory/Mram_data
     ----------------------------------------
-    Total                      2.568ns (0.900ns logic, 1.668ns route)
-                                       (35.1% logic, 64.9% route)
+    Total                      8.184ns (2.939ns logic, 5.245ns route)
+                                       (35.9% logic, 64.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 2309 / 134
+  Total number of paths / destination ports: 593361 / 231
 -------------------------------------------------------------------------
-Offset:              8.315ns (Levels of Logic = 7)
-  Source:            dl1/out_0 (FF)
+Offset:              12.738ns (Levels of Logic = 26)
+  Source:            ir/out_26 (FF)
   Destination:       res_zero (PAD)
   Source Clock:      clk falling
 
-  Data Path: dl1/out_0 to res_zero
+  Data Path: ir/out_26 to res_zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD_1:C->Q             2   0.447   0.616  dl1/out_0 (dl1/out_0)
-     INV:I->O              1   0.206   0.000  alu/Mmux_result7_rs_lut<0>1_INV_0 (alu/Mmux_result7_rs_lut<0>)
+     FDE_1:C->Q           15   0.447   1.210  ir/out_26 (ir/out_26)
+     LUT5:I2->O           18   0.205   1.050  control_unit/op_code[5]_op_code[5]_OR_93_o21_2 (control_unit/op_code[5]_op_code[5]_OR_93_o21_1)
+     LUT3:I2->O            6   0.205   0.973  mux2/Mmux_out11 (alu_in_a_0_OBUF)
+     LUT4:I1->O            1   0.205   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_lut<0> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<0> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<1> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<2> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<3> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<4> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<5> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<6> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<7> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<8> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<9> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<10> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<11> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<12> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<13> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<14> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<14>)
+     MUXCY:CI->O           2   0.213   0.617  alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<15> (alu/Mcompar_srca[31]_srcb[31]_LessThan_8_o_cy<15>)
+     LUT5:I4->O            1   0.205   0.000  alu/Mmux_result7_rs_lut<0> (alu/Mmux_result7_rs_lut<0>)
      MUXCY:S->O            1   0.172   0.000  alu/Mmux_result7_rs_cy<0> (alu/Mmux_result7_rs_cy<0>)
-     XORCY:CI->O           4   0.180   1.048  alu/Mmux_result7_rs_xor<1> (alu_res_1_OBUF)
-     LUT6:I0->O            1   0.203   0.944  alu/result[31]_GND_44_o_equal_1_o<31>1 (alu/result[31]_GND_44_o_equal_1_o<31>)
-     LUT6:I0->O            1   0.203   0.944  alu/result[31]_GND_44_o_equal_1_o<31>2 (alu/result[31]_GND_44_o_equal_1_o<31>1)
-     LUT6:I0->O            1   0.203   0.579  alu/result[31]_GND_44_o_equal_1_o<31>7 (res_zero_OBUF)
+     XORCY:CI->O           6   0.180   1.109  alu/Mmux_result7_rs_xor<1> (alu_res_1_OBUF)
+     LUT6:I0->O            1   0.203   0.924  alu/result[31]_GND_44_o_equal_1_o<31>5 (alu/result[31]_GND_44_o_equal_1_o<31>4)
+     LUT6:I1->O            1   0.203   0.827  alu/result[31]_GND_44_o_equal_1_o<31>6 (alu/result[31]_GND_44_o_equal_1_o<31>5)
+     LUT4:I0->O            1   0.203   0.579  alu/result[31]_GND_44_o_equal_1_o<31>8 (res_zero_OBUF)
      OBUF:I->O                 2.571          res_zero_OBUF (res_zero)
     ----------------------------------------
-    Total                      8.315ns (4.185ns logic, 4.130ns route)
-                                       (50.3% logic, 49.7% route)
+    Total                     12.738ns (5.450ns logic, 7.288ns route)
+                                       (42.8% logic, 57.2% route)
 
 =========================================================================
 
@@ -953,29 +919,29 @@ Clock to Setup on destination clock clk
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |         |         |    3.136|         |
-control_unit/_n0071|         |    1.283|         |         |
+clk                |    7.849|    8.184|    7.680|         |
+control_unit/_n0072|         |    1.216|         |         |
 -------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock control_unit/_n0071
+Clock to Setup on destination clock control_unit/_n0072
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    2.394|         |
+clk            |         |         |    1.776|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.73 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.67 secs
  
 --> 
 
-Total memory usage is 4522720 kilobytes
+Total memory usage is 4522612 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  259 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  180 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

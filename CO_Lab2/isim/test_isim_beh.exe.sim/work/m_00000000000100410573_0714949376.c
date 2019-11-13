@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/npc_adder.v";
-static int ng1[] = {4, 0};
+static int ng1[] = {1, 0};
 
 
 

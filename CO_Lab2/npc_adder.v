@@ -23,7 +23,7 @@ module npc_adder(address, npc);
 	output reg [31:0] npc;
 	
 	always @(address) begin
-		npc = address + 4;
+		npc = address + 1;
 	end
 
 endmodule

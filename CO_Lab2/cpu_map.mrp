@@ -10,40 +10,40 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 13 18:52:17 2019
+Mapped Date    : Wed Nov 13 22:44:05 2019
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Slice Logic Utilization:
-  Number of Slice Registers:                    88 out of  18,224    1%
-    Number used as Flip Flops:                  83
+  Number of Slice Registers:                   184 out of  18,224    1%
+    Number used as Flip Flops:                 179
     Number used as Latches:                      5
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         80 out of   9,112    1%
-    Number used as logic:                       45 out of   9,112    1%
-      Number using O6 output only:              43
-      Number using O5 output only:               0
-      Number using O5 and O6:                    2
+  Number of Slice LUTs:                        361 out of   9,112    3%
+    Number used as logic:                      358 out of   9,112    3%
+      Number using O6 output only:             298
+      Number using O5 output only:              30
+      Number using O5 and O6:                   30
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:     35
-      Number with same-slice register load:      4
-      Number with same-slice carry load:        31
+    Number used exclusively as route-thrus:      3
+      Number with same-slice register load:      1
+      Number with same-slice carry load:         2
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    33 out of   2,278    1%
-  Number of MUXCYs used:                        32 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          116
-    Number with an unused Flip Flop:            32 out of     116   27%
-    Number with an unused LUT:                  36 out of     116   31%
-    Number of fully used LUT-FF pairs:          48 out of     116   41%
-    Number of unique control sets:               3
+  Number of occupied Slices:                   120 out of   2,278    5%
+  Number of MUXCYs used:                        92 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          377
+    Number with an unused Flip Flop:           194 out of     377   51%
+    Number with an unused LUT:                  16 out of     377    4%
+    Number of fully used LUT-FF pairs:         167 out of     377   44%
+    Number of unique control sets:               5
     Number of slice register sites lost
-      to control set restrictions:               8 out of  18,224    1%
+      to control set restrictions:              16 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -52,12 +52,12 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                       201 out of     232   86%
+  Number of bonded IOBs:                       232 out of     232  100%
     IOB Flip Flops:                              5
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                          2 out of      64    3%
+  Number of RAMB16BWERs:                         1 out of      32    3%
+  Number of RAMB8BWERs:                          3 out of      64    4%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
   Number of BUFG/BUFGMUXs:                       1 out of      16    6%
@@ -82,11 +82,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.98
+Average Fanout of Non-Clock Nets:                3.43
 
-Peak Memory Usage:  4552 MB
-Total REAL time to MAP completion:  44 secs 
-Total CPU time to MAP completion:   44 secs 
+Peak Memory Usage:  4568 MB
+Total REAL time to MAP completion:  45 secs 
+Total CPU time to MAP completion:   45 secs 
 
 Table of Contents
 -----------------
@@ -109,7 +109,7 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net control_unit/_n0071 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control_unit/_n0072 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
@@ -249,8 +249,6 @@ Section 6 - IOB Properties
 | alu_res<29>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | alu_res<30>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | alu_res<31>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| alu_select_a                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| alu_select_b                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | current_op<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | current_op<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -289,38 +287,71 @@ Section 6 - IOB Properties
 | current_state<2>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
 | current_state<3>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
 | current_state<4>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| data_memory_out<0>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<1>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<2>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<3>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<4>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<5>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<6>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<7>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<8>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<9>                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<10>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<11>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<12>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<13>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<14>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<15>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<16>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<17>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<18>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<19>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<20>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<21>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<22>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<23>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<24>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<25>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<26>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<27>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<28>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<29>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<30>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| data_memory_out<31>                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| equal                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<8>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<9>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<10>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<11>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<12>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<13>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<14>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<15>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<16>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<17>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<18>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<19>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<20>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<21>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<22>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<23>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<24>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<25>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<26>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<27>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<28>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<29>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<30>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| next_pc<31>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<8>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<9>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<10>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<11>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<12>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<13>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<14>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<15>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<16>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<17>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<18>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<19>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<20>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<21>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<22>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<23>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<24>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<25>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<26>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<27>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<28>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<29>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<30>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pc_addr<31>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | reg_write_data<0>                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | reg_write_data<1>                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | reg_write_data<2>                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

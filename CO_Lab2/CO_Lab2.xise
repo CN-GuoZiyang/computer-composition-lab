@@ -77,9 +77,9 @@
     </file>
     <file xil_pn:name="test.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="97"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="97"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="97"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="79"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="79"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="79"/>
     </file>
   </files>
 

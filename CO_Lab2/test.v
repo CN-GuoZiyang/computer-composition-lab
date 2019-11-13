@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   18:42:21 11/13/2019
+// Create Date:   22:04:26 11/13/2019
 // Design Name:   cpu
 // Module Name:   C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/test.v
 // Project Name:  CO_Lab2
@@ -29,13 +29,13 @@ module test;
 
 	// Outputs
 	wire res_zero;
-	wire alu_select_a;
-	wire alu_select_b;
+	wire equal;
+	wire [31:0] next_pc;
+	wire [31:0] pc_addr;
 	wire [31:0] current_op;
 	wire [31:0] alu_in_a;
 	wire [31:0] alu_in_b;
 	wire [31:0] alu_res;
-	wire [31:0] data_memory_out;
 	wire [4:0] current_state;
 	wire [31:0] reg_write_data;
 
@@ -43,58 +43,24 @@ module test;
 	cpu uut (
 		.clk(clk), 
 		.res_zero(res_zero), 
-		.alu_select_a(alu_select_a), 
-		.alu_select_b(alu_select_b), 
+		.equal(equal), 
+		.next_pc(next_pc), 
+		.pc_addr(pc_addr), 
 		.current_op(current_op), 
 		.alu_in_a(alu_in_a), 
 		.alu_in_b(alu_in_b), 
 		.alu_res(alu_res), 
-		.data_memory_out(data_memory_out), 
 		.current_state(current_state), 
 		.reg_write_data(reg_write_data)
 	);
 
 	initial begin
-		clk = 1;
-		#10;
+	   #10;
 		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
-		clk = 1;
-		#10;
-		clk = 0;
-		#10;
+		forever begin
+			#10;
+			clk = ~clk;
+		end
 	end
       
 endmodule

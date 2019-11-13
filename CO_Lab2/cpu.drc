@@ -1,11 +1,11 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Nov 13 18:53:20 2019
+Wed Nov 13 22:45:11 2019
 
 drc -z cpu.ncd cpu.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net control_unit/_n0071 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control_unit/_n0072 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs

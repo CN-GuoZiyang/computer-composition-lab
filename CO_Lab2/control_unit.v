@@ -35,7 +35,8 @@ module control_unit(
 	output reg next_address_select, //pc��ַѡ��
 	output reg [2:0] alu_op,	//alu������
 	output reg ir_write,	//ir���ź�
-	output reg [4:0] current_state
+	output reg [4:0] current_state,
+	output reg renew_pc
 );
 
 	// ָ��ִ�н׶���
@@ -67,6 +68,7 @@ module control_unit(
 		alu_op = 3'b000;
 		ir_write = 0;
 		current_state = sIF;
+		renew_pc = 0;
 	end
 	
 	// ���µ���һ������
@@ -82,6 +84,15 @@ module control_unit(
 			sEX: next_state = sMEM;
 			sMEM: next_state = sWB;
 			sWB: next_state = sIF;
+		endcase
+	end
+	
+	always @(negedge clk) begin
+		case(current_state)
+			//sID: if(op_code == J) renew_pc <= 1;
+			//sEX: if(op_code == BEQ) renew_pc <= 1;
+			sWB: renew_pc <= 1;
+			default: renew_pc <= 0;
 		endcase
 	end
 	
@@ -103,10 +114,8 @@ module control_unit(
 		reg_write_address_select = (op_code == LW)?0:1;
 
 		extender_select = (op_code == BEQ || op_code == LW || op_code == SW)?0:1;
-
-		if(current_state == sID && op_code == J) next_address_select = 1;
-		else if(current_state == sEX && (op_code == BEQ && equal == 1)) next_address_select = 1;
-		else next_address_select = 0;
+		
+		next_address_select = (op_code == J || (op_code == BEQ && equal == 1))?1:0;
 
 		ir_write = (current_state == sIF)?1:0;
 

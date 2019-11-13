@@ -21,19 +21,19 @@
 module cpu(
 	input clk,
 	output res_zero,
-	output alu_select_a,
-	output alu_select_b,
+	output equal,
+	output [31:0] next_pc,
+	output [31:0] pc_addr,
 	output [31:0] current_op,
 	output [31:0] alu_in_a,
 	output [31:0] alu_in_b,
 	output [31:0] alu_res,
-	output [31:0] data_memory_out,
 	output [4:0] current_state,
 	output [31:0] reg_write_data
 );
 
-	//wire alu_select_a;	//alu����ѡ��
-	//wire alu_select_b;	//alu����ѡ��
+	wire alu_select_a;	//alu����ѡ��
+	wire alu_select_b;	//alu����ѡ��
 	wire reg_write_select;	//regд������ѡ��
 	wire reg_write;	//regд���ź�
 	wire instruction_read;	//ָ��洢�����ź�
@@ -44,10 +44,9 @@ module cpu(
 	wire next_address_select; //pc��ַѡ��
 	wire [2:0] alu_op;	//alu������
 	wire ir_write;	//ir���ź�
+	wire renew_pc;
 	
-	wire equal;
-	
-	wire [31:0] pc_addr, next_pc, npc, op_ir_in;
+	wire [31:0] npc, op_ir_in;
 	
 	wire [31:0] read_data_a, read_data_b, read_dataa, read_datab, extender_out;
 	
@@ -65,7 +64,9 @@ module cpu(
 	
    wire [25:0]	jname;
 	
-	pc pc(clk, next_pc, pc_addr);
+	wire [31:0] data_memory_out;
+	
+	pc pc(clk, renew_pc, next_pc, pc_addr);
 	
 	npc_adder npc_adder(pc_addr, npc);
 	
@@ -127,7 +128,8 @@ module cpu(
 		next_address_select, //pc��ַѡ��
 		alu_op,	//alu������
 		ir_write,	//ir���ź�
-		current_state
+		current_state,
+		renew_pc
 	);
 
 endmodule
