@@ -5,34 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\pc.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">pc</arg>&gt; remains a black box.
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="1670" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 29: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; in initial block is partially initialized.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 35: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 36: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 37: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 38: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 64: Assignment to <arg fmt="%s" index="1">alu_func</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 69: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 70: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 72: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">one</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 74: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">immediate16</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1670" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\reg_file.v" Line 30: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; in initial block is partially initialized.
@@ -41,76 +20,91 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 31: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 42: Result of <arg fmt="%d" index="1">36</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">32</arg>-bit target.
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="1670" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\data_memory.v" Line 29: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; in initial block is partially initialized.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 92: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 91: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 94: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 91: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 94: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 93: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 96: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 93: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 96: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 95: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 98: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 95: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 98: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 97: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 100: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 97: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 100: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 99: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 99: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 101: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 104: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 101: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 103: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 103: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 105: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 106: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 105: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 109: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 107: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 110: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 108: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 111: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 113: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 113: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 114: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 115: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 115: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">new_address</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 117: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 117: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">current_address</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">pc</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000000000000000000</arg>).
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">data</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">instruction_memory</arg>&apos;, is tied to its initial value.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">out&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -209,10 +203,10 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">out&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="3012" delta="old" >Available block RAM resources offer a maximum of two write ports. You are apparently describing a RAM with <arg fmt="%s" index="1">4</arg> separate write ports for signal &lt;<arg fmt="%s" index="2">data</arg>&gt;. The RAM will be expanded on registers.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3019" delta="new" >HDL ADVISOR - <arg fmt="%s" index="1">1024</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">data</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">alu_func&lt;10:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">instruction_read</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">control_unit</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
@@ -236,40 +230,87 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ir</arg>&gt;.
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">equal_judge</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ir</arg>&gt;.
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">pc_select</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ir</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ir</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ir</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ir</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dl3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
@@ -278,13 +319,10 @@
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
@@ -293,13 +331,13 @@
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
@@ -320,22 +358,40 @@
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">instruction_memory</arg>&gt;.
@@ -352,193 +408,275 @@
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">reg_file/Mram_data</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">data_memory/Mram_data</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">reg_file/Mram_data1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_data</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_data1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ir/out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ir/out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ir/out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ir/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ir/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ir/out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">data_memory</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
-
-<msg type="warning" file="Xst" num="2040" delta="new" >Unit <arg fmt="%s" index="1">data_memory</arg>: <arg fmt="%d" index="2">1024</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">dl3/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">dl3/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">dl3/out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instruction_memory/out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instruction_memory/out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instruction_memory/out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instruction_memory/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instruction_memory/out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">instruction_memory/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_31</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dl3/out_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">out_29</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">instruction_memory</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">out_28</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">instruction_memory</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">out_27</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">instruction_memory</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">out_21</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">instruction_memory</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">out_16</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">instruction_memory</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">out_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">instruction_memory</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">out_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">instruction_memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ir/out_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">cpu</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_16</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_17</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_19</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_18</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
@@ -547,52 +685,124 @@
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">instruction_memory/out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data3</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ir/out_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data4</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data5</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data6</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data7</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data8</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ir/out_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data2</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data9</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data12</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data13</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data14</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data15</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data16</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data17</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="new" >RAMs &lt;<arg fmt="%s" index="1">Mram_data11</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_data18</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_31</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_30</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_29</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_28</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_24</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_23</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_22</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_21</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_20</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_19</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_18</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_17</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">dl2/out_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">reg_file/Mram_data</arg>&gt;, &lt;<arg fmt="%s" index="2">reg_file/Mram_data1</arg>&gt; are equivalent, second RAM is removed
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

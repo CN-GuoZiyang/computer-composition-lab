@@ -28,11 +28,11 @@ module extender(immediate16, immediate26, select, out);
 		case(select)
 			1'b0: begin
 				out[15:0] = immediate16;
-				out[31:16] = 16'd0;
+				out[31:16] = (immediate16[15])? 16'hffff : 16'h0000;
 			end
 			1'b1: begin
 				out[25:0] = immediate26;
-				out[31:26] = 6'd0;
+				out[31:26] = (immediate26[25])? 6'b111111 : 6'b000000;
 			end
 		endcase
 	end

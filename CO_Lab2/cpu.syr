@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: cpu.prj
 
@@ -105,8 +105,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\zero_judge.v" into library work
-Parsing module <zero_judge>.
+Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\select_5bit.v" into library work
+Parsing module <select_5bit>.
 Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\select_32bit.v" into library work
 Parsing module <select_32bit>.
 Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\reg_file.v" into library work
@@ -123,6 +123,8 @@ Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\in
 Parsing module <instruction_memory>.
 Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\extender.v" into library work
 Parsing module <extender>.
+Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\equal_judge.v" into library work
+Parsing module <equal_judge>.
 Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\data_memory.v" into library work
 Parsing module <data_memory>.
 Analyzing Verilog file "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\data_late.v" into library work
@@ -141,6 +143,7 @@ Parsing module <cpu>.
 Elaborating module <cpu>.
 
 Elaborating module <pc>.
+WARNING:HDLCompiler:1499 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\pc.v" Line 21: Empty module <pc> remains a black box.
 
 Elaborating module <npc_adder>.
 
@@ -148,20 +151,12 @@ Elaborating module <instruction_memory>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt\".
 WARNING:HDLCompiler:1670 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 29: Signal <data> in initial block is partially initialized.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 35: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 36: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 37: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 38: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <ir>.
-WARNING:HDLCompiler:1127 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 64: Assignment to alu_func ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 69: Result of 16-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 70: Result of 26-bit expression is truncated to fit in 5-bit target.
 
-Elaborating module <select_32bit>.
-WARNING:HDLCompiler:189 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 72: Size mismatch in connection of port <one>. Formal port size is 32-bit while actual signal size is 5-bit.
+Elaborating module <select_5bit>.
 
 Elaborating module <extender>.
-WARNING:HDLCompiler:189 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 74: Size mismatch in connection of port <immediate16>. Formal port size is 16-bit while actual signal size is 5-bit.
 
 Elaborating module <reg_file>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/register.txt\".
@@ -169,10 +164,13 @@ WARNING:HDLCompiler:1670 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab
 
 Elaborating module <data_late>.
 
-Elaborating module <zero_judge>.
+Elaborating module <equal_judge>.
+
+Elaborating module <select_32bit>.
 
 Elaborating module <alu>.
 WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 31: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 42: Result of 36-bit expression is truncated to fit in 32-bit target.
 
 Elaborating module <data_memory>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt\".
@@ -181,28 +179,28 @@ WARNING:HDLCompiler:1670 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab
 Elaborating module <pc_select>.
 
 Elaborating module <control_unit>.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 92: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 94: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 94: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 96: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 96: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 98: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 98: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 100: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 100: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 104: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 91: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 91: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 93: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 93: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 95: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 95: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 97: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 97: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 99: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 99: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 101: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 101: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 103: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 103: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 105: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 106: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 109: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 110: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 105: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 107: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 108: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 111: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 113: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 113: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 114: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 115: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 115: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 117: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 117: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -216,9 +214,11 @@ Unit <cpu> synthesized.
 
 Synthesizing Unit <pc>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\pc.v".
-    Found 32-bit register for signal <current_address>.
+WARNING:Xst:647 - Input <new_address> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'current_address', unconnected in block 'pc', is tied to its initial value (00000000000000000000000000000000).
     Summary:
-	inferred  32 D-type flip-flop(s).
+	no macro.
 Unit <pc> synthesized.
 
 Synthesizing Unit <npc_adder>.
@@ -230,11 +230,9 @@ Unit <npc_adder> synthesized.
 
 Synthesizing Unit <instruction_memory>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v".
-WARNING:Xst:653 - Signal <data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 32-bit adder for signal <n0042> created at line 36.
-    Found 32-bit adder for signal <n0044> created at line 37.
-    Found 32-bit adder for signal <n0046> created at line 38.
-    Found 128x8-bit dual-port Read Only RAM <Mram_data> for signal <data>.
+WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'data', unconnected in block 'instruction_memory', is tied to its initial value.
+    Found 256x32-bit single-port Read Only RAM <Mram_data> for signal <data>.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -268,8 +266,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <out<1>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <out<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   2 RAM(s).
-	inferred   3 Adder/Subtractor(s).
+	inferred   1 RAM(s).
 	inferred  32 Latch(s).
 Unit <instruction_memory> synthesized.
 
@@ -280,11 +277,11 @@ Synthesizing Unit <ir>.
 	inferred  32 D-type flip-flop(s).
 Unit <ir> synthesized.
 
-Synthesizing Unit <select_32bit>.
-    Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\select_32bit.v".
+Synthesizing Unit <select_5bit>.
+    Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\select_5bit.v".
     Summary:
 	inferred   1 Multiplexer(s).
-Unit <select_32bit> synthesized.
+Unit <select_5bit> synthesized.
 
 Synthesizing Unit <extender>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\extender.v".
@@ -307,166 +304,60 @@ Synthesizing Unit <data_late>.
 	inferred  32 D-type flip-flop(s).
 Unit <data_late> synthesized.
 
-Synthesizing Unit <zero_judge>.
-    Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\zero_judge.v".
+Synthesizing Unit <equal_judge>.
+    Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\equal_judge.v".
+    Found 32-bit comparator equal for signal <out> created at line 26
     Summary:
-	no macro.
-Unit <zero_judge> synthesized.
+	inferred   1 Comparator(s).
+Unit <equal_judge> synthesized.
+
+Synthesizing Unit <select_32bit>.
+    Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\select_32bit.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <select_32bit> synthesized.
 
 Synthesizing Unit <alu>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v".
     Found 32-bit subtractor for signal <srca[31]_srcb[31]_sub_4_OUT> created at line 36.
     Found 32-bit adder for signal <srca[31]_srcb[31]_add_2_OUT> created at line 35.
-    Found 32-bit shifter logical left for signal <srca[31]_srcb[31]_shift_left_4_OUT> created at line 37
+    Found 32-bit adder for signal <srca[31]_srcb[29]_add_9_OUT> created at line 41.
     Found 32-bit 8-to-1 multiplexer for signal <result> created at line 34.
-    Found 32-bit comparator greater for signal <srca[31]_srcb[31]_LessThan_10_o> created at line 42
-    Found 1-bit comparator equal for signal <srca[31]_srcb[31]_equal_11_o> created at line 42
+    Found 32-bit comparator greater for signal <srca[31]_srcb[31]_LessThan_8_o> created at line 40
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
-	inferred   8 Multiplexer(s).
-	inferred   1 Combinational logic shifter(s).
+	inferred   1 Comparator(s).
+	inferred  11 Multiplexer(s).
 Unit <alu> synthesized.
 
 Synthesizing Unit <data_memory>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\data_memory.v".
-WARNING:Xst:3012 - Available block RAM resources offer a maximum of two write ports. You are apparently describing a RAM with 4 separate write ports for signal <data>. The RAM will be expanded on registers.
-INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <data>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 8-bit register for signal <data_ff_0>.
-    Found 8-bit register for signal <data_ff_1>.
-    Found 8-bit register for signal <data_ff_2>.
-    Found 8-bit register for signal <data_ff_3>.
-    Found 8-bit register for signal <data_ff_4>.
-    Found 8-bit register for signal <data_ff_5>.
-    Found 8-bit register for signal <data_ff_6>.
-    Found 8-bit register for signal <data_ff_7>.
-    Found 8-bit register for signal <data_ff_8>.
-    Found 8-bit register for signal <data_ff_9>.
-    Found 8-bit register for signal <data_ff_10>.
-    Found 8-bit register for signal <data_ff_11>.
-    Found 8-bit register for signal <data_ff_12>.
-    Found 8-bit register for signal <data_ff_13>.
-    Found 8-bit register for signal <data_ff_14>.
-    Found 8-bit register for signal <data_ff_15>.
-    Found 8-bit register for signal <data_ff_16>.
-    Found 8-bit register for signal <data_ff_17>.
-    Found 8-bit register for signal <data_ff_18>.
-    Found 8-bit register for signal <data_ff_19>.
-    Found 8-bit register for signal <data_ff_20>.
-    Found 8-bit register for signal <data_ff_21>.
-    Found 8-bit register for signal <data_ff_22>.
-    Found 8-bit register for signal <data_ff_23>.
-    Found 8-bit register for signal <data_ff_24>.
-    Found 8-bit register for signal <data_ff_25>.
-    Found 8-bit register for signal <data_ff_26>.
-    Found 8-bit register for signal <data_ff_27>.
-    Found 8-bit register for signal <data_ff_28>.
-    Found 8-bit register for signal <data_ff_29>.
-    Found 8-bit register for signal <data_ff_30>.
-    Found 8-bit register for signal <data_ff_31>.
-    Found 8-bit register for signal <data_ff_32>.
-    Found 8-bit register for signal <data_ff_33>.
-    Found 8-bit register for signal <data_ff_34>.
-    Found 8-bit register for signal <data_ff_35>.
-    Found 8-bit register for signal <data_ff_36>.
-    Found 8-bit register for signal <data_ff_37>.
-    Found 8-bit register for signal <data_ff_38>.
-    Found 8-bit register for signal <data_ff_39>.
-    Found 8-bit register for signal <data_ff_40>.
-    Found 8-bit register for signal <data_ff_41>.
-    Found 8-bit register for signal <data_ff_42>.
-    Found 8-bit register for signal <data_ff_43>.
-    Found 8-bit register for signal <data_ff_44>.
-    Found 8-bit register for signal <data_ff_45>.
-    Found 8-bit register for signal <data_ff_46>.
-    Found 8-bit register for signal <data_ff_47>.
-    Found 8-bit register for signal <data_ff_48>.
-    Found 8-bit register for signal <data_ff_49>.
-    Found 8-bit register for signal <data_ff_50>.
-    Found 8-bit register for signal <data_ff_51>.
-    Found 8-bit register for signal <data_ff_52>.
-    Found 8-bit register for signal <data_ff_53>.
-    Found 8-bit register for signal <data_ff_54>.
-    Found 8-bit register for signal <data_ff_55>.
-    Found 8-bit register for signal <data_ff_56>.
-    Found 8-bit register for signal <data_ff_57>.
-    Found 8-bit register for signal <data_ff_58>.
-    Found 8-bit register for signal <data_ff_59>.
-    Found 8-bit register for signal <data_ff_60>.
-    Found 8-bit register for signal <data_ff_61>.
-    Found 8-bit register for signal <data_ff_62>.
-    Found 8-bit register for signal <data_ff_63>.
-    Found 8-bit register for signal <data_ff_64>.
-    Found 8-bit register for signal <data_ff_65>.
-    Found 8-bit register for signal <data_ff_66>.
-    Found 8-bit register for signal <data_ff_67>.
-    Found 8-bit register for signal <data_ff_68>.
-    Found 8-bit register for signal <data_ff_69>.
-    Found 8-bit register for signal <data_ff_70>.
-    Found 8-bit register for signal <data_ff_71>.
-    Found 8-bit register for signal <data_ff_72>.
-    Found 8-bit register for signal <data_ff_73>.
-    Found 8-bit register for signal <data_ff_74>.
-    Found 8-bit register for signal <data_ff_75>.
-    Found 8-bit register for signal <data_ff_76>.
-    Found 8-bit register for signal <data_ff_77>.
-    Found 8-bit register for signal <data_ff_78>.
-    Found 8-bit register for signal <data_ff_79>.
-    Found 8-bit register for signal <data_ff_80>.
-    Found 8-bit register for signal <data_ff_81>.
-    Found 8-bit register for signal <data_ff_82>.
-    Found 8-bit register for signal <data_ff_83>.
-    Found 8-bit register for signal <data_ff_84>.
-    Found 8-bit register for signal <data_ff_85>.
-    Found 8-bit register for signal <data_ff_86>.
-    Found 8-bit register for signal <data_ff_87>.
-    Found 8-bit register for signal <data_ff_88>.
-    Found 8-bit register for signal <data_ff_89>.
-    Found 8-bit register for signal <data_ff_90>.
-    Found 8-bit register for signal <data_ff_91>.
-    Found 8-bit register for signal <data_ff_92>.
-    Found 8-bit register for signal <data_ff_93>.
-    Found 8-bit register for signal <data_ff_94>.
-    Found 8-bit register for signal <data_ff_95>.
-    Found 8-bit register for signal <data_ff_96>.
-    Found 8-bit register for signal <data_ff_97>.
-    Found 8-bit register for signal <data_ff_98>.
-    Found 8-bit register for signal <data_ff_99>.
-    Found 8-bit register for signal <data_ff_100>.
-    Found 8-bit register for signal <data_ff_101>.
-    Found 8-bit register for signal <data_ff_102>.
-    Found 8-bit register for signal <data_ff_103>.
-    Found 8-bit register for signal <data_ff_104>.
-    Found 8-bit register for signal <data_ff_105>.
-    Found 8-bit register for signal <data_ff_106>.
-    Found 8-bit register for signal <data_ff_107>.
-    Found 8-bit register for signal <data_ff_108>.
-    Found 8-bit register for signal <data_ff_109>.
-    Found 8-bit register for signal <data_ff_110>.
-    Found 8-bit register for signal <data_ff_111>.
-    Found 8-bit register for signal <data_ff_112>.
-    Found 8-bit register for signal <data_ff_113>.
-    Found 8-bit register for signal <data_ff_114>.
-    Found 8-bit register for signal <data_ff_115>.
-    Found 8-bit register for signal <data_ff_116>.
-    Found 8-bit register for signal <data_ff_117>.
-    Found 8-bit register for signal <data_ff_118>.
-    Found 8-bit register for signal <data_ff_119>.
-    Found 8-bit register for signal <data_ff_120>.
-    Found 8-bit register for signal <data_ff_121>.
-    Found 8-bit register for signal <data_ff_122>.
-    Found 8-bit register for signal <data_ff_123>.
-    Found 8-bit register for signal <data_ff_124>.
-    Found 8-bit register for signal <data_ff_125>.
-    Found 8-bit register for signal <data_ff_126>.
-    Found 8-bit register for signal <data_ff_127>.
-    Found 32-bit adder for signal <n0049> created at line 32.
-    Found 32-bit adder for signal <n0051> created at line 33.
-    Found 32-bit adder for signal <n0053> created at line 34.
-    Found 8-bit 128-to-1 multiplexer for signal <address[31]_read_port_2_OUT> created at line 0.
-    Found 8-bit 128-to-1 multiplexer for signal <address[31]_read_port_6_OUT> created at line 0.
-    Found 8-bit 128-to-1 multiplexer for signal <address[31]_read_port_10_OUT> created at line 0.
-    Found 8-bit 128-to-1 multiplexer for signal <address[6]_read_port_13_OUT> created at line 0.
+WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x32-bit single-port RAM <Mram_data> for signal <data>.
+    Found 1-bit tristate buffer for signal <out<31>> created at line 32
+    Found 1-bit tristate buffer for signal <out<30>> created at line 32
+    Found 1-bit tristate buffer for signal <out<29>> created at line 32
+    Found 1-bit tristate buffer for signal <out<28>> created at line 32
+    Found 1-bit tristate buffer for signal <out<27>> created at line 32
+    Found 1-bit tristate buffer for signal <out<26>> created at line 32
+    Found 1-bit tristate buffer for signal <out<25>> created at line 32
+    Found 1-bit tristate buffer for signal <out<24>> created at line 32
+    Found 1-bit tristate buffer for signal <out<23>> created at line 32
+    Found 1-bit tristate buffer for signal <out<22>> created at line 32
+    Found 1-bit tristate buffer for signal <out<21>> created at line 32
+    Found 1-bit tristate buffer for signal <out<20>> created at line 32
+    Found 1-bit tristate buffer for signal <out<19>> created at line 32
+    Found 1-bit tristate buffer for signal <out<18>> created at line 32
+    Found 1-bit tristate buffer for signal <out<17>> created at line 32
+    Found 1-bit tristate buffer for signal <out<16>> created at line 32
+    Found 1-bit tristate buffer for signal <out<15>> created at line 32
+    Found 1-bit tristate buffer for signal <out<14>> created at line 32
+    Found 1-bit tristate buffer for signal <out<13>> created at line 32
+    Found 1-bit tristate buffer for signal <out<12>> created at line 32
+    Found 1-bit tristate buffer for signal <out<11>> created at line 32
+    Found 1-bit tristate buffer for signal <out<10>> created at line 32
+    Found 1-bit tristate buffer for signal <out<9>> created at line 32
+    Found 1-bit tristate buffer for signal <out<8>> created at line 32
     Found 1-bit tristate buffer for signal <out<7>> created at line 32
     Found 1-bit tristate buffer for signal <out<6>> created at line 32
     Found 1-bit tristate buffer for signal <out<5>> created at line 32
@@ -475,547 +366,9 @@ INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <data>. Y
     Found 1-bit tristate buffer for signal <out<2>> created at line 32
     Found 1-bit tristate buffer for signal <out<1>> created at line 32
     Found 1-bit tristate buffer for signal <out<0>> created at line 32
-    Found 1-bit tristate buffer for signal <out<15>> created at line 33
-    Found 1-bit tristate buffer for signal <out<14>> created at line 33
-    Found 1-bit tristate buffer for signal <out<13>> created at line 33
-    Found 1-bit tristate buffer for signal <out<12>> created at line 33
-    Found 1-bit tristate buffer for signal <out<11>> created at line 33
-    Found 1-bit tristate buffer for signal <out<10>> created at line 33
-    Found 1-bit tristate buffer for signal <out<9>> created at line 33
-    Found 1-bit tristate buffer for signal <out<8>> created at line 33
-    Found 1-bit tristate buffer for signal <out<23>> created at line 34
-    Found 1-bit tristate buffer for signal <out<22>> created at line 34
-    Found 1-bit tristate buffer for signal <out<21>> created at line 34
-    Found 1-bit tristate buffer for signal <out<20>> created at line 34
-    Found 1-bit tristate buffer for signal <out<19>> created at line 34
-    Found 1-bit tristate buffer for signal <out<18>> created at line 34
-    Found 1-bit tristate buffer for signal <out<17>> created at line 34
-    Found 1-bit tristate buffer for signal <out<16>> created at line 34
-    Found 1-bit tristate buffer for signal <out<31>> created at line 35
-    Found 1-bit tristate buffer for signal <out<30>> created at line 35
-    Found 1-bit tristate buffer for signal <out<29>> created at line 35
-    Found 1-bit tristate buffer for signal <out<28>> created at line 35
-    Found 1-bit tristate buffer for signal <out<27>> created at line 35
-    Found 1-bit tristate buffer for signal <out<26>> created at line 35
-    Found 1-bit tristate buffer for signal <out<25>> created at line 35
-    Found 1-bit tristate buffer for signal <out<24>> created at line 35
-    Found 8-bit tristate buffer for signal <data_trst_0> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_0> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_0> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_0> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_1> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_1> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_1> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_1> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_2> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_2> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_2> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_2> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_3> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_3> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_3> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_3> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_4> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_4> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_4> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_4> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_5> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_5> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_5> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_5> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_6> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_6> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_6> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_6> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_7> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_7> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_7> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_7> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_8> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_8> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_8> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_8> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_9> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_9> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_9> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_9> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_10> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_10> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_10> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_10> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_11> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_11> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_11> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_11> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_12> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_12> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_12> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_12> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_13> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_13> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_13> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_13> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_14> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_14> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_14> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_14> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_15> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_15> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_15> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_15> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_16> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_16> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_16> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_16> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_17> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_17> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_17> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_17> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_18> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_18> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_18> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_18> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_19> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_19> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_19> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_19> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_20> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_20> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_20> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_20> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_21> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_21> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_21> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_21> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_22> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_22> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_22> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_22> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_23> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_23> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_23> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_23> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_24> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_24> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_24> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_24> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_25> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_25> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_25> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_25> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_26> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_26> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_26> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_26> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_27> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_27> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_27> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_27> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_28> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_28> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_28> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_28> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_29> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_29> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_29> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_29> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_30> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_30> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_30> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_30> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_31> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_31> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_31> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_31> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_32> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_32> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_32> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_32> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_33> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_33> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_33> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_33> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_34> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_34> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_34> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_34> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_35> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_35> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_35> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_35> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_36> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_36> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_36> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_36> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_37> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_37> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_37> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_37> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_38> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_38> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_38> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_38> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_39> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_39> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_39> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_39> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_40> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_40> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_40> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_40> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_41> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_41> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_41> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_41> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_42> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_42> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_42> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_42> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_43> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_43> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_43> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_43> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_44> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_44> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_44> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_44> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_45> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_45> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_45> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_45> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_46> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_46> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_46> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_46> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_47> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_47> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_47> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_47> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_48> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_48> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_48> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_48> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_49> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_49> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_49> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_49> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_50> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_50> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_50> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_50> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_51> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_51> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_51> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_51> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_52> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_52> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_52> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_52> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_53> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_53> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_53> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_53> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_54> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_54> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_54> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_54> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_55> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_55> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_55> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_55> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_56> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_56> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_56> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_56> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_57> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_57> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_57> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_57> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_58> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_58> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_58> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_58> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_59> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_59> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_59> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_59> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_60> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_60> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_60> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_60> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_61> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_61> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_61> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_61> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_62> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_62> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_62> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_62> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_63> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_63> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_63> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_63> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_64> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_64> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_64> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_64> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_65> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_65> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_65> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_65> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_66> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_66> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_66> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_66> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_67> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_67> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_67> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_67> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_68> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_68> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_68> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_68> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_69> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_69> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_69> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_69> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_70> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_70> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_70> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_70> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_71> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_71> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_71> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_71> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_72> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_72> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_72> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_72> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_73> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_73> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_73> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_73> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_74> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_74> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_74> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_74> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_75> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_75> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_75> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_75> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_76> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_76> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_76> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_76> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_77> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_77> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_77> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_77> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_78> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_78> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_78> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_78> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_79> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_79> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_79> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_79> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_80> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_80> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_80> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_80> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_81> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_81> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_81> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_81> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_82> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_82> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_82> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_82> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_83> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_83> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_83> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_83> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_84> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_84> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_84> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_84> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_85> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_85> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_85> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_85> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_86> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_86> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_86> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_86> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_87> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_87> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_87> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_87> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_88> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_88> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_88> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_88> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_89> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_89> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_89> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_89> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_90> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_90> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_90> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_90> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_91> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_91> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_91> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_91> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_92> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_92> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_92> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_92> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_93> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_93> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_93> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_93> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_94> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_94> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_94> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_94> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_95> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_95> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_95> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_95> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_96> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_96> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_96> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_96> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_97> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_97> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_97> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_97> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_98> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_98> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_98> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_98> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_99> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_99> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_99> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_99> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_100> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_100> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_100> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_100> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_101> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_101> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_101> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_101> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_102> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_102> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_102> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_102> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_103> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_103> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_103> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_103> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_104> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_104> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_104> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_104> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_105> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_105> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_105> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_105> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_106> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_106> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_106> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_106> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_107> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_107> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_107> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_107> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_108> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_108> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_108> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_108> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_109> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_109> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_109> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_109> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_110> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_110> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_110> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_110> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_111> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_111> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_111> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_111> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_112> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_112> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_112> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_112> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_113> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_113> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_113> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_113> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_114> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_114> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_114> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_114> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_115> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_115> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_115> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_115> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_116> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_116> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_116> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_116> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_117> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_117> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_117> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_117> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_118> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_118> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_118> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_118> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_119> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_119> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_119> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_119> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_120> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_120> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_120> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_120> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_121> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_121> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_121> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_121> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_122> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_122> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_122> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_122> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_123> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_123> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_123> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_123> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_124> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_124> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_124> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_124> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_125> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_125> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_125> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_125> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_126> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_126> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_126> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_126> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_127> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_127> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_127> created at line 22
-    Found 8-bit tristate buffer for signal <data_trst_127> created at line 22
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred 1024 D-type flip-flop(s).
-	inferred   4 Multiplexer(s).
-	inferred 544 Tristate(s).
+	inferred   1 RAM(s).
+	inferred  32 Tristate(s).
 Unit <data_memory> synthesized.
 
 Synthesizing Unit <pc_select>.
@@ -1032,13 +385,11 @@ Synthesizing Unit <control_unit>.
         sMEM = 5'b01000
         sWB = 5'b10000
         J = 6'b000000
-        BEQZ = 6'b000010
-        AND = 6'b000100
-        OR = 6'b000100
-        ADDI = 6'b001010
-        SUBI = 6'b001000
+        BEQ = 6'b000010
+        ALU = 6'b000100
         SW = 6'b001100
         LW = 6'b001110
+WARNING:Xst:647 - Input <alu_func<10:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2935 - Signal 'instruction_read', unconnected in block 'control_unit', is tied to its initial value (1).
     Found 5-bit register for signal <current_state>.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1049,7 +400,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be g
     Summary:
 	inferred   5 D-type flip-flop(s).
 	inferred   5 Latch(s).
-	inferred   3 Multiplexer(s).
+	inferred   6 Multiplexer(s).
 Unit <control_unit> synthesized.
 
 =========================================================================
@@ -1057,30 +408,27 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 4
- 128x8-bit dual-port Read Only RAM                     : 2
+ 256x32-bit single-port RAM                            : 1
+ 256x32-bit single-port Read Only RAM                  : 1
  32x32-bit dual-port RAM                               : 2
-# Adders/Subtractors                                   : 8
- 32-bit adder                                          : 7
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 135
- 32-bit register                                       : 6
+# Registers                                            : 6
+ 32-bit register                                       : 5
  5-bit register                                        : 1
- 8-bit register                                        : 128
 # Latches                                              : 37
  1-bit latch                                           : 37
 # Comparators                                          : 2
- 1-bit comparator equal                                : 1
+ 32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 23
- 1-bit 2-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 5
  32-bit 2-to-1 multiplexer                             : 16
- 8-bit 128-to-1 multiplexer                            : 4
-# Logic shifters                                       : 1
- 32-bit shifter logical left                           : 1
-# Tristates                                            : 544
+ 5-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 32
  1-bit tristate buffer                                 : 32
- 8-bit tristate buffer                                 : 512
 # Xors                                                 : 1
  32-bit xor2                                           : 1
 
@@ -1091,40 +439,62 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:2677 - Node <out_5> of sequential type is unconnected in block <ir>.
-WARNING:Xst:2677 - Node <out_6> of sequential type is unconnected in block <ir>.
-WARNING:Xst:2677 - Node <out_7> of sequential type is unconnected in block <ir>.
-WARNING:Xst:2677 - Node <out_8> of sequential type is unconnected in block <ir>.
-WARNING:Xst:2677 - Node <out_9> of sequential type is unconnected in block <ir>.
-WARNING:Xst:2677 - Node <out_10> of sequential type is unconnected in block <ir>.
-WARNING:Xst:2677 - Node <out_10> of sequential type is unconnected in block <instruction_memory>.
-WARNING:Xst:2677 - Node <out_9> of sequential type is unconnected in block <instruction_memory>.
-WARNING:Xst:2677 - Node <out_8> of sequential type is unconnected in block <instruction_memory>.
-WARNING:Xst:2677 - Node <out_7> of sequential type is unconnected in block <instruction_memory>.
-WARNING:Xst:2677 - Node <out_6> of sequential type is unconnected in block <instruction_memory>.
-WARNING:Xst:2677 - Node <out_5> of sequential type is unconnected in block <instruction_memory>.
+WARNING:Xst:1290 - Hierarchical block <equal_judge> is unconnected in block <cpu>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <pc_select> is unconnected in block <cpu>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <out_8> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_9> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_10> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_11> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_12> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_13> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_14> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_15> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_16> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_17> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_18> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_19> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_20> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_21> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_22> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_23> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_24> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_25> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_26> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_27> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_28> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_29> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_30> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:2677 - Node <out_31> of sequential type is unconnected in block <dl3>.
+WARNING:Xst:1294 - Latch <out_28> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_30> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_29> is equivalent to a wire in block <instruction_memory>.
-WARNING:Xst:1294 - Latch <out_26> is equivalent to a wire in block <instruction_memory>.
-WARNING:Xst:1294 - Latch <out_28> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_27> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_26> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_25> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_24> is equivalent to a wire in block <instruction_memory>.
-WARNING:Xst:1294 - Latch <out_21> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_23> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_22> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_21> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_20> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_19> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_18> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_17> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_16> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_15> is equivalent to a wire in block <instruction_memory>.
-WARNING:Xst:1294 - Latch <out_12> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_14> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_13> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_12> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_11> is equivalent to a wire in block <instruction_memory>.
-WARNING:Xst:1294 - Latch <out_3> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_10> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_9> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_8> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_7> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_6> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_5> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_4> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_3> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_2> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_1> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_0> is equivalent to a wire in block <instruction_memory>.
@@ -1140,7 +510,7 @@ INFO:Xst:3226 - The RAM <reg_file/Mram_data> will be implemented as a BLOCK RAM,
     |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | fall     |
     |     weA            | connected to internal node          | high     |
-    |     addrA          | connected to signal <n0028>         |          |
+    |     addrA          | connected to signal <reg_write_address> |          |
     |     diA            | connected to signal <reg_write_data> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
@@ -1154,6 +524,29 @@ INFO:Xst:3226 - The RAM <reg_file/Mram_data> will be implemented as a BLOCK RAM,
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <data_memory/Mram_data> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to signal <data_memory_write> | high     |
+    |     addrA          | connected to signal <data_memory_address> |          |
+    |     diA            | connected to signal <read_data_b>   |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | fall     |
+    |     addrB          | connected to signal <alu_res<7:0>>  |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <reg_file/Mram_data1> will be implemented as a BLOCK RAM, absorbing the following register(s): <ir/out>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
@@ -1163,7 +556,7 @@ INFO:Xst:3226 - The RAM <reg_file/Mram_data1> will be implemented as a BLOCK RAM
     |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | fall     |
     |     weA            | connected to internal node          | high     |
-    |     addrA          | connected to signal <n0028>         |          |
+    |     addrA          | connected to signal <reg_write_address> |          |
     |     diA            | connected to signal <reg_write_data> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
@@ -1185,64 +578,59 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs ei
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 128-word x 8-bit                    |          |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <address>       |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 128-word x 8-bit                    |          |
-    |     addrB          | connected to signal <n0042>         |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 128-word x 8-bit                    |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <n0044>         |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 128-word x 8-bit                    |          |
-    |     addrB          | connected to signal <n0046>         |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
 Unit <instruction_memory> synthesized (advanced).
-WARNING:Xst:2677 - Node <ir/out_5> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <ir/out_6> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <ir/out_7> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <ir/out_8> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <ir/out_9> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <ir/out_10> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_8> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_9> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_10> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_11> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_12> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_13> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_14> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_15> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_16> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_17> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_18> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_19> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_20> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_21> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_22> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_23> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_24> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_25> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_26> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_27> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_28> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_29> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_30> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <dl3/out_31> of sequential type is unconnected in block <cpu>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 4
- 128x8-bit dual-port distributed Read Only RAM         : 2
+ 256x32-bit dual-port block RAM                        : 1
+ 256x32-bit single-port distributed Read Only RAM      : 1
  32x32-bit dual-port block RAM                         : 2
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
- 7-bit adder                                           : 6
-# Registers                                            : 1215
- Flip-Flops                                            : 1215
+# Registers                                            : 141
+ Flip-Flops                                            : 141
 # Comparators                                          : 2
- 1-bit comparator equal                                : 1
+ 32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 23
- 1-bit 2-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 5
  32-bit 2-to-1 multiplexer                             : 16
- 8-bit 128-to-1 multiplexer                            : 4
-# Logic shifters                                       : 1
- 32-bit shifter logical left                           : 1
+ 5-bit 2-to-1 multiplexer                              : 1
 # Xors                                                 : 1
  32-bit xor2                                           : 1
 
@@ -1251,99 +639,136 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2042 - Unit data_memory: 32 internal tristates are replaced by logic (pull-up yes): out<0>, out<10>, out<11>, out<12>, out<13>, out<14>, out<15>, out<16>, out<17>, out<18>, out<19>, out<1>, out<20>, out<21>, out<22>, out<23>, out<24>, out<25>, out<26>, out<27>, out<28>, out<29>, out<2>, out<30>, out<31>, out<3>, out<4>, out<5>, out<6>, out<7>, out<8>, out<9>.
-WARNING:Xst:2040 - Unit data_memory: 1024 multi-source signals are replaced by logic (pull-up yes): data_trst_0<24>, data_trst_0<25>, data_trst_0<26>, data_trst_0<27>, data_trst_0<28>, data_trst_0<29>, data_trst_0<30>, data_trst_0<31>, data_trst_100<24>, data_trst_100<25>, data_trst_100<26>, data_trst_100<27>, data_trst_100<28>, data_trst_100<29>, data_trst_100<30>, data_trst_100<31>, data_trst_101<24>, data_trst_101<25>, data_trst_101<26>, data_trst_101<27>, data_trst_101<28>, data_trst_101<29>, data_trst_101<30>, data_trst_101<31>, data_trst_102<24>, data_trst_102<25>, data_trst_102<26>, data_trst_102<27>, data_trst_102<28>, data_trst_102<29>, data_trst_102<30>, data_trst_102<31>, data_trst_103<24>, data_trst_103<25>, data_trst_103<26>, data_trst_103<27>, data_trst_103<28>, data_trst_103<29>, data_trst_103<30>, data_trst_103<31>, data_trst_104<24>, data_trst_104<25>, data_trst_104<26>, data_trst_104<27>, data_trst_104<28>, data_trst_104<29>, data_trst_104<30>, data_trst_104<31>, data_trst_105<24>, data_trst_105<25>, data_trst_105<26>, data_trst_105<27>, data_trst_105<28>, data_trst_105<29>, data_trst_105<30>, data_trst_105<31>, data_trst_106<24>, data_trst_106<25>, data_trst_106<26>, data_trst_106<27>, data_trst_106<28>, data_trst_106<29>, data_trst_106<30>, data_trst_106<31>, data_trst_107<24>, data_trst_107<25>, data_trst_107<26>, data_trst_107<27>, data_trst_107<28>, data_trst_107<29>, data_trst_107<30>, data_trst_107<31>, data_trst_108<24>, data_trst_108<25>, data_trst_108<26>, data_trst_108<27>, data_trst_108<28>, data_trst_108<29>, data_trst_108<30>, data_trst_108<31>, data_trst_109<24>, data_trst_109<25>, data_trst_109<26>, data_trst_109<27>, data_trst_109<28>, data_trst_109<29>, data_trst_109<30>, data_trst_109<31>, data_trst_10<24>, data_trst_10<25>, data_trst_10<26>, data_trst_10<27>, data_trst_10<28>, data_trst_10<29>, data_trst_10<30>, data_trst_10<31>, data_trst_110<24>, data_trst_110<25>, data_trst_110<26>, data_trst_110<27>, data_trst_110<28>, data_trst_110<29>, data_trst_110<30>, data_trst_110<31>, data_trst_111<24>, data_trst_111<25>, data_trst_111<26>, data_trst_111<27>, data_trst_111<28>, data_trst_111<29>, data_trst_111<30>, data_trst_111<31>, data_trst_112<24>, data_trst_112<25>, data_trst_112<26>, data_trst_112<27>, data_trst_112<28>, data_trst_112<29>, data_trst_112<30>, data_trst_112<31>, data_trst_113<24>, data_trst_113<25>, data_trst_113<26>, data_trst_113<27>, data_trst_113<28>, data_trst_113<29>, data_trst_113<30>, data_trst_113<31>, data_trst_114<24>, data_trst_114<25>, data_trst_114<26>, data_trst_114<27>, data_trst_114<28>, data_trst_114<29>, data_trst_114<30>, data_trst_114<31>, data_trst_115<24>, data_trst_115<25>, data_trst_115<26>, data_trst_115<27>, data_trst_115<28>, data_trst_115<29>, data_trst_115<30>, data_trst_115<31>, data_trst_116<24>, data_trst_116<25>, data_trst_116<26>, data_trst_116<27>, data_trst_116<28>, data_trst_116<29>, data_trst_116<30>, data_trst_116<31>, data_trst_117<24>, data_trst_117<25>, data_trst_117<26>, data_trst_117<27>, data_trst_117<28>, data_trst_117<29>, data_trst_117<30>, data_trst_117<31>, data_trst_118<24>, data_trst_118<25>, data_trst_118<26>, data_trst_118<27>, data_trst_118<28>, data_trst_118<29>, data_trst_118<30>, data_trst_118<31>, data_trst_119<24>, data_trst_119<25>, data_trst_119<26>, data_trst_119<27>, data_trst_119<28>, data_trst_119<29>, data_trst_119<30>, data_trst_119<31>, data_trst_11<24>, data_trst_11<25>, data_trst_11<26>, data_trst_11<27>, data_trst_11<28>, data_trst_11<29>, data_trst_11<30>, data_trst_11<31>, data_trst_120<24>, data_trst_120<25>, data_trst_120<26>, data_trst_120<27>, data_trst_120<28>, data_trst_120<29>, data_trst_120<30>, data_trst_120<31>, data_trst_121<24>, data_trst_121<25>, data_trst_121<26>, data_trst_121<27>, data_trst_121<28>, data_trst_121<29>, data_trst_121<30>, data_trst_121<31>, data_trst_122<24>, data_trst_122<25>, data_trst_122<26>, data_trst_122<27>, data_trst_122<28>, data_trst_122<29>, data_trst_122<30>, data_trst_122<31>, data_trst_123<24>, data_trst_123<25>, data_trst_123<26>, data_trst_123<27>, data_trst_123<28>, data_trst_123<29>, data_trst_123<30>, data_trst_123<31>, data_trst_124<24>, data_trst_124<25>, data_trst_124<26>, data_trst_124<27>, data_trst_124<28>, data_trst_124<29>, data_trst_124<30>, data_trst_124<31>, data_trst_125<24>, data_trst_125<25>, data_trst_125<26>, data_trst_125<27>, data_trst_125<28>, data_trst_125<29>, data_trst_125<30>, data_trst_125<31>, data_trst_126<24>, data_trst_126<25>, data_trst_126<26>, data_trst_126<27>, data_trst_126<28>, data_trst_126<29>, data_trst_126<30>, data_trst_126<31>, data_trst_127<24>, data_trst_127<25>, data_trst_127<26>, data_trst_127<27>, data_trst_127<28>, data_trst_127<29>, data_trst_127<30>, data_trst_127<31>, data_trst_12<24>, data_trst_12<25>, data_trst_12<26>, data_trst_12<27>, data_trst_12<28>, data_trst_12<29>, data_trst_12<30>, data_trst_12<31>, data_trst_13<24>, data_trst_13<25>, data_trst_13<26>, data_trst_13<27>, data_trst_13<28>, data_trst_13<29>, data_trst_13<30>, data_trst_13<31>, data_trst_14<24>, data_trst_14<25>, data_trst_14<26>, data_trst_14<27>, data_trst_14<28>, data_trst_14<29>, data_trst_14<30>, data_trst_14<31>, data_trst_15<24>, data_trst_15<25>, data_trst_15<26>, data_trst_15<27>, data_trst_15<28>, data_trst_15<29>, data_trst_15<30>, data_trst_15<31>, data_trst_16<24>, data_trst_16<25>, data_trst_16<26>, data_trst_16<27>, data_trst_16<28>, data_trst_16<29>, data_trst_16<30>, data_trst_16<31>, data_trst_17<24>, data_trst_17<25>, data_trst_17<26>, data_trst_17<27>, data_trst_17<28>, data_trst_17<29>, data_trst_17<30>, data_trst_17<31>, data_trst_18<24>, data_trst_18<25>, data_trst_18<26>, data_trst_18<27>, data_trst_18<28>, data_trst_18<29>, data_trst_18<30>, data_trst_18<31>, data_trst_19<24>, data_trst_19<25>, data_trst_19<26>, data_trst_19<27>, data_trst_19<28>, data_trst_19<29>, data_trst_19<30>, data_trst_19<31>, data_trst_1<24>, data_trst_1<25>, data_trst_1<26>, data_trst_1<27>, data_trst_1<28>, data_trst_1<29>, data_trst_1<30>, data_trst_1<31>, data_trst_20<24>, data_trst_20<25>, data_trst_20<26>, data_trst_20<27>, data_trst_20<28>, data_trst_20<29>, data_trst_20<30>, data_trst_20<31>, data_trst_21<24>, data_trst_21<25>, data_trst_21<26>, data_trst_21<27>, data_trst_21<28>, data_trst_21<29>, data_trst_21<30>, data_trst_21<31>, data_trst_22<24>, data_trst_22<25>, data_trst_22<26>, data_trst_22<27>, data_trst_22<28>, data_trst_22<29>, data_trst_22<30>, data_trst_22<31>, data_trst_23<24>, data_trst_23<25>, data_trst_23<26>, data_trst_23<27>, data_trst_23<28>, data_trst_23<29>, data_trst_23<30>, data_trst_23<31>, data_trst_24<24>, data_trst_24<25>, data_trst_24<26>, data_trst_24<27>, data_trst_24<28>, data_trst_24<29>, data_trst_24<30>, data_trst_24<31>, data_trst_25<24>, data_trst_25<25>, data_trst_25<26>, data_trst_25<27>, data_trst_25<28>, data_trst_25<29>, data_trst_25<30>, data_trst_25<31>, data_trst_26<24>, data_trst_26<25>, data_trst_26<26>, data_trst_26<27>, data_trst_26<28>, data_trst_26<29>, data_trst_26<30>, data_trst_26<31>, data_trst_27<24>, data_trst_27<25>, data_trst_27<26>, data_trst_27<27>, data_trst_27<28>, data_trst_27<29>, data_trst_27<30>, data_trst_27<31>, data_trst_28<24>, data_trst_28<25>, data_trst_28<26>, data_trst_28<27>, data_trst_28<28>, data_trst_28<29>, data_trst_28<30>, data_trst_28<31>, data_trst_29<24>, data_trst_29<25>, data_trst_29<26>, data_trst_29<27>, data_trst_29<28>, data_trst_29<29>, data_trst_29<30>, data_trst_29<31>, data_trst_2<24>, data_trst_2<25>, data_trst_2<26>, data_trst_2<27>, data_trst_2<28>, data_trst_2<29>, data_trst_2<30>, data_trst_2<31>, data_trst_30<24>, data_trst_30<25>, data_trst_30<26>, data_trst_30<27>, data_trst_30<28>, data_trst_30<29>, data_trst_30<30>, data_trst_30<31>, data_trst_31<24>, data_trst_31<25>, data_trst_31<26>, data_trst_31<27>, data_trst_31<28>, data_trst_31<29>, data_trst_31<30>, data_trst_31<31>, data_trst_32<24>, data_trst_32<25>, data_trst_32<26>, data_trst_32<27>, data_trst_32<28>, data_trst_32<29>, data_trst_32<30>, data_trst_32<31>, data_trst_33<24>, data_trst_33<25>, data_trst_33<26>, data_trst_33<27>, data_trst_33<28>, data_trst_33<29>, data_trst_33<30>, data_trst_33<31>, data_trst_34<24>, data_trst_34<25>, data_trst_34<26>, data_trst_34<27>, data_trst_34<28>, data_trst_34<29>, data_trst_34<30>, data_trst_34<31>, data_trst_35<24>, data_trst_35<25>, data_trst_35<26>, data_trst_35<27>, data_trst_35<28>, data_trst_35<29>, data_trst_35<30>, data_trst_35<31>, data_trst_36<24>, data_trst_36<25>, data_trst_36<26>, data_trst_36<27>, data_trst_36<28>, data_trst_36<29>, data_trst_36<30>, data_trst_36<31>, data_trst_37<24>, data_trst_37<25>, data_trst_37<26>, data_trst_37<27>, data_trst_37<28>, data_trst_37<29>, data_trst_37<30>, data_trst_37<31>, data_trst_38<24>, data_trst_38<25>, data_trst_38<26>, data_trst_38<27>, data_trst_38<28>, data_trst_38<29>, data_trst_38<30>, data_trst_38<31>, data_trst_39<24>, data_trst_39<25>, data_trst_39<26>, data_trst_39<27>, data_trst_39<28>, data_trst_39<29>, data_trst_39<30>, data_trst_39<31>, data_trst_3<24>, data_trst_3<25>, data_trst_3<26>, data_trst_3<27>, data_trst_3<28>, data_trst_3<29>, data_trst_3<30>, data_trst_3<31>, data_trst_40<24>, data_trst_40<25>, data_trst_40<26>, data_trst_40<27>, data_trst_40<28>, data_trst_40<29>, data_trst_40<30>, data_trst_40<31>, data_trst_41<24>, data_trst_41<25>, data_trst_41<26>, data_trst_41<27>, data_trst_41<28>, data_trst_41<29>, data_trst_41<30>, data_trst_41<31>, data_trst_42<24>, data_trst_42<25>, data_trst_42<26>, data_trst_42<27>, data_trst_42<28>, data_trst_42<29>, data_trst_42<30>, data_trst_42<31>, data_trst_43<24>, data_trst_43<25>, data_trst_43<26>, data_trst_43<27>, data_trst_43<28>, data_trst_43<29>, data_trst_43<30>, data_trst_43<31>, data_trst_44<24>, data_trst_44<25>, data_trst_44<26>, data_trst_44<27>, data_trst_44<28>, data_trst_44<29>, data_trst_44<30>, data_trst_44<31>, data_trst_45<24>, data_trst_45<25>, data_trst_45<26>, data_trst_45<27>, data_trst_45<28>, data_trst_45<29>, data_trst_45<30>, data_trst_45<31>, data_trst_46<24>, data_trst_46<25>, data_trst_46<26>, data_trst_46<27>, data_trst_46<28>, data_trst_46<29>, data_trst_46<30>, data_trst_46<31>, data_trst_47<24>, data_trst_47<25>, data_trst_47<26>, data_trst_47<27>, data_trst_47<28>, data_trst_47<29>, data_trst_47<30>, data_trst_47<31>, data_trst_48<24>, data_trst_48<25>, data_trst_48<26>, data_trst_48<27>, data_trst_48<28>, data_trst_48<29>, data_trst_48<30>, data_trst_48<31>, data_trst_49<24>, data_trst_49<25>, data_trst_49<26>, data_trst_49<27>, data_trst_49<28>, data_trst_49<29>, data_trst_49<30>, data_trst_49<31>, data_trst_4<24>, data_trst_4<25>, data_trst_4<26>, data_trst_4<27>, data_trst_4<28>, data_trst_4<29>, data_trst_4<30>, data_trst_4<31>, data_trst_50<24>, data_trst_50<25>, data_trst_50<26>, data_trst_50<27>, data_trst_50<28>, data_trst_50<29>, data_trst_50<30>, data_trst_50<31>, data_trst_51<24>, data_trst_51<25>, data_trst_51<26>, data_trst_51<27>, data_trst_51<28>, data_trst_51<29>, data_trst_51<30>, data_trst_51<31>, data_trst_52<24>, data_trst_52<25>, data_trst_52<26>, data_trst_52<27>, data_trst_52<28>, data_trst_52<29>, data_trst_52<30>, data_trst_52<31>, data_trst_53<24>, data_trst_53<25>, data_trst_53<26>, data_trst_53<27>, data_trst_53<28>, data_trst_53<29>, data_trst_53<30>, data_trst_53<31>, data_trst_54<24>, data_trst_54<25>, data_trst_54<26>, data_trst_54<27>, data_trst_54<28>, data_trst_54<29>, data_trst_54<30>, data_trst_54<31>, data_trst_55<24>, data_trst_55<25>, data_trst_55<26>, data_trst_55<27>, data_trst_55<28>, data_trst_55<29>, data_trst_55<30>, data_trst_55<31>, data_trst_56<24>, data_trst_56<25>, data_trst_56<26>, data_trst_56<27>, data_trst_56<28>, data_trst_56<29>, data_trst_56<30>, data_trst_56<31>, data_trst_57<24>, data_trst_57<25>, data_trst_57<26>, data_trst_57<27>, data_trst_57<28>, data_trst_57<29>, data_trst_57<30>, data_trst_57<31>, data_trst_58<24>, data_trst_58<25>, data_trst_58<26>, data_trst_58<27>, data_trst_58<28>, data_trst_58<29>, data_trst_58<30>, data_trst_58<31>, data_trst_59<24>, data_trst_59<25>, data_trst_59<26>, data_trst_59<27>, data_trst_59<28>, data_trst_59<29>, data_trst_59<30>, data_trst_59<31>, data_trst_5<24>, data_trst_5<25>, data_trst_5<26>, data_trst_5<27>, data_trst_5<28>, data_trst_5<29>, data_trst_5<30>, data_trst_5<31>, data_trst_60<24>, data_trst_60<25>, data_trst_60<26>, data_trst_60<27>, data_trst_60<28>, data_trst_60<29>, data_trst_60<30>, data_trst_60<31>, data_trst_61<24>, data_trst_61<25>, data_trst_61<26>, data_trst_61<27>, data_trst_61<28>, data_trst_61<29>, data_trst_61<30>, data_trst_61<31>, data_trst_62<24>, data_trst_62<25>, data_trst_62<26>, data_trst_62<27>, data_trst_62<28>, data_trst_62<29>, data_trst_62<30>, data_trst_62<31>, data_trst_63<24>, data_trst_63<25>, data_trst_63<26>, data_trst_63<27>, data_trst_63<28>, data_trst_63<29>, data_trst_63<30>, data_trst_63<31>, data_trst_64<24>, data_trst_64<25>, data_trst_64<26>, data_trst_64<27>, data_trst_64<28>, data_trst_64<29>, data_trst_64<30>, data_trst_64<31>, data_trst_65<24>, data_trst_65<25>, data_trst_65<26>, data_trst_65<27>, data_trst_65<28>, data_trst_65<29>, data_trst_65<30>, data_trst_65<31>, data_trst_66<24>, data_trst_66<25>, data_trst_66<26>, data_trst_66<27>, data_trst_66<28>, data_trst_66<29>, data_trst_66<30>, data_trst_66<31>, data_trst_67<24>, data_trst_67<25>, data_trst_67<26>, data_trst_67<27>, data_trst_67<28>, data_trst_67<29>, data_trst_67<30>, data_trst_67<31>, data_trst_68<24>, data_trst_68<25>, data_trst_68<26>, data_trst_68<27>, data_trst_68<28>, data_trst_68<29>, data_trst_68<30>, data_trst_68<31>, data_trst_69<24>, data_trst_69<25>, data_trst_69<26>, data_trst_69<27>, data_trst_69<28>, data_trst_69<29>, data_trst_69<30>, data_trst_69<31>, data_trst_6<24>, data_trst_6<25>, data_trst_6<26>, data_trst_6<27>, data_trst_6<28>, data_trst_6<29>, data_trst_6<30>, data_trst_6<31>, data_trst_70<24>, data_trst_70<25>, data_trst_70<26>, data_trst_70<27>, data_trst_70<28>, data_trst_70<29>, data_trst_70<30>, data_trst_70<31>, data_trst_71<24>, data_trst_71<25>, data_trst_71<26>, data_trst_71<27>, data_trst_71<28>, data_trst_71<29>, data_trst_71<30>, data_trst_71<31>, data_trst_72<24>, data_trst_72<25>, data_trst_72<26>, data_trst_72<27>, data_trst_72<28>, data_trst_72<29>, data_trst_72<30>, data_trst_72<31>, data_trst_73<24>, data_trst_73<25>, data_trst_73<26>, data_trst_73<27>, data_trst_73<28>, data_trst_73<29>, data_trst_73<30>, data_trst_73<31>, data_trst_74<24>, data_trst_74<25>, data_trst_74<26>, data_trst_74<27>, data_trst_74<28>, data_trst_74<29>, data_trst_74<30>, data_trst_74<31>, data_trst_75<24>, data_trst_75<25>, data_trst_75<26>, data_trst_75<27>, data_trst_75<28>, data_trst_75<29>, data_trst_75<30>, data_trst_75<31>, data_trst_76<24>, data_trst_76<25>, data_trst_76<26>, data_trst_76<27>, data_trst_76<28>, data_trst_76<29>, data_trst_76<30>, data_trst_76<31>, data_trst_77<24>, data_trst_77<25>, data_trst_77<26>, data_trst_77<27>, data_trst_77<28>, data_trst_77<29>, data_trst_77<30>, data_trst_77<31>, data_trst_78<24>, data_trst_78<25>, data_trst_78<26>, data_trst_78<27>, data_trst_78<28>, data_trst_78<29>, data_trst_78<30>, data_trst_78<31>, data_trst_79<24>, data_trst_79<25>, data_trst_79<26>, data_trst_79<27>, data_trst_79<28>, data_trst_79<29>, data_trst_79<30>, data_trst_79<31>, data_trst_7<24>, data_trst_7<25>, data_trst_7<26>, data_trst_7<27>, data_trst_7<28>, data_trst_7<29>, data_trst_7<30>, data_trst_7<31>, data_trst_80<24>, data_trst_80<25>, data_trst_80<26>, data_trst_80<27>, data_trst_80<28>, data_trst_80<29>, data_trst_80<30>, data_trst_80<31>, data_trst_81<24>, data_trst_81<25>, data_trst_81<26>, data_trst_81<27>, data_trst_81<28>, data_trst_81<29>, data_trst_81<30>, data_trst_81<31>, data_trst_82<24>, data_trst_82<25>, data_trst_82<26>, data_trst_82<27>, data_trst_82<28>, data_trst_82<29>, data_trst_82<30>, data_trst_82<31>, data_trst_83<24>, data_trst_83<25>, data_trst_83<26>, data_trst_83<27>, data_trst_83<28>, data_trst_83<29>, data_trst_83<30>, data_trst_83<31>, data_trst_84<24>, data_trst_84<25>, data_trst_84<26>, data_trst_84<27>, data_trst_84<28>, data_trst_84<29>, data_trst_84<30>, data_trst_84<31>, data_trst_85<24>, data_trst_85<25>, data_trst_85<26>, data_trst_85<27>, data_trst_85<28>, data_trst_85<29>, data_trst_85<30>, data_trst_85<31>, data_trst_86<24>, data_trst_86<25>, data_trst_86<26>, data_trst_86<27>, data_trst_86<28>, data_trst_86<29>, data_trst_86<30>, data_trst_86<31>, data_trst_87<24>, data_trst_87<25>, data_trst_87<26>, data_trst_87<27>, data_trst_87<28>, data_trst_87<29>, data_trst_87<30>, data_trst_87<31>, data_trst_88<24>, data_trst_88<25>, data_trst_88<26>, data_trst_88<27>, data_trst_88<28>, data_trst_88<29>, data_trst_88<30>, data_trst_88<31>, data_trst_89<24>, data_trst_89<25>, data_trst_89<26>, data_trst_89<27>, data_trst_89<28>, data_trst_89<29>, data_trst_89<30>, data_trst_89<31>, data_trst_8<24>, data_trst_8<25>, data_trst_8<26>, data_trst_8<27>, data_trst_8<28>, data_trst_8<29>, data_trst_8<30>, data_trst_8<31>, data_trst_90<24>, data_trst_90<25>, data_trst_90<26>, data_trst_90<27>, data_trst_90<28>, data_trst_90<29>, data_trst_90<30>, data_trst_90<31>, data_trst_91<24>, data_trst_91<25>, data_trst_91<26>, data_trst_91<27>, data_trst_91<28>, data_trst_91<29>, data_trst_91<30>, data_trst_91<31>, data_trst_92<24>, data_trst_92<25>, data_trst_92<26>, data_trst_92<27>, data_trst_92<28>, data_trst_92<29>, data_trst_92<30>, data_trst_92<31>, data_trst_93<24>, data_trst_93<25>, data_trst_93<26>, data_trst_93<27>, data_trst_93<28>, data_trst_93<29>, data_trst_93<30>, data_trst_93<31>, data_trst_94<24>, data_trst_94<25>, data_trst_94<26>, data_trst_94<27>, data_trst_94<28>, data_trst_94<29>, data_trst_94<30>, data_trst_94<31>, data_trst_95<24>, data_trst_95<25>, data_trst_95<26>, data_trst_95<27>, data_trst_95<28>, data_trst_95<29>, data_trst_95<30>, data_trst_95<31>, data_trst_96<24>, data_trst_96<25>, data_trst_96<26>, data_trst_96<27>, data_trst_96<28>, data_trst_96<29>, data_trst_96<30>, data_trst_96<31>, data_trst_97<24>, data_trst_97<25>, data_trst_97<26>, data_trst_97<27>, data_trst_97<28>, data_trst_97<29>, data_trst_97<30>, data_trst_97<31>, data_trst_98<24>, data_trst_98<25>, data_trst_98<26>, data_trst_98<27>, data_trst_98<28>, data_trst_98<29>, data_trst_98<30>, data_trst_98<31>, data_trst_99<24>, data_trst_99<25>, data_trst_99<26>, data_trst_99<27>, data_trst_99<28>, data_trst_99<29>, data_trst_99<30>, data_trst_99<31>, data_trst_9<24>, data_trst_9<25>, data_trst_9<26>, data_trst_9<27>, data_trst_9<28>, data_trst_9<29>, data_trst_9<30>, data_trst_9<31>.
-
-Optimizing unit <pc> ...
-
-Optimizing unit <data_late> ...
+WARNING:Xst:1426 - The value init of the FF/Latch out_29 hinder the constant cleaning in the block instruction_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch out_28 hinder the constant cleaning in the block instruction_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch out_27 hinder the constant cleaning in the block instruction_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch out_21 hinder the constant cleaning in the block instruction_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch out_16 hinder the constant cleaning in the block instruction_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch out_0 hinder the constant cleaning in the block instruction_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <out_31> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_1> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_2> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_3> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_4> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_5> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_6> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_7> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_8> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_9> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_10> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_11> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_12> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_13> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_14> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_15> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_17> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_18> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_19> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_20> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_22> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_23> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_24> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_25> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_26> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_30> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ir/out_31> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_30> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_26> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_25> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_24> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_23> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_22> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_20> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_19> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_18> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_17> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_15> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_14> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_13> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_12> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_11> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_10> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_9> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_8> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_7> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_6> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_5> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_4> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_3> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_2> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_1> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2042 - Unit cpu: 32 internal tristates are replaced by logic (pull-up yes): N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, N20, N21, N22, N23, N24, N25, N26, N27, N28, N29, N3, N30, N31, N32, N33, N34, N4, N5, N6, N7, N8, N9.
 
 Optimizing unit <cpu> ...
 
-Optimizing unit <data_memory> ...
-
 Optimizing unit <control_unit> ...
 
-Optimizing unit <instruction_memory> ...
-
 Optimizing unit <alu> ...
-WARNING:Xst:2677 - Node <dl3/out_31> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_30> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_29> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_28> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_27> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_26> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_25> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_24> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_23> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_22> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_21> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_20> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_19> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_18> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_17> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_16> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_15> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_14> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_13> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_12> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_11> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_10> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_9> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_8> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <dl3/out_7> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <instruction_memory/out_5> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <instruction_memory/out_6> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <instruction_memory/out_7> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <instruction_memory/out_8> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <instruction_memory/out_10> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:2677 - Node <instruction_memory/out_9> of sequential type is unconnected in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_31> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_1> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_2> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_0> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_3> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_4> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_11> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_12> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_13> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_14> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_15> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_16> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_17> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_19> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_20> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_18> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_21> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_22> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_24> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_25> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_23> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_26> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_27> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_29> is equivalent to a wire in block <cpu>.
-WARNING:Xst:1294 - Latch <instruction_memory/out_30> is equivalent to a wire in block <cpu>.
 WARNING:Xst:1294 - Latch <instruction_memory/out_28> is equivalent to a wire in block <cpu>.
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data3> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data4> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data5> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data6> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data7> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data8> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data2>, <Mram_data9> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data12> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data13> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data14> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data15> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data16> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data17> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <Mram_data11>, <Mram_data18> are equivalent, second RAM is removed
+WARNING:Xst:1710 - FF/Latch <ir/out_0> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_16> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_21> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_27> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_28> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ir/out_29> (without init value) has a constant value of 1 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_9> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_8> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_7> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_6> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_5> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_4> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_3> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_31> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_30> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_2> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_29> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_28> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_27> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_26> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_25> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_24> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_23> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_22> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_21> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_20> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_1> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_19> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_18> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_17> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_16> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_15> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_14> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_13> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_12> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_11> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_10> is unconnected in block <cpu>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dl2/out_0> is unconnected in block <cpu>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 43.
-FlipFlop ir/out_28 has been replicated 2 time(s)
-FlipFlop ir/out_29 has been replicated 2 time(s)
+INFO:Xst:2399 - RAMs <reg_file/Mram_data>, <reg_file/Mram_data1> are equivalent, second RAM is removed
+Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 1.
+FlipFlop control_unit/current_state_0 has been replicated 1 time(s)
+FlipFlop control_unit/current_state_1 has been replicated 1 time(s)
+FlipFlop control_unit/current_state_2 has been replicated 2 time(s)
+FlipFlop control_unit/current_state_3 has been replicated 1 time(s)
+FlipFlop control_unit/current_state_4 has been replicated 1 time(s)
+FlipFlop control_unit/current_state_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop control_unit/current_state_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop control_unit/current_state_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop control_unit/current_state_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop control_unit/current_state_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -1351,8 +776,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1194
- Flip-Flops                                            : 1194
+# Registers                                            : 88
+ Flip-Flops                                            : 88
 
 =========================================================================
 
@@ -1375,32 +800,27 @@ Top Level Output File Name         : cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4052
+# BELS                             : 144
 #      GND                         : 1
-#      INV                         : 23
-#      LUT1                        : 28
-#      LUT2                        : 9
-#      LUT3                        : 102
-#      LUT4                        : 132
-#      LUT5                        : 304
-#      LUT6                        : 2888
-#      MUXCY                       : 78
-#      MUXF7                       : 424
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT3                        : 1
+#      LUT5                        : 8
+#      LUT6                        : 37
+#      MUXCY                       : 31
 #      VCC                         : 1
-#      XORCY                       : 62
-# FlipFlops/Latches                : 1199
-#      FD                          : 37
-#      FD_1                        : 103
-#      FDE                         : 1024
-#      FDE_1                       : 30
+#      XORCY                       : 32
+# FlipFlops/Latches                : 93
+#      FD                          : 16
+#      FD_1                        : 72
 #      LD                          : 5
-# RAMS                             : 4
-#      RAM128X1D                   : 2
+# RAMS                             : 2
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 1
-#      OBUF                        : 1
+# IO Buffers                       : 200
+#      OBUF                        : 168
+#      OBUFT                       : 32
 
 Device utilization summary:
 ---------------------------
@@ -1409,22 +829,21 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1199  out of  18224     6%  
- Number of Slice LUTs:                 3494  out of   9112    38%  
-    Number used as Logic:              3486  out of   9112    38%  
-    Number used as Memory:                8  out of   2176     0%  
-       Number used as RAM:                8
+ Number of Slice Registers:              88  out of  18224     0%  
+ Number of Slice LUTs:                   79  out of   9112     0%  
+    Number used as Logic:                79  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3554
-   Number with an unused Flip Flop:    2355  out of   3554    66%  
-   Number with an unused LUT:            60  out of   3554     1%  
-   Number of fully used LUT-FF pairs:  1139  out of   3554    32%  
-   Number of unique control sets:       104
+ Number of LUT Flip Flop pairs used:    117
+   Number with an unused Flip Flop:      29  out of    117    24%  
+   Number with an unused LUT:            38  out of    117    32%  
+   Number of fully used LUT-FF pairs:    50  out of    117    42%  
+   Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                           2
- Number of bonded IOBs:                   2  out of    232     0%  
+ Number of IOs:                         201
+ Number of bonded IOBs:                 201  out of    232    86%  
+    IOB Flip Flops/Latches:               5
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of     32     3%  
@@ -1449,13 +868,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------+-------------------------------------+-------+
-Clock Signal                            | Clock buffer(FF name)               | Load  |
-----------------------------------------+-------------------------------------+-------+
-clk                                     | BUFGP                               | 1196  |
-control_unit/_n0075(control_unit/out1:O)| NONE(*)(control_unit/next_state_1)  | 5     |
-N0                                      | NONE(instruction_memory_Mram_data11)| 2     |
-----------------------------------------+-------------------------------------+-------+
+----------------------------------------+-----------------------------------+-------+
+Clock Signal                            | Clock buffer(FF name)             | Load  |
+----------------------------------------+-----------------------------------+-------+
+clk                                     | BUFGP                             | 90    |
+control_unit/_n0071(control_unit/out1:O)| NONE(*)(control_unit/next_state_1)| 5     |
+----------------------------------------+-----------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -1469,9 +887,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 13.595ns (Maximum Frequency: 73.558MHz)
+   Minimum period: 5.135ns (Maximum Frequency: 194.734MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 11.631ns
+   Maximum output required time after clock: 8.315ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1480,100 +898,84 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 13.595ns (frequency: 73.558MHz)
-  Total number of paths / destination ports: 163275 / 2305
+  Clock period: 5.135ns (frequency: 194.734MHz)
+  Total number of paths / destination ports: 444 / 156
 -------------------------------------------------------------------------
-Delay:               6.797ns (Levels of Logic = 5)
-  Source:            control_unit/current_state_3 (FF)
-  Destination:       data_memory/_o2036_31 (FF)
+Delay:               2.568ns (Levels of Logic = 1)
+  Source:            control_unit/current_state_4_1 (FF)
+  Destination:       reg_file/Mram_data (RAM)
   Source Clock:      clk rising
   Destination Clock: clk falling
 
-  Data Path: control_unit/current_state_3 to data_memory/_o2036_31
+  Data Path: control_unit/current_state_4_1 to reg_file/Mram_data
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.447   1.227  control_unit/current_state_3 (control_unit/current_state_3)
-     LUT5:I0->O            1   0.203   0.580  control_unit/current_state[4]_GND_79_o_Select_9_o<4>1_1 (control_unit/current_state[4]_GND_79_o_Select_9_o<4>1)
-     LUT5:I4->O           43   0.205   1.449  control_unit/current_state[4]_op_code[5]_AND_50_o1_1 (control_unit/current_state[4]_op_code[5]_AND_50_o1)
-     LUT4:I3->O           88   0.205   2.046  data_memory/_n060651 (data_memory/_n0606_bdd6)
-     LUT6:I2->O            1   0.203   0.000  data_memory/_o1972_24_dpot_F (N204)
-     MUXF7:I0->O           1   0.131   0.000  data_memory/_o1972_24_dpot (data_memory/_o1972_24_dpot)
-     FDE:D                     0.102          data_memory/_o1972_24
+     FD:C->Q               1   0.447   0.924  control_unit/current_state_4_1 (control_unit/current_state_4_1)
+     LUT5:I0->O            6   0.203   0.744  control_unit/current_state[4]_GND_79_o_Select_17_o<4>1 (control_unit/current_state[4]_GND_79_o_Select_17_o)
+     RAMB8BWER:WEAWEL0         0.250          reg_file/Mram_data
     ----------------------------------------
-    Total                      6.797ns (1.496ns logic, 5.301ns route)
-                                       (22.0% logic, 78.0% route)
+    Total                      2.568ns (0.900ns logic, 1.668ns route)
+                                       (35.1% logic, 64.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 35003 / 1
+  Total number of paths / destination ports: 2309 / 134
 -------------------------------------------------------------------------
-Offset:              11.631ns (Levels of Logic = 11)
-  Source:            control_unit/current_state_2 (FF)
+Offset:              8.315ns (Levels of Logic = 7)
+  Source:            dl1/out_0 (FF)
   Destination:       res_zero (PAD)
-  Source Clock:      clk rising
+  Source Clock:      clk falling
 
-  Data Path: control_unit/current_state_2 to res_zero
+  Data Path: dl1/out_0 to res_zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.447   1.227  control_unit/current_state_2 (control_unit/current_state_2)
-     LUT5:I0->O           10   0.203   0.857  control_unit/current_state[4]_GND_79_o_Select_11_o<4>1_1 (control_unit/current_state[4]_GND_79_o_Select_11_o<4>1)
-     LUT6:I5->O            7   0.205   0.774  mux2/Mmux_out11 (alu_in_a<0>)
-     LUT6:I5->O            1   0.205   0.000  alu/Mmux_result1_rs_lut<0> (alu/Mmux_result1_rs_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  alu/Mmux_result1_rs_cy<0> (alu/Mmux_result1_rs_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  alu/Mmux_result1_rs_cy<1> (alu/Mmux_result1_rs_cy<1>)
-     XORCY:CI->O           1   0.180   0.580  alu/Mmux_result1_rs_xor<2> (alu/Mmux_result1_split<2>)
-     LUT5:I4->O            4   0.205   1.048  alu/Mmux_result7241 (alu_res<2>)
-     LUT6:I0->O            1   0.203   0.827  alu/result[31]_GND_43_o_equal_1_o<31>5 (alu/result[31]_GND_43_o_equal_1_o<31>4)
-     LUT6:I2->O            1   0.203   0.924  alu/result[31]_GND_43_o_equal_1_o<31>6 (alu/result[31]_GND_43_o_equal_1_o<31>5)
-     LUT5:I0->O            1   0.203   0.579  alu/result[31]_GND_43_o_equal_1_o<31>8 (res_zero_OBUF)
+     FD_1:C->Q             2   0.447   0.616  dl1/out_0 (dl1/out_0)
+     INV:I->O              1   0.206   0.000  alu/Mmux_result7_rs_lut<0>1_INV_0 (alu/Mmux_result7_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alu/Mmux_result7_rs_cy<0> (alu/Mmux_result7_rs_cy<0>)
+     XORCY:CI->O           4   0.180   1.048  alu/Mmux_result7_rs_xor<1> (alu_res_1_OBUF)
+     LUT6:I0->O            1   0.203   0.944  alu/result[31]_GND_44_o_equal_1_o<31>1 (alu/result[31]_GND_44_o_equal_1_o<31>)
+     LUT6:I0->O            1   0.203   0.944  alu/result[31]_GND_44_o_equal_1_o<31>2 (alu/result[31]_GND_44_o_equal_1_o<31>1)
+     LUT6:I0->O            1   0.203   0.579  alu/result[31]_GND_44_o_equal_1_o<31>7 (res_zero_OBUF)
      OBUF:I->O                 2.571          res_zero_OBUF (res_zero)
     ----------------------------------------
-    Total                     11.631ns (4.816ns logic, 6.815ns route)
-                                       (41.4% logic, 58.6% route)
+    Total                      8.315ns (4.185ns logic, 4.130ns route)
+                                       (50.3% logic, 49.7% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock N0
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    2.687|         |         |         |
----------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
 -------------------+---------+---------+---------+---------+
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |    6.866|    6.420|    8.762|         |
-control_unit/_n0075|         |    1.179|         |         |
+clk                |         |         |    3.136|         |
+control_unit/_n0071|         |    1.283|         |         |
 -------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock control_unit/_n0075
+Clock to Setup on destination clock control_unit/_n0071
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    1.914|         |
+clk            |         |         |    2.394|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 21.05 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.73 secs
  
 --> 
 
-Total memory usage is 4561896 kilobytes
+Total memory usage is 4522720 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  178 (   0 filtered)
-Number of infos    :   21 (   0 filtered)
+Number of warnings :  259 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

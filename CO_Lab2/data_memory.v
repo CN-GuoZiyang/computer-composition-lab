@@ -29,7 +29,7 @@ module data_memory(clk, address, write_data, read, write, out);
 		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data);
 	end
 	
-	assign out = (read == 1)?data[address]: 8'bz;
+	assign out = (read == 1)?data[address]: 32'bz;
 	
 	always @(negedge clk) begin
 		if(write == 1) begin

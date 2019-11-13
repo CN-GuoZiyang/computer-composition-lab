@@ -1,0 +1,194 @@
+# Reading D:/modeltech64_10.6d/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {test.fdo}
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:32 on Nov 13,2019
+# vlog -reportprogress 300 select_32bit.v 
+# -- Compiling module select_32bit
+# 
+# Top level modules:
+# 	select_32bit
+# End time: 16:34:32 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:32 on Nov 13,2019
+# vlog -reportprogress 300 reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 16:34:32 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:32 on Nov 13,2019
+# vlog -reportprogress 300 pc_select.v 
+# -- Compiling module pc_select
+# 
+# Top level modules:
+# 	pc_select
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 pc.v 
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 npc_adder.v 
+# -- Compiling module npc_adder
+# 
+# Top level modules:
+# 	npc_adder
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 ir.v 
+# -- Compiling module ir
+# 
+# Top level modules:
+# 	ir
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 extender.v 
+# -- Compiling module extender
+# 
+# Top level modules:
+# 	extender
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 equal_judge.v 
+# -- Compiling module equal_judge
+# 
+# Top level modules:
+# 	equal_judge
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 data_memory.v 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:33 on Nov 13,2019
+# vlog -reportprogress 300 data_late.v 
+# -- Compiling module data_late
+# 
+# Top level modules:
+# 	data_late
+# End time: 16:34:33 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:34 on Nov 13,2019
+# vlog -reportprogress 300 control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 16:34:34 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:34 on Nov 13,2019
+# vlog -reportprogress 300 alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 16:34:34 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:34 on Nov 13,2019
+# vlog -reportprogress 300 cpu.v 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 16:34:34 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:34 on Nov 13,2019
+# vlog -reportprogress 300 test.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 16:34:34 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:34:34 on Nov 13,2019
+# vlog -reportprogress 300 D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:34:34 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.test glbl 
+# Start time: 16:34:35 on Nov 13,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "control_unit(fast)".
+# Loading work.test(fast)
+# Loading work.cpu(fast)
+# Loading work.pc(fast)
+# Loading work.npc_adder(fast)
+# Loading work.instruction_memory(fast)
+# Loading work.ir(fast)
+# Loading work.select_32bit(fast)
+# Loading work.extender(fast)
+# Loading work.reg_file(fast)
+# Loading work.data_late(fast)
+# Loading work.equal_judge(fast)
+# Loading work.alu(fast)
+# Loading work.data_memory(fast)
+# Loading work.pc_select(fast)
+# Loading work.control_unit(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) cpu.v(72): [PCDPC] - Port size (32) does not match connection size (5) for port 'one'. The port definition is at: select_32bit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /test/uut/mux1 File: select_32bit.v
+# ** Warning: (vsim-3015) cpu.v(72): [PCDPC] - Port size (32) does not match connection size (5) for port 'two'. The port definition is at: select_32bit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /test/uut/mux1 File: select_32bit.v
+# ** Warning: (vsim-3015) cpu.v(72): [PCDPC] - Port size (32) does not match connection size (5) for port 'out'. The port definition is at: select_32bit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /test/uut/mux1 File: select_32bit.v
+# ** Warning: (vsim-3015) cpu.v(74): [PCDPC] - Port size (16) does not match connection size (5) for port 'immediate16'. The port definition is at: extender.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /test/uut/extender File: extender.v
+# ** Warning: (vsim-3015) cpu.v(74): [PCDPC] - Port size (26) does not match connection size (5) for port 'immediate26'. The port definition is at: extender.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /test/uut/extender File: extender.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 16:35:06 on Nov 13,2019, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 5

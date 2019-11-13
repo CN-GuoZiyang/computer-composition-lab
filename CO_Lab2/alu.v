@@ -34,16 +34,12 @@ module alu(func, srca, srcb, result, zero);
 		case(func)
 			3'b000: result = srca + srcb;
 			3'b001: result = srca - srcb;
-			3'b010: result = srca << srcb;
+			3'b010: result = srca & srcb;
 			3'b011: result = srca | srcb;
-			3'b100: result = srca & srcb;
+			3'b100: result = srca ^ srcb;
 			3'b101: result = (srca < srcb) ? 1 : 0;
-			3'b110: begin
-				if(srca < srcb && (srca[31] == srcb[31]))result = 1;
-            else if (srca[31] == 1 && srcb[31] == 0) result = 1;
-            else result = 0;
-			end
-			3'b111: result = srca ^ srcb;
+			3'b110: result = srca + (srcb << 2);
+			3'b111: result = {srca[31:28], srcb<<2};
 			default: begin
 				result = 32'd0;
 			end

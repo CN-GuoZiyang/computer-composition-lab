@@ -17,16 +17,16 @@
 <msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
 </msg>
 
-<msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">control_unit/_n0075</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">control_unit/_n0071</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="2410" delta="new" >This design is using one or more 9K Block RAMs (RAMB8BWER).  9K Block RAM initialization data, both user defined and default, may be incorrect and should not be used.  For more information, please reference Xilinx Answer Record 39999.
+<msg type="warning" file="PhysDesignRules" num="2410" delta="old" >This design is using one or more 9K Block RAMs (RAMB8BWER).  9K Block RAM initialization data, both user defined and default, may be incorrect and should not be used.  For more information, please reference Xilinx Answer Record 39999.
 </msg>
 
 </messages>

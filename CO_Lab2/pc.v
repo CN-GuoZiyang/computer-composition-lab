@@ -27,8 +27,8 @@ module pc(clk, new_address, current_address);
 		current_address <= 32'd0;
 	end
 	
-	always @(posedge clk) begin
-		current_address <= new_address;
-	end
+	//always @(posedge clk) begin
+		//current_address <= new_address;
+	//end
 
 endmodule

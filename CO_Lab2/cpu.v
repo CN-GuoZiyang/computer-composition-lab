@@ -20,37 +20,50 @@
 //////////////////////////////////////////////////////////////////////////////////
 module cpu(
 	input clk,
-	output res_zero
+	output res_zero,
+	output alu_select_a,
+	output alu_select_b,
+	output [31:0] current_op,
+	output [31:0] alu_in_a,
+	output [31:0] alu_in_b,
+	output [31:0] alu_res,
+	output [31:0] data_memory_out,
+	output [4:0] current_state,
+	output [31:0] reg_write_data
 );
 
-	wire alu_select_a;	//aluÊäÈëÑ¡Ôñ
-	wire alu_select_b;	//aluÊäÈëÑ¡Ôñ
-	wire reg_write_select;	//regÐ´»ØÊý¾ÝÑ¡Ôñ
-	wire reg_write;	//regÐ´ÈëÐÅºÅ
-	wire instruction_read;	//Ö¸Áî´æ´¢Æ÷¶ÁÐÅºÅ
-	wire data_memory_read;	//Êý¾Ý´æ´¢Æ÷¶ÁÐÅºÅ
-	wire data_memory_write;	//Êý¾Ý´æ´¢Æ÷Ð´ÐÅºÅ
-	wire reg_write_address_select;	//¼Ä´æÆ÷Ð´»ØµØÖ·Ñ¡Ôñ
-	wire extender_select;	//Êý¾ÝÀ©Õ¹Ñ¡Ôñ
-	wire next_address_select; //pcµØÖ·Ñ¡Ôñ
-	wire [2:0] alu_op;	//alu²Ù×÷Âë
-	wire ir_write;	//ir¶ÁÐÅºÅ
+	//wire alu_select_a;	//aluï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	//wire alu_select_b;	//aluï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	wire reg_write_select;	//regÐ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	wire reg_write;	//regÐ´ï¿½ï¿½ï¿½Åºï¿½
+	wire instruction_read;	//Ö¸ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿
+	wire data_memory_read;	//ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
+	wire data_memory_write;	//ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½Ð´ï¿½Åºï¿½
+	wire reg_write_address_select;	//ï¿½Ä´ï¿½ï¿½ï¿½Ð´ï¿½Øµï¿½Ö·Ñ¡ï¿½ï¿½
+	wire extender_select;	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹Ñ¡ï¿½ï¿½
+	wire next_address_select; //pcï¿½ï¿½Ö·Ñ¡ï¿½ï¿½
+	wire [2:0] alu_op;	//aluï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	wire ir_write;	//irï¿½ï¿½ï¿½Åºï¿½
 	
 	wire equal;
 	
-	wire [31:0] pc_addr, next_pc, npc, op_ir_in, current_op, extender_out;
+	wire [31:0] pc_addr, next_pc, npc, op_ir_in;
 	
-	wire [31:0] read_data_a, read_data_b, reg_write_data, read_dataa, read_datab;
+	wire [31:0] read_data_a, read_data_b, read_dataa, read_datab, extender_out;
 	
-	wire [31:0] alu_in_a, alu_in_b, alu_res;
+	// wire [31:0] alu_in_a, alu_in_b, alu_res;
 	
-	wire [31:0] data_memory_address, data_memory_out, mux4out;
+	wire [31:0] data_memory_address, mux4out;
 	
 	wire [5:0] op_code;
 	
 	wire [10:0] alu_func;
 	
-	wire [4:0] irs, rrs2, ird, rrd, iins, jname, reg_write_address;
+	wire [4:0] irs, rrs2, ird, rrd, reg_write_address;
+	
+	wire [15:0] iins;
+	
+   wire [25:0]	jname;
 	
 	pc pc(clk, next_pc, pc_addr);
 	
@@ -69,7 +82,7 @@ module cpu(
 	assign iins = current_op[15:0];
 	assign jname = current_op[25:0];
 	
-	select_32bit mux1(reg_write_address_select, ird, rrd, reg_write_address);
+	select_5bit mux1(reg_write_address_select, ird, rrd, reg_write_address);
 	
 	extender extender(iins, jname, extender_select, extender_out);
 	
@@ -98,21 +111,23 @@ module cpu(
 	data_late dl4(clk, mux4out, reg_write_data);
 	
 	control_unit control_unit(
-		clk,	//Ê±ÖÓ
-		op_code,	//Ö¸Áî²Ù×÷Âë
-		equal,	//BEQÏàµÈÅÐ¶Ï
-		alu_select_a,	//aluÊäÈëÑ¡Ôñ
-		alu_select_b,	//aluÊäÈëÑ¡Ôñ
-		reg_write_select,	//regÐ´»ØÊý¾ÝÑ¡Ôñ
-		reg_write,	//regÐ´ÈëÐÅºÅ
-		instruction_read,	//Ö¸Áî´æ´¢Æ÷¶ÁÐÅºÅ
-		data_memory_read,	//Êý¾Ý´æ´¢Æ÷¶ÁÐÅºÅ
-		data_memory_write,	//Êý¾Ý´æ´¢Æ÷Ð´ÐÅºÅ
-		reg_write_address_select,	//¼Ä´æÆ÷Ð´»ØµØÖ·Ñ¡Ôñ
-		extender_select,	//Êý¾ÝÀ©Õ¹Ñ¡Ôñ
-		next_address_select, //pcµØÖ·Ñ¡Ôñ
-		alu_op,	//alu²Ù×÷Âë
-		ir_write	//ir¶ÁÐÅºÅ
+		clk,	//Ê±ï¿½ï¿½
+		op_code,	//Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
+		alu_func,
+		equal,	//BEQï¿½ï¿½ï¿½ï¿½Ð¶ï¿
+		alu_select_a,	//aluï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+		alu_select_b,	//aluï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+		reg_write_select,	//regÐ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+		reg_write,	//regÐ´ï¿½ï¿½ï¿½Åºï¿½
+		instruction_read,	//Ö¸ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿
+		data_memory_read,	//ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
+		data_memory_write,	//ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½Ð´ï¿½Åºï¿½
+		reg_write_address_select,	//ï¿½Ä´ï¿½ï¿½ï¿½Ð´ï¿½Øµï¿½Ö·Ñ¡ï¿½ï¿½
+		extender_select,	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹Ñ¡ï¿½ï¿½
+		next_address_select, //pcï¿½ï¿½Ö·Ñ¡ï¿½ï¿½
+		alu_op,	//aluï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ir_write,	//irï¿½ï¿½ï¿½Åºï¿½
+		current_state
 	);
 
 endmodule

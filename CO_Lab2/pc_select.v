@@ -27,6 +27,7 @@ module pc_select(select, npc, reg_address, new_address);
 		case(select)
 			1'b0: new_address = npc;
 			1'b1: new_address = reg_address;
+			default: new_address = 32'd0;
 		endcase
 	end
 

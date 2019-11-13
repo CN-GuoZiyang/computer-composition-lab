@@ -19,24 +19,26 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module control_unit(
-	input clk,	//Ê±ÖÓ
-	input [5:0] op_code,	//Ö¸Áî²Ù×÷Âë
-	input equal,	//BEQÏàµÈÅÐ¶Ï
-	output reg alu_select_a,	//aluÊäÈëÑ¡Ôñ
-	output reg alu_select_b,	//aluÊäÈëÑ¡Ôñ
-	output reg reg_write_select,	//regÐ´»ØÊý¾ÝÑ¡Ôñ
-	output reg reg_write,	//regÐ´ÈëÐÅºÅ
-	output reg instruction_read,	//Ö¸Áî´æ´¢Æ÷¶ÁÐÅºÅ
-	output reg data_memory_read,	//Êý¾Ý´æ´¢Æ÷¶ÁÐÅºÅ
-	output reg data_memory_write,	//Êý¾Ý´æ´¢Æ÷Ð´ÐÅºÅ
-	output reg reg_write_address_select,	//¼Ä´æÆ÷Ð´»ØµØÖ·Ñ¡Ôñ
-	output reg extender_select,	//Êý¾ÝÀ©Õ¹Ñ¡Ôñ
-	output reg next_address_select, //pcµØÖ·Ñ¡Ôñ
-	output reg [2:0] alu_op,	//alu²Ù×÷Âë
-	output reg ir_write	//ir¶ÁÐÅºÅ
+	input clk,	//Ê±ï¿½ï¿½
+	input [5:0] op_code,
+	input [10:0] alu_func,
+	input equal,	//BEQï¿½ï¿½ï¿½ï¿½Ð¶ï¿
+	output reg alu_select_a,	//aluï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	output reg alu_select_b,	//aluï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	output reg reg_write_select,	//regÐ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	output reg reg_write,	//regÐ´ï¿½ï¿½ï¿½Åºï¿½
+	output reg instruction_read,	//Ö¸ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿
+	output reg data_memory_read,	//ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
+	output reg data_memory_write,	//ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½Ð´ï¿½Åºï¿½
+	output reg reg_write_address_select,	//ï¿½Ä´ï¿½ï¿½ï¿½Ð´ï¿½Øµï¿½Ö·Ñ¡ï¿½ï¿½
+	output reg extender_select,	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹Ñ¡ï¿½ï¿½
+	output reg next_address_select, //pcï¿½ï¿½Ö·Ñ¡ï¿½ï¿½
+	output reg [2:0] alu_op,	//aluï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	output reg ir_write,	//irï¿½ï¿½ï¿½Åºï¿½
+	output reg [4:0] current_state
 );
 
-	// Ö¸ÁîÖ´ÐÐ½×¶ÎÂë
+	// Ö¸ï¿½ï¿½Ö´ï¿½Ð½×¶ï¿½ï¿½ï¿½
 	parameter [4:0]	sIF = 5'b00001,
 							sID = 5'b00010,
 							sEX = 5'b00100,
@@ -44,15 +46,12 @@ module control_unit(
 							sWB = 5'b10000;
 	
 	parameter [5:0]	J = 6'b000000,
-							BEQZ = 6'b000010,
-							AND = 6'b000100,
-							OR = 6'b000100,
-							ADDI = 6'b001010,
-							SUBI = 6'b001000,
+							BEQ = 6'b000010,
+							ALU = 6'b000100,
 							SW = 6'b001100,
 							LW = 6'b001110;
 	
-	reg [4:0] current_state, next_state;
+	reg [4:0] next_state;
 	
 	initial begin
 		alu_select_a = 0;
@@ -70,12 +69,12 @@ module control_unit(
 		current_state = sIF;
 	end
 	
-	// ¸üÐÂµ½ÏÂÒ»¸öÖÜÆÚ
+	// ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	always @(posedge clk) begin
 		current_state <= next_state;
 	end
 	
-	// È·¶¨ÏÂÒ»¸öÖÜÆÚ
+	// È·ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	always @(current_state) begin
 		case(current_state)
 			sIF: next_state = sID;
@@ -86,35 +85,35 @@ module control_unit(
 		endcase
 	end
 	
-	// ¸ù¾ÝÌõ¼þÅÐ¶Ï¸÷¸öÊ¹ÄÜÐÅºÅ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶Ï¸ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Åºï¿½
 	always @(current_state) begin
 		
-		ir_write = (current_state == sIF) ? 1 : 0;
+		alu_select_a = (op_code == J || op_code == BEQ)?1:0;
 		
-		reg_write = (current_state == sWB && (op_code != J || op_code != BEQZ || op_code != SW)) ? 1 : 0;
-		
-		reg_write_address_select = (op_code == AND || op_code == OR) ? 1 : 0;
-		
-		extender_select = (current_state == sID && op_code == J) ? 1 : 0;
-		
-		alu_select_a = (current_state == sEX && (op_code == J || op_code == BEQZ)) ? 1 : 0;
-		
-		alu_select_b = (current_state == sEX && (op_code == AND || op_code == OR)) ? 1 : 0;
-		
-		if(op_code == SUBI) alu_op = 3'b001;
-		else if(op_code == AND) alu_op = 3'b100;
-		else if(op_code == OR) alu_op = 3'b011;
-		else alu_op = 3'b000;
-		
+		alu_select_b = (op_code == J || op_code == BEQ || op_code == SW || op_code == LW)?1:0;
+
+		reg_write_select = (op_code == LW)?1:0;
+
+		reg_write = (current_state == sWB && (op_code == ALU || op_code == LW))?1:0;
+
+		data_memory_read = (current_state == sMEM && op_code == LW)?1:0;
+
+		data_memory_write = (current_state == sMEM && op_code == SW)?1:0;
+
+		reg_write_address_select = (op_code == LW)?0:1;
+
+		extender_select = (op_code == BEQ || op_code == LW || op_code == SW)?0:1;
+
 		if(current_state == sID && op_code == J) next_address_select = 1;
-		else if(current_state == sEX && op_code == BEQZ && equal == 1) next_address_select = 1;
+		else if(current_state == sEX && (op_code == BEQ && equal == 1)) next_address_select = 1;
 		else next_address_select = 0;
-		
-		data_memory_read = (current_state == sMEM && op_code == LW) ? 1 : 0;
-		
-		data_memory_write = (current_state == sMEM && op_code == SW) ? 1 : 0;
-		
-		reg_write_select = (op_code == LW) ? 1 : 0;
+
+		ir_write = (current_state == sIF)?1:0;
+
+		if(op_code == ALU) alu_op = alu_func[2:0];
+		else if(op_code == BEQ) alu_op = 3'b110;
+		else if(op_code == J) alu_op = 3'b111;
+		else alu_op = 3'b000;
 		
 	end
 	
