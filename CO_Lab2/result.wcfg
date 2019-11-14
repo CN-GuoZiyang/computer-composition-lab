@@ -22,15 +22,16 @@
    <wvobject fp_name="/test/next_pc" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">next_pc[31:0]</obj_property>
       <obj_property name="ObjectShortName">next_pc[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test/pc_addr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">pc_addr[31:0]</obj_property>
       <obj_property name="ObjectShortName">pc_addr[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test/current_op" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">current_op[31:0]</obj_property>
       <obj_property name="ObjectShortName">current_op[31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test/alu_in_a" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">alu_in_a[31:0]</obj_property>
@@ -50,20 +51,20 @@
    <wvobject fp_name="/test/current_state" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">current_state[4:0]</obj_property>
       <obj_property name="ObjectShortName">current_state[4:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test/reg_write_data" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">reg_write_data[31:0]</obj_property>
       <obj_property name="ObjectShortName">reg_write_data[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
    <wvobject fp_name="/test/uut/data_memory/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">data[0:255,31:0]</obj_property>
       <obj_property name="ObjectShortName">data[0:255,31:0]</obj_property>
+      <obj_property name="label">data_memory[0:255,31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <wvobject fp_name="/test/uut/data_memory/data[0]" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">[0,31:0]</obj_property>
@@ -1347,8 +1348,10 @@
       </wvobject>
    </wvobject>
    <wvobject fp_name="/test/uut/reg_file/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">data[1:31,31:0]</obj_property>
       <obj_property name="ObjectShortName">data[1:31,31:0]</obj_property>
+      <obj_property name="label">reg_data[1:31,31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <wvobject fp_name="/test/uut/reg_file/data[1]" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">[1,31:0]</obj_property>

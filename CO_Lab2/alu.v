@@ -24,6 +24,8 @@ module alu(func, srca, srcb, result, zero);
 	output reg [31:0] result;
 	output zero;
 	
+	reg [31:0] temp;
+	
 	initial begin
 		result = 31'd0;
 	end
@@ -39,7 +41,10 @@ module alu(func, srca, srcb, result, zero);
 			3'b100: result = srca ^ srcb;
 			3'b101: result = (srca < srcb) ? 1 : 0;
 			3'b110: result = srca + (srcb << 2);
-			3'b111: result = {srca[31:28], srcb<<2};
+			3'b111: begin 
+				temp = srcb << 2;
+				result = {srca[31:26], temp[25:0]};
+			end
 			default: begin
 				result = 32'd0;
 			end

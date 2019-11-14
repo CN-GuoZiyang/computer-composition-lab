@@ -8,10 +8,7 @@
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\instruction_memory.v" Line 35: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 31: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 42: Result of <arg fmt="%d" index="1">36</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">32</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 33: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Signal &lt;<arg fmt="%s" index="1">op_code</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.

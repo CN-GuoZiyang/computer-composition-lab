@@ -8,6 +8,11 @@
 <msg type="info" file="Par" num="282" delta="old" >No user timing constraints were detected or you have set the option to ignore timing constraints (&quot;par -x&quot;). Place and Route will run in &quot;Performance Evaluation Mode&quot; to automatically improve the performance of all internal clocks in this design. Because there are not defined timing requirements, a timing score will not be reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock. Note: For the fastest runtime, set the effort level to &quot;std&quot;.  For best performance, set the effort level to &quot;high&quot;.
 </msg>
 
+<msg type="warning" file="Route" num="452" delta="new" >
+ Not all timing constraints have been achieved.  Please consult the `Post-Place &amp; Route Static Timing Report&apos; to determine the actual timing results.  For suggestions on how to work around this problem go to http://support.xilinx.com and `Search Answers Database&apos; using the text of this message.
+
+</msg>
+
 <msg type="info" file="Par" num="459" delta="old" >The Clock Report is not displayed in the non timing-driven mode.
 </msg>
 

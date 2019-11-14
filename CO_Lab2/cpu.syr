@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: cpu.prj
 
@@ -166,8 +166,7 @@ Elaborating module <equal_judge>.
 Elaborating module <select_32bit>.
 
 Elaborating module <alu>.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 31: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 42: Result of 36-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v" Line 33: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <data_memory>.
 Reading initialization file \"C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt\".
@@ -313,15 +312,15 @@ Unit <select_32bit> synthesized.
 
 Synthesizing Unit <alu>.
     Related source file is "C:\Users\guo\Desktop\computer-composition-lab\CO_Lab2\alu.v".
-    Found 32-bit subtractor for signal <srca[31]_srcb[31]_sub_4_OUT> created at line 36.
-    Found 32-bit adder for signal <srca[31]_srcb[31]_add_2_OUT> created at line 35.
-    Found 32-bit adder for signal <srca[31]_srcb[29]_add_9_OUT> created at line 41.
-    Found 32-bit 8-to-1 multiplexer for signal <result> created at line 34.
-    Found 32-bit comparator greater for signal <srca[31]_srcb[31]_LessThan_8_o> created at line 40
+    Found 32-bit subtractor for signal <srca[31]_srcb[31]_sub_4_OUT> created at line 38.
+    Found 32-bit adder for signal <srca[31]_srcb[31]_add_2_OUT> created at line 37.
+    Found 32-bit adder for signal <srca[31]_srcb[29]_add_9_OUT> created at line 43.
+    Found 32-bit 8-to-1 multiplexer for signal <result> created at line 36.
+    Found 32-bit comparator greater for signal <srca[31]_srcb[31]_LessThan_8_o> created at line 42
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
-	inferred  11 Multiplexer(s).
+	inferred  12 Multiplexer(s).
 Unit <alu> synthesized.
 
 Synthesizing Unit <data_memory>.
@@ -418,10 +417,10 @@ Macro Statistics
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 24
+# Multiplexers                                         : 25
  1-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
- 32-bit 2-to-1 multiplexer                             : 16
+ 32-bit 2-to-1 multiplexer                             : 17
  5-bit 2-to-1 multiplexer                              : 1
 # Tristates                                            : 32
  1-bit tristate buffer                                 : 32
@@ -620,10 +619,10 @@ Macro Statistics
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 24
+# Multiplexers                                         : 25
  1-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
- 32-bit 2-to-1 multiplexer                             : 16
+ 32-bit 2-to-1 multiplexer                             : 17
  5-bit 2-to-1 multiplexer                              : 1
 # Xors                                                 : 1
  32-bit xor2                                           : 1
@@ -676,8 +675,9 @@ WARNING:Xst:1294 - Latch <instruction_memory/out_30> is equivalent to a wire in 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 5.
-FlipFlop ir/out_27 has been replicated 1 time(s)
-FlipFlop ir/out_28 has been replicated 2 time(s)
+FlipFlop ir/out_25 has been replicated 1 time(s)
+FlipFlop ir/out_27 has been replicated 2 time(s)
+FlipFlop ir/out_28 has been replicated 3 time(s)
 FlipFlop ir/out_29 has been replicated 2 time(s)
 FlipFlop control_unit/current_state_4 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop control_unit/current_state_3 has been replicated 1 time(s) to handle iob=true attribute.
@@ -691,8 +691,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 184
- Flip-Flops                                            : 184
+# Registers                                            : 187
+ Flip-Flops                                            : 187
 
 =========================================================================
 
@@ -722,16 +722,16 @@ Primitive and Black Box Usage:
 #      LUT2                        : 1
 #      LUT3                        : 49
 #      LUT4                        : 66
-#      LUT5                        : 120
-#      LUT6                        : 120
+#      LUT5                        : 96
+#      LUT6                        : 144
 #      MUXCY                       : 89
 #      VCC                         : 1
 #      XORCY                       : 64
-# FlipFlops/Latches                : 189
+# FlipFlops/Latches                : 192
 #      FD                          : 10
 #      FD_1                        : 105
 #      FDE                         : 32
-#      FDE_1                       : 37
+#      FDE_1                       : 40
 #      LD                          : 5
 # RAMS                             : 4
 #      RAMB16BWER                  : 1
@@ -748,15 +748,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             184  out of  18224     1%  
+ Number of Slice Registers:             187  out of  18224     1%  
  Number of Slice LUTs:                  389  out of   9112     4%  
     Number used as Logic:               389  out of   9112     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    433
-   Number with an unused Flip Flop:     249  out of    433    57%  
-   Number with an unused LUT:            44  out of    433    10%  
-   Number of fully used LUT-FF pairs:   140  out of    433    32%  
+ Number of LUT Flip Flop pairs used:    436
+   Number with an unused Flip Flop:     249  out of    436    57%  
+   Number with an unused LUT:            47  out of    436    10%  
+   Number of fully used LUT-FF pairs:   140  out of    436    32%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -790,7 +790,7 @@ Clock Information:
 ----------------------------------------+-----------------------------------+-------+
 Clock Signal                            | Clock buffer(FF name)             | Load  |
 ----------------------------------------+-----------------------------------+-------+
-clk                                     | BUFGP                             | 188   |
+clk                                     | BUFGP                             | 191   |
 control_unit/_n0072(control_unit/out1:O)| NONE(*)(control_unit/next_state_2)| 5     |
 ----------------------------------------+-----------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -818,7 +818,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 16.368ns (frequency: 61.096MHz)
-  Total number of paths / destination ports: 508211 / 396
+  Total number of paths / destination ports: 515488 / 402
 -------------------------------------------------------------------------
 Delay:               8.184ns (Levels of Logic = 29)
   Source:            ir/out_26 (FF)
@@ -867,7 +867,7 @@ Delay:               8.184ns (Levels of Logic = 29)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 593361 / 231
+  Total number of paths / destination ports: 603777 / 231
 -------------------------------------------------------------------------
 Offset:              12.738ns (Levels of Logic = 26)
   Source:            ir/out_26 (FF)
@@ -934,14 +934,14 @@ clk            |         |         |    1.776|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.67 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.07 secs
  
 --> 
 
 Total memory usage is 4522612 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  180 (   0 filtered)
+Number of warnings :  179 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

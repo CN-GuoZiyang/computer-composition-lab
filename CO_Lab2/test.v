@@ -57,10 +57,8 @@ module test;
 	initial begin
 	   #10;
 		clk = 0;
-		forever begin
-			#10;
-			clk = ~clk;
-		end
+		repeat(89) #10 clk = ~clk;
+		$stop();
 	end
       
 endmodule
