@@ -1,16 +1,13 @@
-
 # PlanAhead Generated physical constraints 
 
 NET "clk" LOC = V10;
-
-# PlanAhead Generated IO constraints 
-
-# PlanAhead Generated physical constraints 
-
 NET "equal" LOC = T11;
+NET "res_zero" LOC = R11;
+NET "reset" LOC = T5;
 
 # PlanAhead Generated IO constraints 
 
-# PlanAhead Generated physical constraints 
-
-NET "res_zero" LOC = R11;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "equal" IOSTANDARD = LVCMOS33;
+NET "res_zero" IOSTANDARD = LVCMOS33;

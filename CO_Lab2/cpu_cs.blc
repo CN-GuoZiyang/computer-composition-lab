@@ -20,12 +20,12 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4405544 kilobytes
+Total memory usage is 4405564 kilobytes
 
 Writing NGC file "C:/Users/Ziyang
 Guo/Desktop/computer-composition-lab/CO_Lab2/cpu_cs.ngc" ...
-Total REAL time to NGCBUILD completion:  3 sec
-Total CPU time to NGCBUILD completion:   3 sec
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
 
 Writing NGCBUILD log file "C:/Users/Ziyang
 Guo/Desktop/computer-composition-lab/CO_Lab2/cpu_cs.blc"...

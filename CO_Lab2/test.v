@@ -26,6 +26,7 @@ module test;
 
 	// Inputs
 	reg clk;
+	reg reset;
 
 	// Outputs
 	wire res_zero;
@@ -33,7 +34,8 @@ module test;
 
 	// Instantiate the Unit Under Test (UUT)
 	cpu uut (
-		.clk(clk), 
+		.clk(clk),
+		.reset(reset),
 		.res_zero(res_zero), 
 		.equal(equal)
 	);

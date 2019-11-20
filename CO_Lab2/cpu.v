@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module cpu(
 	input clk,
+   input reset,
 	output res_zero,
 	output equal
 );
@@ -69,7 +70,7 @@ module cpu(
 	
 	wire [31:0] data_memory_out;
 	
-	pc pc(clk, renew_pc, next_pc, pc_addr);
+	pc pc(clk, reset, renew_pc, next_pc, pc_addr);
 	
 	npc_adder npc_adder(pc_addr, npc);
 	
@@ -90,7 +91,7 @@ module cpu(
 	
 	extender extender(iins, jname, extender_select, extender_out);
 	
-	reg_file reg_file(clk, reg_write, irs, rrs2, reg_write_address, reg_write_data, read_data_a, read_data_b);
+	reg_file reg_file(clk, reset, reg_write, irs, rrs2, reg_write_address, reg_write_data, read_data_a, read_data_b);
 	
 	data_late dl1(clk, read_data_a, read_dataa);
 	
@@ -106,7 +107,7 @@ module cpu(
 	
 	data_late dl3(clk, alu_res, data_memory_address);
 	
-	data_memory data_memory(clk, data_memory_address, read_data_b, data_memory_read, data_memory_write, data_memory_out);
+	data_memory data_memory(clk, reset, data_memory_address, read_data_b, data_memory_read, data_memory_write, data_memory_out);
 	
 	pc_select pc_select(next_address_select, npc, alu_res, next_pc);
 	
@@ -116,6 +117,7 @@ module cpu(
 	
 	control_unit control_unit(
 		clk,	//Ê±ï¿½ï¿½
+		reset,
 		op_code,	//Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
 		alu_func,
 		equal,	//BEQï¿½ï¿½ï¿½ï¿½Ð¶ï¿

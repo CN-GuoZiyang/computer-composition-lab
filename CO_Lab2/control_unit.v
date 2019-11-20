@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module control_unit(
 	input clk,	//ʱ��
+	input reset,
 	input [5:0] op_code,
 	input [10:0] alu_func,
 	input equal,	//BEQ����ж�
@@ -72,8 +73,9 @@ module control_unit(
 	end
 	
 	// ���µ���һ������
-	always @(posedge clk) begin
-		current_state <= next_state;
+	always @(posedge clk or negedge reset) begin
+		if(reset == 0) current_state <= sIF;
+		else current_state <= next_state;
 	end
 	
 	// ȷ����һ������

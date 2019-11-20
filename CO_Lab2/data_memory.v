@@ -18,8 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module data_memory(clk, address, write_data, read, write, out);
-	input clk, read, write;
+module data_memory(clk, reset, address, write_data, read, write, out);
+	input clk, reset, read, write;
 	input [31:0] address, write_data;
 	output [31:0] out;
 	
@@ -31,10 +31,11 @@ module data_memory(clk, address, write_data, read, write, out);
 	
 	assign out = (read == 1)?data[address]: 32'bz;
 	
-	always @(negedge clk) begin
-		if(write == 1) begin
-			data[address] <= write_data;
-		end
+	always @(negedge clk or negedge reset) begin
+		if(reset == 0) begin
+			$readmemb("C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data);
+      end
+		else if(write == 1) data[address] <= write_data;
 	end
 
 endmodule

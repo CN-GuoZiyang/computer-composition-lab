@@ -18,8 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module reg_file(clk, write, read_address_a, read_address_b, write_address, write_data, read_out_a, read_out_b);
-	input clk, write;
+module reg_file(clk, reset, write, read_address_a, read_address_b, write_address, write_data, read_out_a, read_out_b);
+	input clk, reset, write;
 	input [4:0] read_address_a, read_address_b, write_address;
 	input [31:0] write_data;
 	output [31:0] read_out_a, read_out_b;
@@ -33,10 +33,11 @@ module reg_file(clk, write, read_address_a, read_address_b, write_address, write
 	assign read_out_a = (read_address_a == 5'd0) ? 32'd0 : data[read_address_a];
 	assign read_out_b = (read_address_b == 5'd0) ? 32'd0 : data[read_address_b];
 	
-	always @(negedge clk) begin
-		if(write == 1'b1 && write_address != 5'd0) begin
-			data[write_address] <= write_data;
-		end
+	always @(negedge clk or negedge reset) begin
+		if(reset == 0) begin
+			$readmemb("C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/register.txt", data);
+      end
+		else if(write == 1'b1 && write_address != 5'd0) data[write_address] <= write_data;
 	end
 
 endmodule

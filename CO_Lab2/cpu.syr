@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Reading design: cpu.prj
 
@@ -158,6 +158,7 @@ Elaborating module <extender>.
 
 Elaborating module <reg_file>.
 Reading initialization file \"C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/register.txt\".
+WARNING:HDLCompiler:817 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\reg_file.v" Line 38: System task readmemb ignored for synthesis
 
 Elaborating module <data_late>.
 
@@ -170,12 +171,11 @@ WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\
 
 Elaborating module <data_memory>.
 Reading initialization file \"C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/data.txt\".
+WARNING:HDLCompiler:817 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\data_memory.v" Line 36: System task readmemb ignored for synthesis
 
 Elaborating module <pc_select>.
 
 Elaborating module <control_unit>.
-WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 102: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 104: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 104: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 106: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -192,11 +192,13 @@ WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\C
 WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 116: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 118: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 118: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 120: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 120: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 122: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 123: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 122: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 124: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:1127 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 134: Assignment to current_state ignored, since the identifier is never used
+WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 125: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\control_unit.v" Line 126: Signal <op_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:1127 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" Line 136: Assignment to current_state ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -204,7 +206,7 @@ WARNING:HDLCompiler:1127 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab
 
 Synthesizing Unit <cpu>.
     Related source file is "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v".
-INFO:Xst:3210 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" line 117: Output port <current_state> of the instance <control_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.v" line 118: Output port <current_state> of the instance <control_unit> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpu> synthesized.
@@ -364,6 +366,7 @@ WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserv
     Found 1-bit tristate buffer for signal <out<0>> created at line 32
     Summary:
 	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
 	inferred  32 Tristate(s).
 Unit <data_memory> synthesized.
 
@@ -387,8 +390,8 @@ Synthesizing Unit <control_unit>.
         LW = 6'b001110
 WARNING:Xst:647 - Input <alu_func<10:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2935 - Signal 'instruction_read', unconnected in block 'control_unit', is tied to its initial value (1).
-    Found 1-bit register for signal <renew_pc>.
     Found 5-bit register for signal <current_state>.
+    Found 1-bit register for signal <renew_pc>.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -420,8 +423,8 @@ Macro Statistics
 # Comparators                                          : 2
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 25
- 1-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 3
  3-bit 2-to-1 multiplexer                              : 5
  32-bit 2-to-1 multiplexer                             : 17
  5-bit 2-to-1 multiplexer                              : 1
@@ -502,7 +505,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs ei
     | Port A                                                              |
     |     aspect ratio   | 256-word x 32-bit                   |          |
     |     clkA           | connected to signal <clk>           | fall     |
-    |     weA            | connected to signal <write>         | high     |
+    |     weA            | connected to internal node          | high     |
     |     addrA          | connected to signal <address>       |          |
     |     diA            | connected to signal <write_data>    |          |
     |     doA            | connected to internal node          |          |
@@ -531,7 +534,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs ei
     | Port A                                                              |
     |     aspect ratio   | 32-word x 32-bit                    |          |
     |     clkA           | connected to signal <clk>           | fall     |
-    |     weA            | connected to internal node          | high     |
+    |     weA            | connected to signal <write_write_address[4]_AND_1_o_0> | high     |
     |     addrA          | connected to signal <write_address> |          |
     |     diA            | connected to signal <write_data>    |          |
     -----------------------------------------------------------------------
@@ -547,7 +550,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data1> will be implemented on LUTs e
     | Port A                                                              |
     |     aspect ratio   | 32-word x 32-bit                    |          |
     |     clkA           | connected to signal <clk>           | fall     |
-    |     weA            | connected to internal node          | high     |
+    |     weA            | connected to signal <write_write_address[4]_AND_1_o_1> | high     |
     |     addrA          | connected to signal <write_address> |          |
     |     diA            | connected to signal <write_data>    |          |
     -----------------------------------------------------------------------
@@ -609,8 +612,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_26> has a const
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_30> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2042 - Unit data_memory: 32 internal tristates are replaced by logic (pull-up yes): out<0>, out<10>, out<11>, out<12>, out<13>, out<14>, out<15>, out<16>, out<17>, out<18>, out<19>, out<1>, out<20>, out<21>, out<22>, out<23>, out<24>, out<25>, out<26>, out<27>, out<28>, out<29>, out<2>, out<30>, out<31>, out<3>, out<4>, out<5>, out<6>, out<7>, out<8>, out<9>.
 
-Optimizing unit <pc> ...
-
 Optimizing unit <ir> ...
 
 Optimizing unit <data_late> ...
@@ -624,6 +625,8 @@ Optimizing unit <extender> ...
 Optimizing unit <pc_select> ...
 
 Optimizing unit <cpu> ...
+
+Optimizing unit <pc> ...
 
 Optimizing unit <reg_file> ...
 
@@ -709,11 +712,11 @@ Top Level Output File Name         : cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 611
+# BELS                             : 615
 #      GND                         : 5
-#      INV                         : 3
+#      INV                         : 5
 #      LUT1                        : 30
-#      LUT2                        : 34
+#      LUT2                        : 36
 #      LUT3                        : 168
 #      LUT4                        : 40
 #      LUT5                        : 29
@@ -723,10 +726,11 @@ Primitive and Black Box Usage:
 #      VCC                         : 3
 #      XORCY                       : 64
 # FlipFlops/Latches                : 179
-#      FD                          : 5
 #      FD_1                        : 105
-#      FDE                         : 32
+#      FDC                         : 4
+#      FDCE                        : 32
 #      FDE_1                       : 32
+#      FDP                         : 1
 #      LD                          : 5
 # RAMS                             : 46
 #      RAM256X1S                   : 32
@@ -734,7 +738,8 @@ Primitive and Black Box Usage:
 #      RAM32X1D                    : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 2
+# IO Buffers                       : 3
+#      IBUF                        : 1
 #      OBUF                        : 2
 
 Device utilization summary:
@@ -745,21 +750,21 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             179  out of  18224     0%  
- Number of Slice LUTs:                  625  out of   9112     6%  
-    Number used as Logic:               449  out of   9112     4%  
+ Number of Slice LUTs:                  629  out of   9112     6%  
+    Number used as Logic:               453  out of   9112     4%  
     Number used as Memory:              176  out of   2176     8%  
        Number used as RAM:              176
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    799
-   Number with an unused Flip Flop:     620  out of    799    77%  
-   Number with an unused LUT:           174  out of    799    21%  
-   Number of fully used LUT-FF pairs:     5  out of    799     0%  
-   Number of unique control sets:         8
+ Number of LUT Flip Flop pairs used:    803
+   Number with an unused Flip Flop:     624  out of    803    77%  
+   Number with an unused LUT:           174  out of    803    21%  
+   Number of fully used LUT-FF pairs:     5  out of    803     0%  
+   Number of unique control sets:         9
 
 IO Utilization: 
- Number of IOs:                           3
- Number of bonded IOBs:                   3  out of    232     1%  
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    232     1%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -786,7 +791,7 @@ Clock Information:
 Clock Signal                            | Clock buffer(FF name)             | Load  |
 ----------------------------------------+-----------------------------------+-------+
 clk                                     | BUFGP                             | 220   |
-control_unit/_n0072(control_unit/out1:O)| NONE(*)(control_unit/next_state_4)| 5     |
+control_unit/_n0077(control_unit/out1:O)| NONE(*)(control_unit/next_state_4)| 5     |
 ----------------------------------------+-----------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -802,7 +807,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 17.123ns (Maximum Frequency: 58.401MHz)
-   Minimum input arrival time before clock: No path found
+   Minimum input arrival time before clock: 3.832ns
    Maximum output required time after clock: 13.590ns
    Maximum combinational path delay: No path found
 
@@ -828,7 +833,7 @@ Delay:               8.562ns (Levels of Logic = 60)
      FDE_1:C->Q            7   0.447   1.138  out_31 (out<31>)
      end scope: 'ir:out<31>'
      begin scope: 'control_unit:op_code<5>'
-     LUT6:I0->O           26   0.203   1.207  _n01621 (extender_select)
+     LUT6:I0->O           26   0.203   1.207  _n01671 (extender_select)
      end scope: 'control_unit:extender_select'
      begin scope: 'extender:select'
      LUT3:I2->O            1   0.205   0.580  Mmux_out11 (out<0>)
@@ -892,10 +897,31 @@ Delay:               8.562ns (Levels of Logic = 60)
      LUT3:I2->O            1   0.205   0.000  Mmux_new_address251 (new_address<31>)
      end scope: 'pc_select:new_address<31>'
      begin scope: 'pc:new_address<31>'
-     FDE:D                     0.102          current_address_31
+     FDCE:D                    0.102          current_address_31
     ----------------------------------------
     Total                      8.562ns (3.348ns logic, 5.214ns route)
                                        (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 83 / 83
+-------------------------------------------------------------------------
+Offset:              3.832ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       pc/current_address_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to pc/current_address_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.683  reset_IBUF (reset_IBUF)
+     begin scope: 'pc:reset'
+     INV:I->O             32   0.206   1.291  reset_inv1_INV_0 (reset_inv)
+     FDCE:CLR                  0.430          current_address_0
+    ----------------------------------------
+    Total                      3.832ns (1.858ns logic, 1.974ns route)
+                                       (48.5% logic, 51.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -913,7 +939,7 @@ Offset:              13.590ns (Levels of Logic = 32)
      FDE_1:C->Q            7   0.447   1.138  out_31 (out<31>)
      end scope: 'ir:out<31>'
      begin scope: 'control_unit:op_code<5>'
-     LUT6:I0->O           26   0.203   1.207  _n01621 (extender_select)
+     LUT6:I0->O           26   0.203   1.207  _n01671 (extender_select)
      end scope: 'control_unit:extender_select'
      begin scope: 'extender:select'
      LUT3:I2->O            1   0.205   0.580  Mmux_out11 (out<0>)
@@ -962,10 +988,10 @@ Clock to Setup on destination clock clk
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
 clk                |    7.579|    8.562|    8.562|         |
-control_unit/_n0072|         |    1.179|         |         |
+control_unit/_n0077|         |    1.179|         |         |
 -------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock control_unit/_n0072
+Clock to Setup on destination clock control_unit/_n0077
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -976,14 +1002,14 @@ clk            |         |         |    1.776|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.03 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.37 secs
  
 --> 
 
 Total memory usage is 4510632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  180 (   0 filtered)
+Number of warnings :  182 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 
