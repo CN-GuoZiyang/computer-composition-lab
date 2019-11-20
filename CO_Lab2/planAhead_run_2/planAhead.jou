@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Nov 20 18:12:45 2019
+# Process ID: 1544
+# Log file: C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin V10 [get_ports clk_out]
+endgroup
+set_property is_loc_fixed false [get_ports [list  clk_out]]
+set_property iostandard LVCMOS33 [get_ports [list clk_out]]
+startgroup
+set_property package_pin C9 [get_ports reset]
+endgroup
+set_property is_loc_fixed false [get_ports [list  reset]]
+set_property is_loc_fixed true [get_ports [list  reset]]
+set_property iostandard LVCMOS33 [get_ports [list reset]]
+set_property iostandard LVCMOS33 [get_ports [list res_zero]]
+set_property iostandard LVCMOS33 [get_ports [list equal]]
+set_property is_loc_fixed true [get_ports [list  clk_out]]
+set_property is_loc_fixed false [get_ports [list  clk_out]]
+set_property is_loc_fixed true [get_ports [list  clk_out]]
+startgroup
+set_property package_pin T11 [get_ports equal]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports res_zero]
+endgroup
+save_constraints

@@ -1,0 +1,16 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = V10;
+
+# PlanAhead Generated IO constraints 
+
+# PlanAhead Generated physical constraints 
+
+NET "equal" LOC = T11;
+
+# PlanAhead Generated IO constraints 
+
+# PlanAhead Generated physical constraints 
+
+NET "res_zero" LOC = R11;

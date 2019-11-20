@@ -27,7 +27,7 @@ module reg_file(clk, write, read_address_a, read_address_b, write_address, write
 	reg [31:0] data [1:31];	// ²»°üº¬#0¼Ä´æÆ÷
 	
 	initial begin
-		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/register.txt", data);
+		$readmemb("C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/register.txt", data);
 	end
 	
 	assign read_out_a = (read_address_a == 5'd0) ? 32'd0 : data[read_address_a];

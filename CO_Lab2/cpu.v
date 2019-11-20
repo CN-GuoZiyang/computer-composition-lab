@@ -21,15 +21,7 @@
 module cpu(
 	input clk,
 	output res_zero,
-	output equal,
-	output [31:0] next_pc,
-	output [31:0] pc_addr,
-	output [31:0] current_op,
-	output [31:0] alu_in_a,
-	output [31:0] alu_in_b,
-	output [31:0] alu_res,
-	output [4:0] current_state,
-	output [31:0] reg_write_data
+	output equal
 );
 
 	wire alu_select_a;	//alu����ѡ��
@@ -45,6 +37,17 @@ module cpu(
 	wire [2:0] alu_op;	//alu������
 	wire ir_write;	//ir���ź�
 	wire renew_pc;
+	
+	
+	wire [31:0] next_pc;
+	wire [31:0] pc_addr;
+	wire [31:0] current_op;
+	wire [31:0] alu_in_a;
+	wire [31:0] alu_in_b;
+	wire [31:0] alu_res;
+	wire [4:0] current_state;
+	wire [31:0] reg_write_data;
+	
 	
 	wire [31:0] npc, op_ir_in;
 	

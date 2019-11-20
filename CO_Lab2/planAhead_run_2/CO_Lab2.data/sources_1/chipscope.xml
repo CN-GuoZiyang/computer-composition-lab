@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ChipScope Version="1" Minor="3">
+	<Core Id="U_ila_pro_0" Type="chipscope_ila_v1">
+		<CoreStatus isImpl="1" isFromHDL="1"/>
+		<CoreParams Id="DebugCoreParams">
+			<Option Id="EnableStorageQualification">1</Option>
+			<Option Id="MaxSequenceLevels">1</Option>
+			<Option Id="SampleDataDepth">1024</Option>
+			<Option Id="SampleOn">0</Option>
+			<Option Id="UseRpms">0</Option>
+		</CoreParams>
+		<Port Type="CLK" Index="0" Width="1">
+			<PortParams Id="DebugPortParams">
+			</PortParams>
+		</Port>
+		<Port Type="TRIG" Index="0" Width="101">
+			<PortParams Id="DebugPortParams">
+				<Option Id="CounterWidth">0</Option>
+				<Option Id="ExcludeFromDataStorage">0</Option>
+				<Option Id="MatchType">1</Option>
+				<Option Id="MatchUnits">1</Option>
+			</PortParams>
+		</Port>
+	</Core>
+	<Core Id="U_icon_pro" Type="chipscope_icon_v1">
+		<CoreStatus isImpl="1" isFromHDL="0"/>
+		<CoreParams Id="DebugCoreParams">
+			<Option Id="UserScanChain">0</Option>
+		</CoreParams>
+	</Core>
+	<UnassignedNets>
+	</UnassignedNets>
+</ChipScope>
+

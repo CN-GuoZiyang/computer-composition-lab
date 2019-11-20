@@ -10,7 +10,7 @@ run
 -opt_level 1
 -power NO
 -iuc NO
--keep_hierarchy No
+-keep_hierarchy Yes
 -netlist_hierarchy As_Optimized
 -rtlview Yes
 -glob_opt AllClockNets

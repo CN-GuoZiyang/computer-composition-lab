@@ -21,7 +21,7 @@
 module ir(clk, write, in, out);
 	input clk, write;
 	input [31:0] in;
-	output reg [31:0] out;
+	(* KEEP="TRUE" *)output reg [31:0] out;
 	
 	always @(negedge clk) begin
 		if(write) begin

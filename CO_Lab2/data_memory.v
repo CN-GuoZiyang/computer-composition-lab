@@ -26,7 +26,7 @@ module data_memory(clk, address, write_data, read, write, out);
 	reg [31:0] data [0:255];
 	
 	initial begin
-		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data);
+		$readmemb("C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/data.txt", data);
 	end
 	
 	assign out = (read == 1)?data[address]: 32'bz;

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-11-14T13:01:26</DateModified>
+  <DateModified>2019-11-20T19:35:58</DateModified>
   <ModuleName>cpu</ModuleName>
   <SummaryTimeStamp>2019-11-13T21:46:19</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/iseconfig/cpu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/iseconfig/cpu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2\</ImplementationReportsDirectory>
   <DateInitialized>2019-10-28T18:58:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

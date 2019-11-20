@@ -26,7 +26,7 @@ module instruction_memory(read, address, out);
 	reg [31:0] data [255:0];
 	
 	initial begin
-		$readmemb("C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt", data);
+		$readmemb("C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/instructions.txt", data);
 		out = 32'd0;
 	end
 	

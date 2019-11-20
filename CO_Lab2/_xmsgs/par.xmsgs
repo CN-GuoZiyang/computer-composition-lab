@@ -5,18 +5,45 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Par" num="282" delta="old" >No user timing constraints were detected or you have set the option to ignore timing constraints (&quot;par -x&quot;). Place and Route will run in &quot;Performance Evaluation Mode&quot; to automatically improve the performance of all internal clocks in this design. Because there are not defined timing requirements, a timing score will not be reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock. Note: For the fastest runtime, set the effort level to &quot;std&quot;.  For best performance, set the effort level to &quot;high&quot;.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data3_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Route" num="452" delta="new" >
- Not all timing constraints have been achieved.  Please consult the `Post-Place &amp; Route Static Timing Report&apos; to determine the actual timing results.  For suggestions on how to work around this problem go to http://support.xilinx.com and `Search Answers Database&apos; using the text of this message.
-
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data12_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="info" file="Par" num="459" delta="old" >The Clock Report is not displayed in the non timing-driven mode.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data13_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data4_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data5_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data15_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data6_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data11_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data2_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">reg_file/Mram_data14_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
 <msg type="info" file="Timing" num="2761" delta="old" >N/A entries in the Constraints List may indicate that the constraint is not analyzed due to the following: No paths covered by this constraint; Other constraints intersect with this constraint; or This constraint was disabled by a Path Tracing Control. Please run the Timespec Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.</msg>
+
+<msg type="warning" file="ParHelpers" num="361" delta="old" >There are <arg fmt="%d" index="1">10</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+<msg type="warning" file="Par" num="283" delta="old" >There are <arg fmt="%d" index="1">10</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
 
 </messages>
 
