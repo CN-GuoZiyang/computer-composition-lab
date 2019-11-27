@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: cpu.prj
 
@@ -600,12 +600,10 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_7> has a consta
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_8> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_9> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_10> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_13> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_14> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_15> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_19> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_20> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_23> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_24> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_25> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <out_26> has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
@@ -668,11 +666,13 @@ WARNING:Xst:2677 - Node <out_31> of sequential type is unconnected in block <dl3
 WARNING:Xst:1294 - Latch <out_28> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_29> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_27> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_23> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_22> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_21> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_18> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_17> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_16> is equivalent to a wire in block <instruction_memory>.
+WARNING:Xst:1294 - Latch <out_13> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_12> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_11> is equivalent to a wire in block <instruction_memory>.
 WARNING:Xst:1294 - Latch <out_1> is equivalent to a wire in block <instruction_memory>.
@@ -712,15 +712,15 @@ Top Level Output File Name         : cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 615
+# BELS                             : 619
 #      GND                         : 5
 #      INV                         : 5
 #      LUT1                        : 30
 #      LUT2                        : 36
-#      LUT3                        : 168
+#      LUT3                        : 170
 #      LUT4                        : 40
 #      LUT5                        : 29
-#      LUT6                        : 145
+#      LUT6                        : 147
 #      MUXCY                       : 89
 #      MUXF7                       : 1
 #      VCC                         : 3
@@ -750,16 +750,16 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             179  out of  18224     0%  
- Number of Slice LUTs:                  629  out of   9112     6%  
-    Number used as Logic:               453  out of   9112     4%  
+ Number of Slice LUTs:                  633  out of   9112     6%  
+    Number used as Logic:               457  out of   9112     5%  
     Number used as Memory:              176  out of   2176     8%  
        Number used as RAM:              176
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    803
-   Number with an unused Flip Flop:     624  out of    803    77%  
-   Number with an unused LUT:           174  out of    803    21%  
-   Number of fully used LUT-FF pairs:     5  out of    803     0%  
+ Number of LUT Flip Flop pairs used:    807
+   Number with an unused Flip Flop:     628  out of    807    77%  
+   Number with an unused LUT:           174  out of    807    21%  
+   Number of fully used LUT-FF pairs:     5  out of    807     0%  
    Number of unique control sets:         9
 
 IO Utilization: 
@@ -818,7 +818,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 17.123ns (frequency: 58.401MHz)
-  Total number of paths / destination ports: 495745 / 701
+  Total number of paths / destination ports: 495761 / 703
 -------------------------------------------------------------------------
 Delay:               8.562ns (Levels of Logic = 60)
   Source:            ir/out_31 (FF)
@@ -987,7 +987,7 @@ Clock to Setup on destination clock clk
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |    7.579|    8.562|    8.562|         |
+clk                |    7.608|    8.562|    8.562|         |
 control_unit/_n0077|         |    1.179|         |         |
 -------------------+---------+---------+---------+---------+
 
@@ -1002,12 +1002,12 @@ clk            |         |         |    1.776|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.37 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.92 secs
  
 --> 
 
-Total memory usage is 4510632 kilobytes
+Total memory usage is 4510628 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  182 (   0 filtered)

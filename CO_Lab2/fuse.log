@@ -40,8 +40,9 @@ Compiling module cpu
 Compiling module test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test_isim_beh.exe.sim\libPortability.dll".
 Compiled 17 Verilog Units
 Built simulation executable C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test_isim_beh.exe
-Fuse Memory Usage: 28712 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 28756 KB
+Fuse CPU Usage: 437 ms

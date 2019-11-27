@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-RKDGL9U::  Wed Nov 20 22:13:21 2019
+DESKTOP-RKDGL9U::  Thu Nov 21 19:00:49 2019
 
 par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
 
@@ -27,18 +27,18 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   889 out of  18,224    4%
-    Number used as Flip Flops:                 883
+  Number of Slice Registers:                 1,019 out of  18,224    5%
+    Number used as Flip Flops:               1,013
     Number used as Latches:                      6
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,088 out of   9,112   11%
-    Number used as logic:                      568 out of   9,112    6%
-      Number using O6 output only:             409
-      Number using O5 output only:              86
+  Number of Slice LUTs:                      1,159 out of   9,112   12%
+    Number used as logic:                      573 out of   9,112    6%
+      Number using O6 output only:             419
+      Number using O5 output only:              81
       Number using O5 and O6:                   73
       Number used as ROM:                        0
-    Number used as Memory:                     362 out of   2,176   16%
+    Number used as Memory:                     394 out of   2,176   18%
       Number used as Dual Port RAM:             44
         Number using O6 output only:             0
         Number using O5 output only:             0
@@ -47,22 +47,22 @@ Slice Logic Utilization:
         Number using O6 output only:           128
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-      Number used as Shift Register:           190
-        Number using O6 output only:           132
+      Number used as Shift Register:           222
+        Number using O6 output only:           148
         Number using O5 output only:             1
-        Number using O5 and O6:                 57
-    Number used exclusively as route-thrus:    158
-      Number with same-slice register load:    150
+        Number using O5 and O6:                 73
+    Number used exclusively as route-thrus:    192
+      Number with same-slice register load:    184
       Number with same-slice carry load:         8
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   510 out of   2,278   22%
-  Number of MUXCYs used:                       252 out of   4,556    5%
-  Number of LUT Flip Flop pairs used:        1,422
-    Number with an unused Flip Flop:           755 out of   1,422   53%
-    Number with an unused LUT:                 334 out of   1,422   23%
-    Number of fully used LUT-FF pairs:         333 out of   1,422   23%
+  Number of occupied Slices:                   538 out of   2,278   23%
+  Number of MUXCYs used:                       268 out of   4,556    5%
+  Number of LUT Flip Flop pairs used:        1,524
+    Number with an unused Flip Flop:           772 out of   1,524   50%
+    Number with an unused LUT:                 365 out of   1,524   23%
+    Number of fully used LUT-FF pairs:         387 out of   1,524   25%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -77,8 +77,8 @@ IO Utilization:
     Number of LOCed IOBs:                        4 out of       4  100%
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         7 out of      32   21%
-  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of RAMB16BWERs:                         9 out of      32   28%
+  Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
   Number of BUFG/BUFGMUXs:                       2 out of      16   12%
@@ -108,26 +108,26 @@ Router effort level (-rl):    High
 Starting initial Timing Analysis.  REAL time: 3 secs 
 Finished initial Timing Analysis.  REAL time: 3 secs 
 
-WARNING:Par:288 - The signal reg_file/Mram_data11_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal reg_file/Mram_data4_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal reg_file/Mram_data13_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal reg_file/Mram_data14_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal reg_file/Mram_data15_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal reg_file/Mram_data11_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal reg_file/Mram_data3_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal reg_file/Mram_data2_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal reg_file/Mram_data12_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal reg_file/Mram_data5_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal reg_file/Mram_data6_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal reg_file/Mram_data15_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal reg_file/Mram_data4_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal reg_file/Mram_data13_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal reg_file/Mram_data2_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 7258 unrouted;      REAL time: 3 secs 
+Phase  1  : 7868 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 5173 unrouted;      REAL time: 4 secs 
+Phase  2  : 5561 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 1389 unrouted;      REAL time: 6 secs 
+Phase  3  : 1481 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 1389 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  4  : 1481 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
 Updating file: cpu.ncd with current fully routed design.
 
@@ -161,16 +161,16 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X3Y13| No   |  232 |  0.060     |  0.906      |
+|           clk_BUFGP | BUFGMUX_X3Y13| No   |  256 |  0.066     |  0.912      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> |  BUFGMUX_X2Y3| No   |   82 |  0.058     |  0.904      |
-+---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  1.159      |
+|    icon_control0<0> |  BUFGMUX_X2Y3| No   |   85 |  0.057     |  0.910      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  0.920      |
+|               E_OUT |         Local|      |    1 |  0.000     |  0.974      |
 +---------------------+--------------+------+------+------------+-------------+
-| control_unit/_n0077 |         Local|      |    2 |  0.000     |  0.302      |
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.505      |
++---------------------+--------------+------+------+------------+-------------+
+| control_unit/_n0077 |         Local|      |    2 |  0.665     |  0.953      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -192,26 +192,26 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.128ns|     2.872ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.157ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.436ns|     2.564ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.011ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.123ns|     0.877ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.440ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.085ns|     0.915ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.419ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    21.811ns|     8.189ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.280ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    21.461ns|     8.539ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.248ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.457ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     2.921ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.879ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     3.289ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.687ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     6.559ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.384ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.139ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 

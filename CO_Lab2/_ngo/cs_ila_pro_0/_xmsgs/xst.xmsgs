@@ -53,9 +53,6 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\_ngo\cs_ila_pro_0\tmp\_cg\_bbx\chipscope_ila_v1_05_a\ila_cap_storage.vhd" Line 184: Assignment to <arg fmt="%s" index="1">logic_0</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\_ngo\cs_ila_pro_0\tmp\_cg\_bbx\chipscope_lib_v1_03_a\cs_bram_simple_s6_ramb9.vhd" Line 130: &lt;<arg fmt="%s" index="1">ramb8bwer</arg>&gt; remains a black-box since it has no binding entity.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="746" delta="new" >"C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\_ngo\cs_ila_pro_0\tmp\_cg\_bbx\chipscope_ila_v1_05_a\ila_trace_buffer.vhd" Line 201: Range is empty (null range)
 </msg>
 
@@ -290,6 +287,30 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RESET_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CLK_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RESET_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CLK_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RESET_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CLK_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RESET_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CLK_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RESET_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">iCFG_EN_VEC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
@@ -360,12 +381,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">WR_RESET_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\_ngo\cs_ila_pro_0\tmp\_cg\_bbx\chipscope_lib_v1_03_a\cs_bram_simple_s6_ramb9.vhd</arg>&quot; line <arg fmt="%s" index="2">374</arg>: Output port &lt;<arg fmt="%s" index="3">DOBDO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U_RAMB9</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\_ngo\cs_ila_pro_0\tmp\_cg\_bbx\chipscope_lib_v1_03_a\cs_bram_simple_s6_ramb9.vhd</arg>&quot; line <arg fmt="%s" index="2">374</arg>: Output port &lt;<arg fmt="%s" index="3">DOPBDOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U_RAMB9</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

@@ -89,3 +89,21 @@ WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
 Writing EDIF netlist file cpu_cs.edif ...
 ngc2edif: Total memory usage is 4326448 kilobytes
 
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design cpu_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file cpu_cs.edif ...
+ngc2edif: Total memory usage is 4326448 kilobytes
+

@@ -10,25 +10,25 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 20 22:13:08 2019
+Mapped Date    : Thu Nov 21 19:00:37 2019
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   16
 Slice Logic Utilization:
-  Number of Slice Registers:                   889 out of  18,224    4%
-    Number used as Flip Flops:                 883
+  Number of Slice Registers:                 1,019 out of  18,224    5%
+    Number used as Flip Flops:               1,013
     Number used as Latches:                      6
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,088 out of   9,112   11%
-    Number used as logic:                      568 out of   9,112    6%
-      Number using O6 output only:             409
-      Number using O5 output only:              86
+  Number of Slice LUTs:                      1,159 out of   9,112   12%
+    Number used as logic:                      573 out of   9,112    6%
+      Number using O6 output only:             419
+      Number using O5 output only:              81
       Number using O5 and O6:                   73
       Number used as ROM:                        0
-    Number used as Memory:                     362 out of   2,176   16%
+    Number used as Memory:                     394 out of   2,176   18%
       Number used as Dual Port RAM:             44
         Number using O6 output only:             0
         Number using O5 output only:             0
@@ -37,25 +37,25 @@ Slice Logic Utilization:
         Number using O6 output only:           128
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-      Number used as Shift Register:           190
-        Number using O6 output only:           132
+      Number used as Shift Register:           222
+        Number using O6 output only:           148
         Number using O5 output only:             1
-        Number using O5 and O6:                 57
-    Number used exclusively as route-thrus:    158
-      Number with same-slice register load:    150
+        Number using O5 and O6:                 73
+    Number used exclusively as route-thrus:    192
+      Number with same-slice register load:    184
       Number with same-slice carry load:         8
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   510 out of   2,278   22%
-  Number of MUXCYs used:                       252 out of   4,556    5%
-  Number of LUT Flip Flop pairs used:        1,422
-    Number with an unused Flip Flop:           755 out of   1,422   53%
-    Number with an unused LUT:                 334 out of   1,422   23%
-    Number of fully used LUT-FF pairs:         333 out of   1,422   23%
+  Number of occupied Slices:                   538 out of   2,278   23%
+  Number of MUXCYs used:                       268 out of   4,556    5%
+  Number of LUT Flip Flop pairs used:        1,524
+    Number with an unused Flip Flop:           772 out of   1,524   50%
+    Number with an unused LUT:                 365 out of   1,524   23%
+    Number of fully used LUT-FF pairs:         387 out of   1,524   25%
     Number of unique control sets:              60
     Number of slice register sites lost
-      to control set restrictions:             296 out of  18,224    1%
+      to control set restrictions:             294 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -68,8 +68,8 @@ IO Utilization:
     Number of LOCed IOBs:                        4 out of       4  100%
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         7 out of      32   21%
-  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of RAMB16BWERs:                         9 out of      32   28%
+  Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
   Number of BUFG/BUFGMUXs:                       2 out of      16   12%
@@ -93,7 +93,7 @@ Specific Feature Utilization:
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
   Number of RPM macros:            9
-Average Fanout of Non-Clock Nets:                3.10
+Average Fanout of Non-Clock Nets:                3.06
 
 Peak Memory Usage:  4557 MB
 Total REAL time to MAP completion:  9 secs 
@@ -123,19 +123,23 @@ Section 2 - Warnings
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net control_unit/_n0077 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data11_RAMD_D1_O> is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data13_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data14_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data3_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data15_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data2_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data11_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data3_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data12_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
@@ -143,22 +147,16 @@ WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data5_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data6_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data15_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data2_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data4_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data13_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mux3/two<30>> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <mux3/two<29>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mux3/two<28>> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <mux3/two<27>> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <mux3/two<25>> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
 
 Section 3 - Informational
 -------------------------
@@ -187,7 +185,7 @@ INFO:Pack:1650 - Map created a placed design.
 Section 4 - Removed Logic Summary
 ---------------------------------
   45 block(s) removed
- 190 block(s) optimized away
+ 224 block(s) optimized away
   55 signal(s) removed
 
 Section 5 - Removed Logic
@@ -439,14 +437,30 @@ GND
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
 U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE/XST_GND
-VCC
+GND
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE/XST_VCC
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE/XST_GND
 GND
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
 U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE/XST_VCC
 GND
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
@@ -488,8 +502,6 @@ VCC 		equal_judge/XST_VCC
 GND 		instruction_memory/XST_GND
 FDE_1 		ir/out_10
    optimized to 0
-FDE_1 		ir/out_13
-   optimized to 0
 FDE_1 		ir/out_14
    optimized to 0
 FDE_1 		ir/out_15
@@ -499,8 +511,6 @@ FDE_1 		ir/out_19
 FDE_1 		ir/out_2
    optimized to 0
 FDE_1 		ir/out_20
-   optimized to 0
-FDE_1 		ir/out_23
    optimized to 0
 FDE_1 		ir/out_24
    optimized to 0
