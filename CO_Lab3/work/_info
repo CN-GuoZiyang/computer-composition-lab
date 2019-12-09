@@ -1,0 +1,356 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/guo/Desktop/computer-composition-lab/CO_Lab2
+T_opt
+!s110 1573634077
+Vnl9gYP:Xea9[P[Oa<Lf@T0
+04 4 4 work test fast 0
+04 4 4 work glbl fast 0
+=1-3c52822f1c32-5dcbc01c-c5-dcc
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+valu
+Z2 !s110 1573634074
+!i10b 1
+!s100 NlneX1PEdnOzP1?]Bj[U=2
+IQeTj_QROIhO^[5<gKGB`D0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573474389
+8alu.v
+Falu.v
+Z4 L0 21
+Z5 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z6 !s108 1573634074.000000
+!s107 alu.v|
+!s90 -reportprogress|300|alu.v|
+!i113 0
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcontrol_unit
+R2
+!i10b 1
+!s100 kPz9FFl4:Ji;>>e_=[5Sa1
+I@2N<B3?Hd^GRV>Th;@L8e0
+R3
+R0
+w1573574884
+8control_unit.v
+Fcontrol_unit.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 control_unit.v|
+!s90 -reportprogress|300|control_unit.v|
+!i113 0
+R7
+R1
+vcpu
+R2
+!i10b 1
+!s100 0lcg27:=?:^eSmP1XkUb42
+I:cZYjniNm0[T3J0zZW?8Y2
+R3
+R0
+w1573478054
+8cpu.v
+Fcpu.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 cpu.v|
+!s90 -reportprogress|300|cpu.v|
+!i113 0
+R7
+R1
+vdata_late
+Z8 !s110 1573634073
+!i10b 1
+!s100 JX[8>J]SDeAj`0O9]c1fj1
+Iaj^Ed[c3kL8dnZ`MRUc3g2
+R3
+R0
+Z9 w1573178604
+8data_late.v
+Fdata_late.v
+R4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1573634073.000000
+!s107 data_late.v|
+!s90 -reportprogress|300|data_late.v|
+!i113 0
+R7
+R1
+vdata_memory
+R8
+!i10b 1
+!s100 o9@kMAX2n3`U8[kNWH[fj0
+INn;RzWV5nGd3RUP[U^AeJ3
+R3
+R0
+R9
+8data_memory.v
+Fdata_memory.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 data_memory.v|
+!s90 -reportprogress|300|data_memory.v|
+!i113 0
+R7
+R1
+vequal_judge
+R8
+!i10b 1
+!s100 S>XP2bhE6afJdGd66LY>J3
+IVYj_h42k<h<98a6NR[1183
+R3
+R0
+w1573259892
+8equal_judge.v
+Fequal_judge.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 equal_judge.v|
+!s90 -reportprogress|300|equal_judge.v|
+!i113 0
+R7
+R1
+vextender
+R8
+!i10b 1
+!s100 [e:9Go<11`M`ReKXi2bMO2
+I_3<nV9<gCAP1kJICkZ]9h2
+R3
+R0
+w1573474655
+8extender.v
+Fextender.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 extender.v|
+!s90 -reportprogress|300|extender.v|
+!i113 0
+R7
+R1
+vglbl
+R2
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+Ik8Q3>OZNK[D?JRF9ZzF?D1
+R3
+R0
+w1381681120
+8D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+R7
+R1
+vinstruction_memory
+R8
+!i10b 1
+!s100 Ick6ZPFWgnz8g3XS2BaRQ3
+IQ=H8:Zfhml9>N6eILWOQ63
+R3
+R0
+R9
+8instruction_memory.v
+Finstruction_memory.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 instruction_memory.v|
+!s90 -reportprogress|300|instruction_memory.v|
+!i113 0
+R7
+R1
+vir
+R8
+!i10b 1
+!s100 mb>=SW1@;GF?07W9Y8?8O0
+I]1jY@70lKI==>6gfTl^hY0
+R3
+R0
+R9
+8ir.v
+Fir.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 ir.v|
+!s90 -reportprogress|300|ir.v|
+!i113 0
+R7
+R1
+vnpc_adder
+R8
+!i10b 1
+!s100 ]hd0>E;O5ceFkPgZaG1=91
+IBZ0<g4YJzWG50753C>TYV3
+R3
+R0
+R9
+8npc_adder.v
+Fnpc_adder.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 npc_adder.v|
+!s90 -reportprogress|300|npc_adder.v|
+!i113 0
+R7
+R1
+vpc
+R8
+!i10b 1
+!s100 dM;?Nkgf]EoJ_`Eg26i>P0
+I:3;aH2I4d3h9b:7I25?@D0
+R3
+R0
+R9
+8pc.v
+Fpc.v
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 pc.v|
+!s90 -reportprogress|300|pc.v|
+!i113 0
+R7
+R1
+vpc_select
+R8
+!i10b 1
+!s100 =k0VdgIQ[jJ3RlRB4[j043
+Iac;ZHJ3mf9c]GUQHgk1mh2
+R3
+R0
+R9
+8pc_select.v
+Fpc_select.v
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1573634072.000000
+!s107 pc_select.v|
+!s90 -reportprogress|300|pc_select.v|
+!i113 0
+R7
+R1
+vreg_file
+Z12 !s110 1573634072
+!i10b 1
+!s100 [8;_ZU2l:`8T4`[<SX5JH0
+IzZZAoHke2fgFPoabW5SH<0
+R3
+R0
+R9
+8reg_file.v
+Freg_file.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 reg_file.v|
+!s90 -reportprogress|300|reg_file.v|
+!i113 0
+R7
+R1
+vselect_32bit
+R12
+!i10b 1
+!s100 A5=o5ZlO:>bECVX1:KDzM1
+I^3S9ggR5e^Y5E;`;?PkA72
+R3
+R0
+R9
+8select_32bit.v
+Fselect_32bit.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 select_32bit.v|
+!s90 -reportprogress|300|select_32bit.v|
+!i113 0
+R7
+R1
+vtest
+R2
+!i10b 1
+!s100 IXS9PZQ1>5o?;nY7Jjh8W2
+I>lQ_ImeKMfDjc96mJaW2N3
+R3
+R0
+w1573634042
+8test.v
+Ftest.v
+L0 25
+R5
+r1
+!s85 0
+31
+R6
+!s107 test.v|
+!s90 -reportprogress|300|test.v|
+!i113 0
+R7
+R1

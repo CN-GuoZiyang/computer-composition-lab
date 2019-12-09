@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/cpu.xst" -ofn "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc6slx16-csg324-3 cpu_cs.ngc cpu.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/cpu.xst" -ofn "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc6slx16-csg324-3 cpu_cs.ngc cpu.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
