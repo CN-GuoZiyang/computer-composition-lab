@@ -30,6 +30,7 @@ module IDEXE_reg(
 	 output reg [31:0] extend_exe,
 	 output reg [31:0] reg1_exe,
 	 output reg [31:0] reg2_exe,
+	 output reg [2:0] alu_func_exe,
 	 output reg alu_in2_select
 	 );
 	 
@@ -52,8 +53,22 @@ module IDEXE_reg(
 	 end
 	 
 	 wire sl;
+	 reg alu_func;
 	 
-	 assign sl = (ir_id[31:26] == 6'b000010 || ir_id[31:26] == 6'b000000)?1:0;
+	 assign sl = (ir[31:26] == 6'b000010 || ir[31:26] == 6'b100000)?1:0;
+	 
+	 always @(*) begin
+		if(ir[31:26] == 6'b000010) begin
+			alu_func = 3'b110;
+		end
+		else if(ir[31:26] == 6'b100000) begin
+			alu_func = 3'b111;
+		end
+		else if(ir[31:26] == 6'b000100) begin
+			alu_func = ir[2:0];
+		end
+		else alu_func = 3'b000;
+	 end
 	 
 	 always @(negedge clk) begin
 		ir_exe <= ir;
@@ -61,6 +76,7 @@ module IDEXE_reg(
 		extend_exe <= extend;
 		reg1_exe <= reg1;
 		reg2_exe <= reg2;
+		alu_func_exe <= alu_func;
 		alu_in2_select <= sl;
 	 end
 

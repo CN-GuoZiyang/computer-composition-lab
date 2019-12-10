@@ -51,9 +51,9 @@ module EXEMEM_reg(
 	end
 	
 	wire npc_select, memw, memr;
-	assign npc_select = (ir_exe[31:26] == 6'b000000 || (ir_exe[31:26] == 6'b000010 && equal_exe == 1))?1:0;
-	assign memr = (ir_exe[31:26] == 6'b001110)?1:0;
-	assign memw = (ir_exe[31:26] == 6'b001100)?1:0;
+	assign npc_select = (ir[31:26] == 6'b100000 || (ir[31:26] == 6'b000010 && equal == 1))?1:0;
+	assign memr = (ir[31:26] == 6'b001110)?1:0;
+	assign memw = (ir[31:26] == 6'b001100)?1:0;
 	
 	
 	always @(negedge clk) begin

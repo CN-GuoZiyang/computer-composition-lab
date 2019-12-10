@@ -18,8 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module pc(clk, reset, renew_pc, new_address, current_address);
-	input clk, reset, renew_pc;
+module pc(clk, reset, new_address, current_address);
+	input clk, reset;
 	input [31:0] new_address;
 	output reg [31:0] current_address;
 	
@@ -29,10 +29,7 @@ module pc(clk, reset, renew_pc, new_address, current_address);
 	
 	always @(posedge clk or negedge reset) begin
 		if(reset == 0) current_address <= 0;
-		else begin
-			if(renew_pc) current_address <= new_address;
-			else current_address <= current_address;
-		end
+		else current_address <= new_address;
 	end
 
 endmodule
