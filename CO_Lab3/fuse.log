@@ -1,48 +1,47 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test_isim_beh.exe" -prj "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test_beh.prj" "work.test" "work.glbl" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/test_isim_beh.exe" -prj "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/test_beh.prj" "work.test" "work.glbl" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/select_5bit.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/select_32bit.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/reg_file.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/pc_select.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/pc.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/npc_adder.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/ir.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/instruction_memory.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/extender.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/equal_judge.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/data_memory.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/data_late.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/control_unit.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/alu.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/cpu.v" into library work
-Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/SELECTOR5BITS.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/SELECTOR32BITS.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/ROM.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/REGFILES.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/RAM.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/PC.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/NPC.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/MEMWBREG.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/IFIDREG.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/IDEXREG.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/EXTEND.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/EXMEMREG.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/CPU.v" into library work
+Analyzing Verilog file "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/test.v" into library work
 Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/CPU.v" Line 44: Port writeback_id is not connected to this instance
 Completed static elaboration
-Compiling module pc
-Compiling module npc_adder
-Compiling module instruction_memory
-Compiling module ir
-Compiling module select_5bit
-Compiling module extender
-Compiling module reg_file
-Compiling module data_late
-Compiling module equal_judge
-Compiling module select_32bit
-Compiling module alu
-Compiling module data_memory
-Compiling module pc_select
-Compiling module control_unit
-Compiling module cpu
+Compiling module PC
+Compiling module NPC
+Compiling module ROM
+Compiling module IFIDREG
+Compiling module SELECTOR5BITS
+Compiling module REGFILES
+Compiling module EXTEND
+Compiling module IDEXREG
+Compiling module SELECTOR32BITS
+Compiling module ALU
+Compiling module EXMEMREG
+Compiling module RAM
+Compiling module MEMWBREG
+Compiling module CPU
 Compiling module test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test_isim_beh.exe.sim\libPortability.dll".
-Compiled 17 Verilog Units
-Built simulation executable C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test_isim_beh.exe
-Fuse Memory Usage: 28756 KB
-Fuse CPU Usage: 437 ms
+Compiled 16 Verilog Units
+Built simulation executable C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/test_isim_beh.exe
+Fuse Memory Usage: 27472 KB
+Fuse CPU Usage: 468 ms

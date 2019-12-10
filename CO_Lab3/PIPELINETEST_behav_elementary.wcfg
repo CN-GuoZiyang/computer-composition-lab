@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PIPELINETEST_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PIPELINETEST" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="122110000fs"></ZoomStartTime>
+      <ZoomEndTime time="392110001fs"></ZoomEndTime>
+      <Cursor1Time time="172510000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/PIPELINETEST/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/equal" type="logic">
+      <obj_property name="ElementShortName">equal</obj_property>
+      <obj_property name="ObjectShortName">equal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/alu_mem" type="array">
+      <obj_property name="ElementShortName">alu_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/ram_mem" type="array">
+      <obj_property name="ElementShortName">ram_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/ir_mem" type="array">
+      <obj_property name="ElementShortName">ir_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ir_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/alu_wb" type="array">
+      <obj_property name="ElementShortName">alu_wb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_wb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/ram_wb" type="array">
+      <obj_property name="ElementShortName">ram_wb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/regwrite_wb" type="logic">
+      <obj_property name="ElementShortName">regwrite_wb</obj_property>
+      <obj_property name="ObjectShortName">regwrite_wb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/writereg_wb" type="array">
+      <obj_property name="ElementShortName">writereg_wb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">writereg_wb[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/alu" type="array">
+      <obj_property name="ElementShortName">alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/ram" type="array">
+      <obj_property name="ElementShortName">ram[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/regwrite" type="logic">
+      <obj_property name="ElementShortName">regwrite</obj_property>
+      <obj_property name="ObjectShortName">regwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/cel" type="logic">
+      <obj_property name="ElementShortName">cel</obj_property>
+      <obj_property name="ObjectShortName">cel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/memwbreg/regname" type="array">
+      <obj_property name="ElementShortName">regname[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regname[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/alu/num1" type="array">
+      <obj_property name="ElementShortName">num1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/alu/num2" type="array">
+      <obj_property name="ElementShortName">num2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/alu/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/alu/equal" type="logic">
+      <obj_property name="ElementShortName">equal</obj_property>
+      <obj_property name="ObjectShortName">equal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/alu/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/alu/ans" type="array">
+      <obj_property name="ElementShortName">ans[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ans[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/regwrite" type="logic">
+      <obj_property name="ElementShortName">regwrite</obj_property>
+      <obj_property name="ObjectShortName">regwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/r1" type="array">
+      <obj_property name="ElementShortName">r1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/r2" type="array">
+      <obj_property name="ElementShortName">r2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/writer" type="array">
+      <obj_property name="ElementShortName">writer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">writer[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/writedata" type="array">
+      <obj_property name="ElementShortName">writedata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writedata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/r1data" type="array">
+      <obj_property name="ElementShortName">r1data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r1data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/r2data" type="array">
+      <obj_property name="ElementShortName">r2data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r2data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/regs" type="array">
+      <obj_property name="ElementShortName">regs[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/PIPELINETEST/pipeline/regfiles/tmp" type="array">
+      <obj_property name="ElementShortName">tmp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp[31:0]</obj_property>
+   </wvobject>
+</wave_config>

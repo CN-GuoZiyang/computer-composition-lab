@@ -3,53 +3,51 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    12:40:48 10/27/2019 
+// Create Date: 2019/12/08 23:55:57
 // Design Name: 
-// Module Name:    alu 
+// Module Name: ALU
 // Project Name: 
 // Target Devices: 
-// Tool versions: 
+// Tool Versions: 
 // Description: 
-//
+// 
 // Dependencies: 
-//
-// Revision: 
+// 
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
-//
+// Additional Comments:
+// 
 //////////////////////////////////////////////////////////////////////////////////
-module alu(func, srca, srcb, result, zero);
-	input [2:0] func;
-	input [31:0] srca, srcb;
-	output reg [31:0] result;
-	output zero;
-	
-	reg [31:0] temp;
-	
-	initial begin
-		result = 31'd0;
-	end
-	
-	assign zero = (result == 31'd0) ? 1 : 0;
-	
-	always @(func or srca or srcb) begin
-		case(func)
-			3'b000: result = srca + srcb;
-			3'b001: result = srca - srcb;
-			3'b010: result = srca & srcb;
-			3'b011: result = srca | srcb;
-			3'b100: result = srca ^ srcb;
-			3'b101: result = (srca < srcb) ? 1 : 0;
-			3'b110: result = srca + (srcb << 2);
-			3'b111: begin 
-				temp = srcb << 2;
-				result = {srca[31:26], temp[25:0]};
-			end
-			default: begin
-				result = 32'd0;
-			end
-		endcase
-	end
 
 
+module ALU(
+    input [31:0] num1,
+    input [31:0] num2,
+    input [5:0] opcode,
+    output equal,
+    output zero,
+    output reg [31:0] ans
+    );
+    
+    initial begin
+        ans = 0;
+    end
+    
+    assign zero = (ans == 0)? 1 : 0;
+    assign equal = (num1 == num2)? 1 : 0;
+    always @ (opcode or num1 or num2) begin
+        case (opcode)
+            6'b000000: ans = num1 + num2;
+            6'b000001: ans = num1 - num2;
+            6'b000010: ans = num1 & num2;
+            6'b000011: ans = num1 | num2;
+            6'b000100: ans = num1 ^ num2;
+            6'b000101: ans = (num1 < num2)? 1 : 0;
+            6'b100000: ans = num1 + num2;
+            6'b100001: ans = num1 + num2;
+            6'b110000: ans = num1 + num2;
+            default: ans = 0;
+        endcase    
+    end
+    
 endmodule

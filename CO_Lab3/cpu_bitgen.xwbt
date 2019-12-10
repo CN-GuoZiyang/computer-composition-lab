@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.ncd
-OUTFILE=C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\cpu.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2
-LICENSE=ISE
-USER_INFO=135256_15690819_173552794_661

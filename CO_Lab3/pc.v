@@ -3,33 +3,37 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    13:10:09 10/27/2019 
+// Create Date: 2019/12/09 00:06:43
 // Design Name: 
-// Module Name:    pc 
+// Module Name: PC
 // Project Name: 
 // Target Devices: 
-// Tool versions: 
+// Tool Versions: 
 // Description: 
-//
+// 
 // Dependencies: 
-//
-// Revision: 
+// 
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
-//
+// Additional Comments:
+// 
 //////////////////////////////////////////////////////////////////////////////////
-module pc(clk, reset, new_address, current_address);
-	input clk, reset;
-	input [31:0] new_address;
-	output reg [31:0] current_address;
-	
-	initial begin
-		current_address <= 32'd0;
-	end
-	
-	always @(posedge clk or negedge reset) begin
-		if(reset == 0) current_address <= 0;
-		else current_address <= new_address;
-	end
 
+
+module PC(
+    input clk, 
+    input reset,
+    input [31:0] newAddr,
+    output reg [31:0] curAddr
+    );
+    initial begin
+        curAddr <= 0;
+    end
+    
+    always @ (negedge clk or negedge reset) begin
+        if(reset == 0) curAddr <= 0;
+        else begin
+            curAddr <= newAddr;
+        end
+    end
 endmodule

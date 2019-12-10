@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Ziyang Guo\Desktop\computer-composition-lab\CO_Lab2\test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test_isim_beh.wdb 
+Running: C:\Users\Ziyang Guo\Desktop\CO_Lab3\CO_Lab3\test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/test_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -13,7 +13,6 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 900 ns :  in File "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test.v" Line 47 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -24,4 +23,13 @@ This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 900 ns :  in File "C:/Users/Ziyang Guo/Desktop/computer-composition-lab/CO_Lab2/test.v" Line 47 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

@@ -1,16 +1,16 @@
 Release 14.7 Map P.20131013 (nt64)
-Xilinx Map Application Log File for Design 'cpu'
+Xilinx Map Application Log File for Design 'CPU'
 
 Design Information
 ------------------
 Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
-high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
--pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+high -t 1 -xt 0 -register_duplication on -r 8 -global_opt off -mt 2 -ir off -pr
+off -lc off -timing -power off -o CPU_map.ncd CPU.ngd CPU.pcf 
 Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Nov 21 19:00:37 2019
+Mapped Date    : Wed Dec 11 00:07:55 2019
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc6slx16' is a WebPack part.
@@ -25,179 +25,365 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 secs 
-Total CPU  time at the beginning of Placer: 4 secs 
+Total REAL time at the beginning of Placer: 11 secs 
+Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:af717c58) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:7194492) REAL time: 12 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:af717c58) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:7194492) REAL time: 13 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4d4cf65a) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:7194492) REAL time: 13 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-
+............
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:118d9a99) REAL time: 6 secs 
+(Checksum:2c6acf6a) REAL time: 16 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:118d9a99) REAL time: 6 secs 
+Phase 5.36  Local Placement Optimization (Checksum:2c6acf6a) REAL time: 16 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:118d9a99) REAL time: 6 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:2c6acf6a) REAL time: 16 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:118d9a99) REAL time: 6 secs 
+...........
+Phase 7.3  Local Placement Optimization (Checksum:314e3adc) REAL time: 17 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:118d9a99) REAL time: 6 secs 
+Phase 8.5  Local Placement Optimization (Checksum:314e3adc) REAL time: 17 secs 
 
 Phase 9.8  Global Placement
-......................................................
-........
-Phase 9.8  Global Placement (Checksum:c1aed52a) REAL time: 7 secs 
+...................................................................................................
+................................................................
+..................................................................................
+.....................................................................................................................................
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
 
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:c1aed52a) REAL time: 7 secs 
+   Unplaced instances by type:
 
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:b371b11) REAL time: 8 secs 
+     FF    6 (31.6)
+     LUT    194 (100.0)
 
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:b371b11) REAL time: 8 secs 
+   Please evaluate the following:
 
-Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:3385c841) REAL time: 8 secs 
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
 
-Total REAL time to Placer completion: 8 secs 
-Total CPU  time to Placer completion: 8 secs 
-Running post-placement packing...
-Writing output files...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net control_unit/_n0077 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data4_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data13_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data14_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data15_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data11_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data3_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data12_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data5_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data6_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <reg_file/Mram_data2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <mux3/two<30>> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <mux3/two<29>> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <mux3/two<28>> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <mux3/two<27>> is incomplete. The
-   signal does not drive any load pins in the design.
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
 
-Design Summary
---------------
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
 
-Design Summary:
-Number of errors:      0
-Number of warnings:   16
-Slice Logic Utilization:
-  Number of Slice Registers:                 1,019 out of  18,224    5%
-    Number used as Flip Flops:               1,013
-    Number used as Latches:                      6
-    Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,159 out of   9,112   12%
-    Number used as logic:                      573 out of   9,112    6%
-      Number using O6 output only:             419
-      Number using O5 output only:              81
-      Number using O5 and O6:                   73
-      Number used as ROM:                        0
-    Number used as Memory:                     394 out of   2,176   18%
-      Number used as Dual Port RAM:             44
-        Number using O6 output only:             0
-        Number using O5 output only:             0
-        Number using O5 and O6:                 44
-      Number used as Single Port RAM:          128
-        Number using O6 output only:           128
-        Number using O5 output only:             0
-        Number using O5 and O6:                  0
-      Number used as Shift Register:           222
-        Number using O6 output only:           148
-        Number using O5 output only:             1
-        Number using O5 and O6:                 73
-    Number used exclusively as route-thrus:    192
-      Number with same-slice register load:    184
-      Number with same-slice carry load:         8
-      Number with other load:                    0
+   The following instances are the last set of instances that failed to place:
 
-Slice Logic Distribution:
-  Number of occupied Slices:                   538 out of   2,278   23%
-  Number of MUXCYs used:                       268 out of   4,556    5%
-  Number of LUT Flip Flop pairs used:        1,524
-    Number with an unused Flip Flop:           772 out of   1,524   50%
-    Number with an unused LUT:                 365 out of   1,524   23%
-    Number of fully used LUT-FF pairs:         387 out of   1,524   25%
-    Number of unique control sets:              60
-    Number of slice register sites lost
-      to control set restrictions:             294 out of  18,224    1%
+   0. FF memwbreg/sel
+   1. fiveout<0> (size: 2)
+      LUT fiveout<0>
+      LUT s/Mmux_ans11
+   2. regfiles/mux63_91 (size: 4)
+      LUT regfiles/mux63_91
+      LUT regfiles/mux63_91
+      LUT regfiles/mux63_91
+      LUT s/Mmux_ans21
+   3. FF exmemreg/equal_mem
+   4. exmemreg/alu<31> (size: 3)
+      LUT exmemreg/alu<31>
+      LUT alu/_n0153<31>1
+      FF exmemreg/alu_31
+   5. memwbreg/regwrite_wb (size: 3)
+      LUT memwbreg/regwrite_wb
+      LUT memwbreg/regwrite_wb_rstpot1
+      FF memwbreg/regwrite_wb
+   6. ram/GND_1037_o_Addr[7]_AND_10031_o (size: 2)
+      LUT ram/GND_1037_o_Addr[7]_AND_10031_o
+      LUT ram/GND_1037_o_Addr[7]_AND_10031_o2
+   7. ram/GND_1037_o_Addr[7]_AND_10063_o (size: 2)
+      LUT ram/GND_1037_o_Addr[7]_AND_10063_o
+      LUT ram/GND_1037_o_Addr[7]_AND_10063_o2
+   8. FF exmemreg/zero_mem
+   9. FF idexreg/s1_sel
+   10. ram/GND_1037_o_Addr[7]_AND_2031_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2031_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2031_o1
+   11. ram/GND_1037_o_Addr[7]_AND_3023_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3023_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3023_o1
+   12. ram/GND_1037_o_Addr[7]_AND_2063_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2063_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2063_o1
+   13. ram/GND_1037_o_Addr[7]_AND_2127_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2127_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2127_o1
+   14. ram/GND_1037_o_Addr[7]_AND_2223_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2223_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2223_o1
+   15. ram/GND_1037_o_Addr[7]_AND_4015_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4015_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4015_o1
+   16. ram/GND_1037_o_Addr[7]_AND_2511_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2511_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2511_o1
+   17. ram/GND_1037_o_Addr[7]_AND_3055_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3055_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3055_o1
+   18. ram/GND_1037_o_Addr[7]_AND_4111_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4111_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4111_o1
+   19. ram/GND_1037_o_Addr[7]_AND_2095_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2095_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2095_o1
+   20. ram/GND_1037_o_Addr[7]_AND_3119_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3119_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3119_o1
+   21. ram/GND_1037_o_Addr[7]_AND_3151_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3151_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3151_o1
+   22. ram/GND_1037_o_Addr[7]_AND_2159_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2159_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2159_o1
+   23. ram/GND_1037_o_Addr[7]_AND_2191_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2191_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2191_o1
+   24. ram/GND_1037_o_Addr[7]_AND_3215_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3215_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3215_o1
+   25. ram/GND_1037_o_Addr[7]_AND_2255_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2255_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2255_o1
+   26. ram/GND_1037_o_Addr[7]_AND_3311_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3311_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3311_o1
+   27. ram/GND_1037_o_Addr[7]_AND_2319_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2319_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2319_o1
+   28. ram/GND_1037_o_Addr[7]_AND_2351_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2351_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2351_o1
+   29. ram/GND_1037_o_Addr[7]_AND_2415_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2415_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2415_o2
+   30. ram/GND_1037_o_Addr[7]_AND_5007_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5007_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5007_o1
+   31. ram/GND_1037_o_Addr[7]_AND_2447_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2447_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2447_o1
+   32. ram/GND_1037_o_Addr[7]_AND_3503_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3503_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3503_o1
+   33. ram/GND_1037_o_Addr[7]_AND_4047_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4047_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4047_o1
+   34. ram/GND_1037_o_Addr[7]_AND_5103_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5103_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5103_o1
+   35. ram/GND_1037_o_Addr[7]_AND_2543_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2543_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2543_o1
+   36. ram/GND_1037_o_Addr[7]_AND_3087_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3087_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3087_o1
+   37. ram/GND_1037_o_Addr[7]_AND_4143_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4143_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4143_o1
+   38. ram/GND_1037_o_Addr[7]_AND_2607_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2607_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2607_o1
+   39. ram/GND_1037_o_Addr[7]_AND_4207_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4207_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4207_o1
+   40. ram/GND_1037_o_Addr[7]_AND_3183_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3183_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3183_o1
+   41. ram/GND_1037_o_Addr[7]_AND_2703_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2703_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2703_o1
+   42. ram/GND_1037_o_Addr[7]_AND_3247_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3247_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3247_o1
+   43. ram/GND_1037_o_Addr[7]_AND_4303_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4303_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4303_o1
+   44. ram/GND_1037_o_Addr[7]_AND_2287_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2287_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2287_o1
+   45. ram/GND_1037_o_Addr[7]_AND_3343_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3343_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3343_o1
+   46. ram/GND_1037_o_Addr[7]_AND_2383_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2383_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2383_o1
+   47. ram/GND_1037_o_Addr[7]_AND_3407_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3407_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3407_o1
+   48. ram/GND_1037_o_Addr[7]_AND_1904_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_1904_o
+       LUT ram/GND_1037_o_Addr[7]_AND_1904_o1
+   49. ram/GND_1037_o_Addr[7]_AND_1935_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_1935_o
+       LUT ram/GND_1037_o_Addr[7]_AND_1935_o1
+   50. ram/GND_1037_o_Addr[7]_AND_3471_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3471_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3471_o1
+   51. ram/GND_1037_o_Addr[7]_AND_5039_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5039_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5039_o1
+   52. ram/GND_1037_o_Addr[7]_AND_2479_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2479_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2479_o1
+   53. ram/GND_1037_o_Addr[7]_AND_5071_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5071_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5071_o1
+   54. ram/GND_1037_o_Addr[7]_AND_3535_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3535_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3535_o1
+   55. ram/GND_1037_o_Addr[7]_AND_4079_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4079_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4079_o1
+   56. ram/GND_1037_o_Addr[7]_AND_5135_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5135_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5135_o1
+   57. ram/GND_1037_o_Addr[7]_AND_2575_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2575_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2575_o1
+   58. ram/GND_1037_o_Addr[7]_AND_3631_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3631_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3631_o1
+   59. ram/GND_1037_o_Addr[7]_AND_4175_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4175_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4175_o1
+   60. ram/GND_1037_o_Addr[7]_AND_2639_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2639_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2639_o1
+   61. ram/GND_1037_o_Addr[7]_AND_5231_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5231_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5231_o1
+   62. ram/GND_1037_o_Addr[7]_AND_2671_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2671_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2671_o1
+   63. ram/GND_1037_o_Addr[7]_AND_4239_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4239_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4239_o1
+   64. ram/GND_1037_o_Addr[7]_AND_2735_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2735_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2735_o1
+   65. ram/GND_1037_o_Addr[7]_AND_4271_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4271_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4271_o1
+   66. ram/GND_1037_o_Addr[7]_AND_3279_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3279_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3279_o1
+   67. ram/GND_1037_o_Addr[7]_AND_4335_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4335_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4335_o1
+   68. ram/GND_1037_o_Addr[7]_AND_2831_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2831_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2831_o1
+   69. ram/GND_1037_o_Addr[7]_AND_3375_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3375_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3375_o1
+   70. ram/GND_1037_o_Addr[7]_AND_4431_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4431_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4431_o1
+   71. ram/GND_1037_o_Addr[7]_AND_6031_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_6031_o
+       LUT ram/GND_1037_o_Addr[7]_AND_6031_o1
+   72. ram/GND_1037_o_Addr[7]_AND_3439_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3439_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3439_o2
+   73. ram/GND_1037_o_Addr[7]_AND_1967_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_1967_o
+       LUT ram/GND_1037_o_Addr[7]_AND_1967_o1
+   74. ram/GND_1037_o_Addr[7]_AND_4527_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4527_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4527_o1
+   75. ram/GND_1037_o_Addr[7]_AND_3567_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3567_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3567_o1
+   76. ram/GND_1037_o_Addr[7]_AND_4623_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4623_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4623_o1
+   77. ram/GND_1037_o_Addr[7]_AND_5167_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5167_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5167_o1
+   78. ram/GND_1037_o_Addr[7]_AND_3663_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3663_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3663_o1
+   79. ram/GND_1037_o_Addr[7]_AND_5263_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5263_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5263_o1
+   80. ram/GND_1037_o_Addr[7]_AND_3727_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3727_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3727_o1
+   81. ram/GND_1037_o_Addr[7]_AND_5327_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5327_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5327_o1
+   82. ram/GND_1037_o_Addr[7]_AND_2767_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2767_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2767_o1
+   83. ram/GND_1037_o_Addr[7]_AND_3823_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_3823_o
+       LUT ram/GND_1037_o_Addr[7]_AND_3823_o1
+   84. ram/GND_1037_o_Addr[7]_AND_4367_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4367_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4367_o1
+   85. ram/GND_1037_o_Addr[7]_AND_5423_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5423_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5423_o1
+   86. ram/GND_1037_o_Addr[7]_AND_2863_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2863_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2863_o1
+   87. ram/GND_1037_o_Addr[7]_AND_7023_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_7023_o
+       LUT ram/GND_1037_o_Addr[7]_AND_7023_o1
+   88. ram/GND_1037_o_Addr[7]_AND_6063_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_6063_o
+       LUT ram/GND_1037_o_Addr[7]_AND_6063_o1
+   89. ram/GND_1037_o_Addr[7]_AND_6127_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_6127_o
+       LUT ram/GND_1037_o_Addr[7]_AND_6127_o1
+   90. ram/GND_1037_o_Addr[7]_AND_6223_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_6223_o
+       LUT ram/GND_1037_o_Addr[7]_AND_6223_o1
+   91. ram/GND_1037_o_Addr[7]_AND_2927_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2927_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2927_o2
+   92. ram/GND_1037_o_Addr[7]_AND_4463_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4463_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4463_o2
+   93. ram/GND_1037_o_Addr[7]_AND_8015_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_8015_o
+       LUT ram/GND_1037_o_Addr[7]_AND_8015_o1
+   94. ram/GND_1037_o_Addr[7]_AND_2959_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2959_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2959_o1
+   95. ram/GND_1037_o_Addr[7]_AND_4495_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_4495_o
+       LUT ram/GND_1037_o_Addr[7]_AND_4495_o1
+   96. ram/GND_1037_o_Addr[7]_AND_5519_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5519_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5519_o1
+   97. ram/GND_1037_o_Addr[7]_AND_2991_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_2991_o
+       LUT ram/GND_1037_o_Addr[7]_AND_2991_o1
+   98. ram/GND_1037_o_Addr[7]_AND_5551_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_5551_o
+       LUT ram/GND_1037_o_Addr[7]_AND_5551_o1
+   99. ram/GND_1037_o_Addr[7]_AND_1999_o (size: 2)
+       LUT ram/GND_1037_o_Addr[7]_AND_1999_o
+       LUT ram/GND_1037_o_Addr[7]_AND_1999_o1
+Phase 9.8  Global Placement (Checksum:76ceb259) REAL time: 35 mins 36 secs 
 
-  A LUT Flip Flop pair for this architecture represents one LUT paired with
-  one Flip Flop within a slice.  A control set is a unique combination of
-  clock, reset, set, and enable signals for a registered element.
-  The Slice Logic Distribution report is not meaningful if the design is
-  over-mapped for a non-slice resource or if Placement fails.
-
-IO Utilization:
-  Number of bonded IOBs:                         4 out of     232    1%
-    Number of LOCed IOBs:                        4 out of       4  100%
-
-Specific Feature Utilization:
-  Number of RAMB16BWERs:                         9 out of      32   28%
-  Number of RAMB8BWERs:                          0 out of      64    0%
-  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
-  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
-    Number used as BUFGs:                        2
-    Number used as BUFGMUX:                      0
-  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
-  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
-  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
-  Number of BSCANs:                              1 out of       4   25%
-  Number of BUFHs:                               0 out of     128    0%
-  Number of BUFPLLs:                             0 out of       8    0%
-  Number of BUFPLL_MCBs:                         0 out of       4    0%
-  Number of DSP48A1s:                            0 out of      32    0%
-  Number of ICAPs:                               0 out of       1    0%
-  Number of MCBs:                                0 out of       2    0%
-  Number of PCILOGICSEs:                         0 out of       2    0%
-  Number of PLL_ADVs:                            0 out of       2    0%
-  Number of PMVs:                                0 out of       1    0%
-  Number of STARTUPs:                            0 out of       1    0%
-  Number of SUSPEND_SYNCs:                       0 out of       1    0%
-
-  Number of RPM macros:            9
-Average Fanout of Non-Clock Nets:                3.06
-
-Peak Memory Usage:  4557 MB
-Total REAL time to MAP completion:  9 secs 
-Total CPU time to MAP completion:   9 secs 
-
-Mapping completed.
-See MAP report file "cpu_map.mrp" for details.
+Phase 10.8  Global Placement
+.............
+...................................................

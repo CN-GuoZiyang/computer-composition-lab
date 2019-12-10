@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sim_1/new/PIPELINETEST.v,1575896307,verilog,,,,PIPELINETEST,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/ALU.v,1575979182,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/EXMEMREG.v,,ALU,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/EXMEMREG.v,1575896192,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/EXTEND.v,,EXMEMREG,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/EXTEND.v,1575822023,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/IDEXREG.v,,EXTEND,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/IDEXREG.v,1575898940,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/IFIDREG.v,,IDEXREG,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/IFIDREG.v,1575892743,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/MEMWBREG.v,,IFIDREG,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/MEMWBREG.v,1575899459,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/NPC.v,,MEMWBREG,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/NPC.v,1575898421,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/PC.v,,NPC,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/PC.v,1575898058,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/PIPELINE.v,,PC,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/PIPELINE.v,1575899352,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/RAM.v,,PIPELINE,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/RAM.v,1575822624,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/REGFILES.v,,RAM,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/REGFILES.v,1575899696,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/ROM.v,,REGFILES,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/ROM.v,1575891535,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/SELECTOR32BITS.v,,ROM,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/SELECTOR32BITS.v,1575822095,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/SELECTOR5BITS.v,,SELECTOR32BITS,,,,,,,,
+E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/SELECTOR5BITS.v,1575822255,verilog,,E:/VivadoPro/pipeline_cpu/pipeline_cpu.srcs/sim_1/new/PIPELINETEST.v,,SELECTOR5BITS,,,,,,,,

@@ -1,16 +1,16 @@
 set -tmpdir "xst/projnav.tmp"
 set -xsthdpdir "xst"
 run
--ifn cpu.prj
--ofn cpu
+-ifn CPU.prj
+-ofn CPU
 -ofmt NGC
 -p xc6slx16-3-csg324
--top cpu
+-top CPU
 -opt_mode Speed
 -opt_level 1
 -power NO
 -iuc NO
--keep_hierarchy Yes
+-keep_hierarchy No
 -netlist_hierarchy As_Optimized
 -rtlview Yes
 -glob_opt AllClockNets

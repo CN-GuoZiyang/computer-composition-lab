@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   22:04:26 11/13/2019
-// Design Name:   cpu
-// Module Name:   C:/Users/guo/Desktop/computer-composition-lab/CO_Lab2/test.v
-// Project Name:  CO_Lab2
+// Create Date:   23:42:28 12/10/2019
+// Design Name:   CPU
+// Module Name:   C:/Users/Ziyang Guo/Desktop/CO_Lab3/CO_Lab3/test.v
+// Project Name:  CO_Lab3
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: cpu
+// Verilog Test Fixture created by ISE for module: CPU
 //
 // Dependencies:
 // 
@@ -29,23 +29,27 @@ module test;
 	reg reset;
 
 	// Outputs
-	wire res_zero;
 	wire equal;
+	wire zero;
 
 	// Instantiate the Unit Under Test (UUT)
-	cpu uut (
-		.clk(clk),
-		.reset(reset),
-		.res_zero(res_zero), 
-		.equal(equal)
+	CPU uut (
+		.clk(clk), 
+		.reset(reset), 
+		.equal(equal), 
+		.zero(zero)
 	);
 
 	initial begin
-	   #10;
-		clk = 0;
-		repeat(89) #10 clk = ~clk;
-		$stop();
+		clk = 1;
+		reset = 0;
+		#5;
+		clk = ~clk;
+		#5;
+		reset = 1;
 	end
+ 
+	always #5 clk = ~clk;
       
 endmodule
 
